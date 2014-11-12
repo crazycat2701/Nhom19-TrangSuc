@@ -1,0 +1,491 @@
+﻿body 
+{
+    background-image:url(../../Images/bg.jpg);
+    font-family:Arial;
+}
+
+/* ca trang web */
+.container
+{
+    margin:0 auto;
+    width:1000px;
+    padding:0px 0 0px 0;
+}
+
+/* phan header */
+.header
+{
+    /*background-image:url(../../Images/header.png);*/
+    margin-top: 20px;
+    width: 1000px;
+    height: 90px;
+    margin-bottom: 0px;
+}
+.logo
+{
+    width: 1000px;
+    height: 60px;
+}
+.menu
+{
+    width: 1000px;
+    height: 40px;
+}
+.danhmuc
+{
+    width: 655px;
+    height: 40px;
+    float: left;
+    position: relative;
+    font-size: 12px;
+}
+.account
+{
+    text-align:right;
+    width: 340px;
+    height: 40px;
+    float: right;
+    line-height:40px;
+    position: relative;
+    padding-right: 5px;
+    font-size: 12px;
+    color:White;
+}
+.account a{text-decoration: none; color:#66ccff;}
+.account a: hover{color:Blue;}
+
+
+/* hieu ung danhmuc */
+.danhmuc ul {padding:0;margin:0;list-style-type:none; height:34px;}
+.danhmuc ul {float:left;height:40px; width:auto;line-height:40px;position:relative;}
+.danhmuc a, .danhmuc a:visited {display:block;float:left;height:100%;font-size:12px;text-decoration:none;color:#ffffff;padding:0 21px 0 13px;}
+.danhmuc a:hover {color:#66ccff;}
+
+/* phan body */
+.body
+{
+    background-image: url(../../Images/bgcenter.png);
+    width: 1000px;
+    height: auto;
+}
+.headerbody
+{
+     background-image:url(../../Images/menu_bg_a.gif);
+     width: 1000px;
+     height: 34px;
+     margin-top: 10px;
+      margin-bottom: 5px;
+}
+.danhmucquanly
+{
+    background-color:#3399cc;
+    font-size: 12px;
+    width: 1000px;
+    height: 34px;
+    line-height: 34px;
+    float: left;
+    position: relative;
+}
+/* hieu ung cho danh muc quan ly */
+.danhmucquanly ul {padding:0px;;margin:0;list-style-type:none; height:34px;}
+.danhmucquanly ul {float:left;height:34px; width:auto;line-height:34px;position:relative;}
+
+/* VI DU MENU XO XUONG */
+.danhmucquanly ul
+{
+    font-size: 12px;
+    text-align:left;
+	position:relative;
+	display:inherit;
+	width:152px;
+}
+.danhmucquanly li
+{
+    font-size: 12px;
+    text-align:left;
+    line-height:34px;
+	position:relative;
+	display:inherit;
+	width:150px;
+	border-bottom: 1px solid #ffffff;
+	border-right: 1px solid #ffffff;
+	border-left: 1px solid #ffffff;
+}
+.danhmucquanly li
+{
+    padding-left:0px;
+    margin:0px;
+    list-style-type:none;
+    height:34px;
+	position:absolute; 
+	display:none;
+	float:left;
+	width:auto;
+	line-height:34px;
+	position:relative;
+}
+.danhmucquanly ul:hover > li
+{
+	display:block;
+	width: 150px;
+}
+.danhmucquanly a 
+{
+    text-decoration:none;
+	display:block; 
+	color:#ffffff;
+	background:#3399cc;
+}
+.danhmucquanly li li,
+.danhmucquanly ul:hover > a,
+.danhmucquanly a:hover
+{
+    color:#000000;
+    background:url(../../images/menu_bg.gif) repeat-x center;
+	opacity:1.0;
+}
+/*Level 1*/
+.danhmucquanly > li > ul
+{
+	float:left;
+	width:150px;
+}
+.danhmucquanly > li > ul > a
+{
+	width:150px;
+}
+
+.content
+{
+    width: 1000px;
+    height: auto;
+    position:static;
+    display:block;
+}
+
+.headercolumn
+{
+    margin-top: 5px;
+	text-align:center;
+	color: #000000;
+	background-color: #3399cc;
+	height:30px;
+	font: bold 12px Arial, Helvetica, sans-serif;
+	line-height:30px;
+}
+.noidungright
+{
+    font: 12px Arial, Helvetica, sans-serif;
+    width: 986px;
+    text-align:left;
+	padding:5px 5px 5px 5px;
+	background-color:#f6f5ee;
+	margin-bottom:0px;
+	border: 2px solid #3399cc;
+	color: #000000;
+}
+.noidungtrong
+{
+    width: 980px;
+    height: auto;
+}
+.tieude
+{
+    font: Bold 12px Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    color:#3399cc;
+    margin: 0px 10px 5px 5px;
+}
+.tieude2
+{
+    font: Bold 12px Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    color:#3399cc;
+    margin: 10px 10px 5px 0px;
+}
+.tieude2 a
+{
+    font: Bold 12px Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    color:Blue;
+    margin: 10px 10px 5px 5px;
+}
+.tieude2 a:hover
+{
+    color:#348db7;
+}
+.trangsanpham 
+{
+    width:986px;
+	float:left;
+}
+.sanpham
+{
+    border:1px dashed #348db7;
+	font: 12px Arial, Helvetica, sans-serif;
+	border-radius: 5px;
+	text-align:center;
+	margin-top:7px;
+	margin-left:7px;
+	margin-bottom:7px;
+	width:182px; 
+    height:270px;
+	float:left;
+	background-color:#f1efe6;
+}
+.sanpham img
+{
+    margin-top: 5px;
+	width:170px;
+	height:170px;
+}
+table
+{
+    border-collapse: collapse;
+}
+
+table td {
+    padding: 3px;
+}
+
+table th {
+    padding: 3px 3px;
+    text-align: center;
+}
+
+.tablenguoidung
+{
+    width: 976px;
+    border: 1px solid #ffffff;
+    margin: 0px 0px 5px 5px;
+    padding: 0px;
+}
+.tablenguoidung th
+{
+    background-color:#9999ff;
+    border: 1px solid #ffffff;
+    text-align: center;
+}
+.tablenguoidung td
+{
+    background-color: #ccffcc;
+    text-align:left;
+    border: 1px solid #ffffff;
+    margin: 0;
+    padding: 5px 5px 5px 5px;
+}
+.tablesua
+{
+     width: 476px;
+    border: 1px solid #000000;
+    margin: 0px 0px 5px 5px;
+    padding: 2px;
+}
+.tablesua th
+{
+    border: 1px solid #000000;
+    text-align: center;
+}
+.tablesua td
+{
+    text-align:justify;
+    border: 1px solid #000000;
+    margin: 0;
+    padding: 7px 10px 7px 10px;
+}
+.sidebarmenu ul
+{
+	margin: auto;
+	padding: 0;
+	list-style-type: none;
+	font: 12px Arial, Helvetica, sans-serif;
+	width: 135px; /*chiều rộng của menu chinh*/
+}
+.sidebarmenu ul li
+{
+	position: relative;
+}
+/* cap do menu link toi style */
+.sidebarmenu ul li a
+{
+	display: block;
+	overflow: auto; /*hieu luc bo tri trong IE7 */
+	color: white;
+	text-decoration: none;
+	padding: 8px;
+	padding-left:15px;
+	border-bottom: 3px solid #ffffff;
+}
+.sidebarmenu ul li a:link, .sidebarmenu ul li a:visited, .sidebarmenu ul li a:active
+{
+	background-color: #2f8bb2; /*background */
+}
+.sidebarmenu ul li a:hover
+{
+	background-color: #5aafd3;
+	color:Black;
+}
+/*Sub level menu items */
+.sidebarmenu ul li ul
+{
+	position: absolute;
+	width: 135px; /*Chiều rộng Sub Menu Items */
+	top: 0;
+	visibility: hidden;
+}
+.sidebarmenu a.subfolderstyle
+{
+	background: url() no-repeat 97% 50%;
+}
+/* Holly Hack for IE \*/
+* html .sidebarmenu ul li { float: left; height: 1%; }
+* html .sidebarmenu ul li a { height: 1%; }
+
+/* phan footer */
+.footer
+{
+    font: Bold 12px Arial, Helvetica, sans-serif;
+    color: White;
+    margin-top: 10px;
+    width: 1000px;
+    height: 50px;
+}
+.clear
+{
+	clear:both;
+}
+.tablequanly
+{
+    width: 976px;
+    margin: 8px 0px 5px 5px;
+    padding: 2px;
+    }
+.tablequanly th
+{
+    background-color:Blue;
+    border: 1px solid #ffffff;
+    text-align: center;
+}
+.tablequanly td
+{
+    background-color:Gray;
+    text-align:center;
+    border: 1px solid #ffffff;
+    margin: 0;
+    line-height: 34px;
+    padding: 7px 10px 7px 10px;
+}
+.mucquanly
+{
+    border:1px dashed #348db7;
+	font: 12px Arial, Helvetica, sans-serif;
+	border-radius: 0px;
+	text-align:center;
+	margin-top:7px;
+	margin-left:9px;
+	margin-bottom:7px;
+	width:315px; 
+    height:435px;
+	float:left;
+	background-color:#f1efe6;
+}
+.dmucquanly
+{
+    text-align: right;
+    color:#000000;
+    text-transform: uppercase;
+    background-color:#3399cc;
+    font: Bold 12px Arial, Helvetica, sans-serif;
+    width: 315px;
+    height: 34px;
+    line-height: 34px;
+    float: right;
+    margin-top: 17px;
+    margin-bottom: 0px;
+    position: static;
+}
+.tablelist
+{
+    color: #006699;
+    font: Bold 12px Arial, Helvetica, sans-serif;
+    float:left;
+    width: 190px;
+    margin: 7px 0px 5px 65px;
+    padding: 2px;
+    }
+.tablelist td
+{
+    text-align:left;
+    margin: 0;
+    line-height: 20px;
+    padding: 0px 0px 0px 0px;
+}
+.tablelist a
+{
+    text-decoration:none;
+    color: #006699;
+}
+.tablelist a:hover
+{
+    text-decoration:none;
+    color: #000000;
+}
+.dmucquanly a, .dmucquanly a:visited {text-align:center; color:#000000; display:block;height:100%;font-size:12px;text-decoration:none;padding:0 20px 0 20px;}
+.dmucquanly a:hover {color:#ffffff;}
+.area
+{
+    width: 986px;
+    height: 450px;
+}
+.themmoi
+{
+    color:Blue;
+}
+
+div.pagination 
+{
+    position:static;
+    width:980px;
+    clear:both;
+    padding:10px 0 10px 0;
+    margin:0px;
+    margin-bottom: 0px;
+    text-align:center;
+    float:left;
+    font-size:11px;
+}
+
+div.pagination a 
+{
+    font-size: 12px;
+    padding: 2px 5px 2px 5px;
+    margin-right: 2px;
+    border: 1px solid #52bfea;
+    text-decoration: none; 
+    color: #348db7;
+}
+div.pagination a:hover, div.pagination a:active 
+{
+    font-size: 12px;
+    border:1px solid #52bfea;
+    color: #fff;
+    background-color: #52bfea;  
+}
+div.pagination span.current 
+{
+    font-size: 12px;
+    padding: 2px 5px 2px 5px;
+    margin-right: 2px;
+    border: 1px solid #52bfea;
+    font-weight: bold;
+    background-color: #52bfea;
+    color: #FFF;
+}
+div.pagination span.disabled 
+{
+    font-size: 12px;
+    padding: 2px 5px 2px 5px;
+    margin-right: 2px;
+    border: 1px solid #f3f3f3;
+    color: #ccc;
+}

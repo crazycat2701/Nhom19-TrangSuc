@@ -1,0 +1,24 @@
+﻿<div class="columncenter">
+        <div class="header-center">TÌM KIẾM SẢN PHẨM</div>   
+        <fieldset class="fieldset">
+            <legend><img src="@Url.Content("~/Image/search-icon.png")" width="25" height="25" align="top" /></legend>
+            <div id="wrapper">
+            <form action="/sanpham/TimKiem" method="get" name="tkcoban"> 
+     	        <input style="width:250px; height: 17px" id="coban" type="text" onblur="if(this.value=='') this.value=this.defaultValue" onfocus="if(this.value==this.defaultValue) this.value=''" value="Nhập tên sản phẩm cần tìm..." name="chuoitk" autocomplete="off" size="36" />
+     	        <input style="width:40px; height: 26px" type="submit" name="tkcoban" value="Tìm" />
+	        </form>
+                <a href="" id="link" onclick="return show_hide()">Tìm kiếm nâng cao</a>
+            </div>
+            <div id="full" style="display:none">
+                <form action="/sanpham/TimKiemNangCao" method="get" name="tknangcao" onsubmit="return checktknc();">
+    	             @{Html.RenderAction("Menutimkiem", "loaisanpham");}
+		            <input id="tensanpham" type="text" onblur="if(this.value=='') this.value=this.defaultValue" onfocus="if(this.value==this.defaultValue) this.value=''" value="tên sản phẩm" name="tensp" autocomplete="off" style="width:100px; height: 16px">
+		            <input id="giatu" type="text" onblur="if(this.value=='') this.value=this.defaultValue" onfocus="if(this.value==this.defaultValue) this.value=''" value="giá từ" name="giatu" autocomplete="off" style="width:100px; height: 16px">
+		            <input id="den"  type="text" onblur="if(this.value=='') this.value=this.defaultValue" onfocus="if(this.value==this.defaultValue) this.value=''" value="đến" name="den" autocomplete="off" style="width:100px; height: 16px">	
+                    <input style="width:40px; height: 26px" type="submit" name="tknangcao" value="Tìm" />
+                </form>
+                <span id="_giatu" style="color:red"></span><br />
+                <a href="" id="link" onclick="return show_hide()">Tìm kiếm cơ bản</a>
+            </div>
+        </fieldset>
+    </div>

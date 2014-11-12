@@ -1,0 +1,10 @@
+﻿@model IEnumerable<Trangsuc.ServiceReferenceNguoidung.Phanquyen_DTO>
+<ul id="danhmucquanly"><a href="/admin/quanlynguoidung/index" style="text-align:center">Quản lý người dùng</a>
+    <li><a href="/admin/quanlynguoidung/index" style="padding-left:26px">Tất cả</a></li>
+    @foreach (var item in Model)
+    {
+        <li><a href="/admin/quanlynguoidung/danhsachuser?phanquyen=@Html.DisplayFor(modelItem => item.Maphanquyen)" style="padding-left:26px"><text style="font-size:12px">@Html.DisplayFor(modelItem => item.Quyen)</text></a></li> 
+    }
+    <li><a href="/admin/quanlynguoidung/nguoidungan" style="padding-left:26px">Người dùng ẩn</a></li>          
+</ul>
+                            

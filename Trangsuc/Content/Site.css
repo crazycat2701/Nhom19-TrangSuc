@@ -1,0 +1,854 @@
+﻿/*----------------------------------------------------------
+The base color for this template is #5c87b2. If you'd like
+to use a different color start by replacing all instances of
+#5c87b2 with your new color.
+----------------------------------------------------------*/
+body 
+{
+    background-image:url(../../Image/background.jpg);
+    font-size: .85em;
+    font-family: Arial;
+    margin: AUTO;
+    padding: initial;
+    color: #696969;
+}
+
+a:link {
+    color: blue;
+    text-decoration: none;
+}
+
+/*a:visited {
+    color: #505abc;
+}*/
+
+a:hover {
+    color: #0000FF;
+    text-decoration: none;
+}
+
+a:active {
+    color: #12eb87;
+}
+
+p, ul {
+    margin-bottom: 20px;
+    line-height: 1.6em;
+}
+
+header,
+footer,
+nav,
+section {
+    display: block;
+}
+
+/* HEADINGS   
+----------------------------------------------------------*/
+h1, h2, h3, h4, h5, h6 {
+    font-size: 1.5em;
+    color: #000;
+}
+
+h1 {
+    font-size: 2em;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+h2 {
+    padding: 0 0 10px 0;
+}
+
+h3 {
+    font-size: 1.2em;
+}
+
+h4 {
+    font-size: 1.1em;
+}
+
+h5, h6 {
+    font-size: 1em;
+}
+
+/* PRIMARY LAYOUT ELEMENTS   
+----------------------------------------------------------*/
+
+/* you can specify a greater or lesser percentage for the 
+page width. Or, you can specify an exact pixel width. */
+.page {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header, #header {
+    position: relative;
+    margin-bottom: 0px;
+    color: #000;
+    padding: 0;
+}
+
+header h1, #header h1 {
+    font-weight: bold;
+    padding: 5px 0;
+    margin: 0;
+    color: #fff;
+    border: none;
+    line-height: 2em;
+    font-size: 32px !important;
+    text-shadow: 1px 1px 2px #111;
+}
+
+#main {
+    padding: 30px 30px 15px 30px;
+    background-color: #fff;
+    border-radius: 4px 0 0 0;
+    -webkit-border-radius: 4px 0 0 0;
+    -moz-border-radius: 4px 0 0 0;
+}
+
+footer, 
+#footer {
+    background-color: #fff;
+    color: #999;
+    padding: 10px 0;
+    text-align: center;
+    line-height: normal;
+    margin: 0 0 30px 0;
+    font-size: .9em;
+    border-radius: 0 0 4px 4px;
+    -webkit-border-radius: 0 0 4px 4px;
+    -moz-border-radius: 0 0 4px 4px;
+}
+
+/* TAB MENU   
+----------------------------------------------------------*/
+
+
+/* FORM LAYOUT ELEMENTS   
+----------------------------------------------------------*/
+
+/*fieldset {
+    border: 1px solid #ddd;
+    padding: 0 1.4em 1.4em 1.4em;
+    margin: 0 0 1.5em 0;
+}*/
+
+legend {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+select {
+    border: 1px solid #ccc;
+    padding: 2px;
+    font-size: 1.2em;
+    color: #444;
+}
+
+/* TABLE
+----------------------------------------------------------*/
+
+/* MISC  
+----------------------------------------------------------*/
+.clear {
+    clear: both;
+}
+
+.error {
+    color: Red;
+}
+
+nav, 
+#menucontainer {
+    margin-top: 40px;
+}
+
+div#title {
+    display: block;
+    float: left;
+    text-align: left;
+}
+
+#logindisplay {
+    font-size: 1.1em;
+    display: block;
+    text-align: right;
+    margin: 10px;
+    color: White;
+}
+
+#logindisplay a:link {
+    color: white;
+    text-decoration: underline;
+}
+
+#logindisplay a:visited {
+    color: white;
+    text-decoration: underline;
+}
+
+#logindisplay a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+/* Styles for validation helpers
+-----------------------------------------------------------*/
+.field-validation-error {
+    color: #ff0000;
+}
+
+.field-validation-valid {
+    display: none;
+}
+
+.input-validation-error {
+    border: 1px solid #ff0000;
+    background-color: #ffeeee;
+}
+
+.validation-summary-errors {
+    font-weight: bold;
+    color: #ff0000;
+}
+
+.validation-summary-valid {
+    display: none;
+}
+.editor-field
+{
+    width: 550px;
+    margin-top: 5px;
+    }
+/* Styles for editor and display helpers
+----------------------------------------------------------*/
+/*.display-label, 
+.editor-label {
+    margin: 1em 0 0 0;
+}
+
+.display-field, 
+.editor-field {
+    margin: 0.5em 0 0 0;
+}
+
+
+
+.text-box.multi-line {
+    height: 6.5em;
+}
+
+.tri-state {
+    width: 6em;
+}
+
+/*CSS*/
+.container
+{
+	font: 12px Arial, Helvetica, sans-serif;
+    width: 1000px;
+	margin: 0px auto;
+}
+
+.banner
+{
+	border-radius: 4px 4px 0px 0px;
+	width:1000px;
+	background-image:url(../../Image/banner.jpg);
+	height:150px;
+}
+
+.menu
+{
+    font-family: Arial;
+	width:1000px;
+	margin-top:5px;
+	height:40px;
+	background-image:url(../../Image/menu_bg.jpg);
+}
+
+.main
+{
+	width:1000px;
+}
+
+.columnleft
+{
+	float:left;
+	width:200px;
+	margin-top:5px;
+}
+
+.columnngoai
+{
+	float:left;
+	width:180px;
+	margin-top:5px;
+}
+
+.header-column
+{
+	text-align:center;
+	color: #000000;
+	background-image:url(../../Image/menu_bg.jpg);
+	height:30px;
+	font: bold 12px Arial, Helvetica, sans-serif;
+	line-height:30px;	
+}
+
+.columnright
+{
+	float:right;
+	width:200px;
+	margin-top:5px;
+}
+   
+
+.columncenter
+{
+	width:580px;
+	float:left;
+	margin-top:5px;
+	/*background-color:#fbd9e9;*/
+	background-color:#f6f5ee;
+    border: 1px solid #348db7;
+}
+.trangsanpham 
+{
+    width:580px;
+	float:left;
+    }
+
+.covercenter
+{
+    width:580px;
+	margin:0px 9px 0px 9px;
+	float:left;
+	margin-bottom: 5px;
+    }
+
+.header-center
+{
+    background-image: url(../../Image/menu_bg.jpg);
+    text-align: center;
+    color: #000000;
+    height: 30px;
+    font: bold 13px Arial, Helvetica, sans-serif;
+    line-height: 30px;
+}
+
+.noidungcanhtrai
+{
+	text-align:left;
+	padding:5px 10px 5px 10px;
+	background-color:#f6f5ee;
+	margin-bottom:5px;
+	border: 1px solid #348db7;
+	color: #000000;
+}
+
+.noidungdangnhap
+{
+	text-align:left;
+	padding:5px 5px 5px 5px;
+	background-color:#f6f5ee;
+	margin-bottom:5px;
+	border: 1px solid #348db7;
+	color: #000000;
+}
+.trangsanpham 
+{
+    width: 580px;
+    height:auto;
+    }
+
+.sidebarmenu ul
+{
+	margin: auto;
+	padding: 0;
+	list-style-type: none;
+	font: 13px Arial, Helvetica, sans-serif;
+	width: 160px; /*chiều rộng của menu chinh*/
+}
+.sidebarmenu ul li
+{
+	position: relative;
+}
+/* cap do menu link toi style */
+.sidebarmenu ul li a
+{
+	display: block;
+	overflow: auto; /*hieu luc bo tri trong IE7 */
+	color: white;
+	text-decoration: none;
+	padding: 10px;
+	padding-left:25px;
+	border-bottom: 3px solid #ffffff;
+}
+.sidebarmenu ul li a:link, .sidebarmenu ul li a:visited, .sidebarmenu ul li a:active
+{
+	background-color: #2f8bb2; /*background */
+}
+.sidebarmenu ul li a:hover
+{
+	background-color: #5aafd3;
+}
+/*Sub level menu items */
+.sidebarmenu ul li ul
+{
+	position: absolute;
+	width: 150px; /*Chiều rộng Sub Menu Items */
+	top: 0;
+	visibility: hidden;
+}
+.sidebarmenu a.subfolderstyle
+{
+	background: url() no-repeat 97% 50%;
+}
+/* Holly Hack for IE \*/
+* html .sidebarmenu ul li { float: left; height: 1%; }
+* html .sidebarmenu ul li a { height: 1%; }
+
+.noidungcanhgiua
+{
+	padding:5px 10px 5px 10px;
+	background-color:#f6f5ee;
+	text-align:center;
+	margin-bottom:5px;
+	border: 1px solid #348db7;
+	color: #000000;
+}
+.noidungcanhgiua2
+{
+	padding:5px 10px 5px 10px;
+	background-color:#f6f5ee;
+	text-align:center;
+	margin-bottom:0px;
+	border: 1px solid #348db7;
+	color: #000000;
+}
+
+.quangcao img
+{
+	margin:0px;
+	width:200px;
+}
+
+.xemthem
+{
+	color:#0033FF;
+	height:20px;
+	padding:2px;
+	text-align:right;
+	color: #000000;
+}
+
+FORM#regmail 
+{
+  position: relative;
+}
+
+DIV#mail
+{
+  position: relative;
+  float: left;
+}
+
+INPUT#mail-field
+{
+  width: 125px;
+  margin-top:1px;
+}
+
+LABEL.overlabel 
+{
+  position: absolute;
+  top: 3px;
+  left: 5px;
+  z-index: 1;
+  color: #999999;
+}
+
+
+.size
+{
+    font: 8px Arial, Helvetica, sans-serif;    
+}
+
+.button
+{
+	font: bold 13px Arial, Helvetica, sans-serif;
+	float:left;
+	text-align:center;
+	text-decoration:none;
+	padding-top:12px;
+	padding-left:15px;
+	padding-right:15px;
+	color:#FFFFFF;
+}
+
+.time
+{
+	float:right;
+	padding-top:12px;
+	padding-left:15px;
+	padding-right:15px;
+	color:#FFFFFF;
+	font: 14px Arial, Helvetica, sans-serif;
+}
+
+.menu-space
+{
+	background-image:url(../../Image/menu-space.jpg);
+	width:2px;
+	height:40px;
+	float:left;
+}
+.clear
+{
+	clear:both;
+}
+
+.footer
+{
+	margin-top:1px;
+	border-radius: 0px 0px 4px 4px;
+	padding:5px 10px 5px 10px;
+	background-image:url(../../Image/footer.png);
+	border: 1px solid #348db7;
+	color:Black
+}
+
+img
+{
+	border:0px;
+	margin:3px;
+
+}
+
+.text
+{
+    color:Black;
+}
+
+.noidunggiua
+{
+	padding:5px 10px 5px 10px;
+	margin-bottom:5px;
+	color:#336699;
+}
+
+.noidungphu
+{
+	padding:0px 10px 0px 35px;
+	margin-bottom:5px;
+	text-align: justify;
+	color:#000000;
+}
+.noidungchinh
+{
+	padding:2px 10px 2px 10px;
+	margin-bottom:5px;
+	color: #336699;
+}
+.noidungphu2
+{
+	padding:2px 10px 2px 60px;
+	margin-bottom:5px;
+	text-align: justify;
+	color:#000000;
+}
+.dangcapnhat
+{
+	margin:10px 0px 10px 0px;
+	text-align: center;
+	color:#000000;
+}
+.dangnhap
+{
+	border-radius: 5px;
+	width:1000px;
+	background-color:#fbd9e9;
+	float:left;
+	border: 1px solid #348db7;
+}
+.menu a
+{
+	color: #FFFFFF;
+    text-decoration: none;
+}
+.menu a:hover
+{
+	color: #000000;
+}
+
+a
+{
+	color: blue;
+    text-decoration: none;
+}
+a:hover
+{
+	color: #0000FF;
+}
+
+.fieldset
+{
+    border-radius: 5px;
+	width:550px;
+	margin:5px 5px 5px 5px;
+	background-color:#f6f5ee;
+	float:left;
+	border: 1px solid #CCCCCC;
+}
+
+.spbanchay
+{
+    height:225px;
+    width:198px;
+}
+.sanphamnoibat
+{
+	border:1px dashed #348db7;
+	font: 12px Arial, Helvetica, sans-serif;
+	border-radius: 4px;
+	text-align:center;
+	margin:20px 10px 20px 10px;
+	width: 155px;
+	height:215px;
+}
+.sanphamnoibat a div img
+{
+	width:140px;
+	height:140px;
+}
+.tensanpham
+{	
+	height:40px;
+}
+.sanpham
+{
+    border:1px dashed #348db7;
+	font: 12px Arial, Helvetica, sans-serif;
+	border-radius: 5px;
+	text-align:center;
+	margin-top:7px;
+	margin-left:7px;
+	margin-bottom:7px;
+	width:182px; 
+    height:270px;
+	float:left;
+	background-color:#f1efe6;
+}
+.sanpham img
+{
+    margin-top: 5px;
+	width:170px;
+	height:170px;
+}
+.chitietsanpham
+{
+    margin: 10px 10px 10px 10px;
+    width: 570px;
+    height: 260px; 
+}
+.sanphamchitiet
+{
+    border:1px dashed #348db7;
+	font: 12px Arial, Helvetica, sans-serif;
+	text-align: center;
+	margin:0px 5px 0px 0px;
+	width:260px;
+	height:260px;
+	float:left;
+	position: relative;
+}
+.phanchitiet
+{
+    width: 270px;
+    height: 260px;
+    position:relative;
+    float: right;
+    margin-right: 20px; 
+}
+.tensanphamct
+{
+    text-align: left;
+    color:#006633;
+    font: Bold 12px Arial, Helvetica, sans-serif;
+    border-bottom: 1px dashed #CCCCCC;
+    width: 270px;
+    height: auto;
+    float: right;
+    margin: 0px 10px 10px 10px;
+    position: static;
+}
+.tensp
+{
+    text-align: left;
+    color:#006633;
+    font: Bold 12px Arial, Helvetica, sans-serif;
+    width: 260px;
+    height: auto;
+    float: right;
+    margin: 0px 10px 10px 20px;
+    position: static;
+    padding-left: 20px;
+}
+
+.sanphamchitiet img
+{
+    margin: 0px 0px 0px 0px;   
+	width:260px;
+	height:260px;
+}
+.muahang
+{
+    color: #000099;
+	border-radius: 5px;
+	margin:0px;
+	background-image:url(../../image/muahang.png);
+	width:83px;
+	height:25px;
+	line-height: 25px;
+	text-align:right;
+	padding-right: 2px;
+	position: relative;
+}
+.muahang a
+{
+    color: #000099;
+}
+.muahang a:hover
+{
+    color: #0066ff;
+}
+.muahang1 a
+{
+    text-decoration: none;
+    color: #000099;
+}
+.muahang1 a:hover
+{
+    color: #0066ff;
+}
+.muahang1
+{
+    text-transform: uppercase;
+	color: #000099;
+	border-radius: 5px;
+	margin:0px;
+	background-image:url(../../image/muahang1.png);
+	width:120px;
+	height:40px;
+	line-height: 40px;
+	text-align:right;
+	padding-right: 2px;
+	position: relative;
+}
+.conhang
+{
+	color: #000099;
+	margin:0px;
+	background-image:url(../../image/conhang.png);
+	width:90px;
+	height:40px;
+	line-height: 40px;
+	text-align:right;
+	padding-right: 2px;
+	position:absolute;
+	margin-right: 20px;
+}
+.chitiet
+{
+    color: #000099;
+	border-radius: 5px;
+	margin:0px;
+	background-image:url(../../image/chitiet.png);
+	width:63px;
+	height:25px;
+	line-height: 25px;
+	text-align:right;
+	padding-right: 2px;
+}
+.chitiet a
+{
+    color: #000099;
+}
+.chitiet a:hover
+{
+    color: #0066ff;
+}
+.text2
+{
+    padding:5px 10px 5px 10px;
+	margin-top:5px;
+    color:Black;
+    text-align: justify;
+    }
+.form_label   
+{
+    color:Black;
+  width: 12em; 
+float:left; 
+}
+
+.updatesoluong
+{
+	border:none;
+	background-image:url(../Image/refresh-icon.png);
+	height:16px;
+	width:16px;
+}
+
+div.pagination 
+{
+    width:580px;
+    clear:both;
+    padding:10px 0 10px 0;
+    margin:0px;
+    margin-bottom: 10px;
+    text-align:center;
+    float:left;
+    font-size:11px;
+    position:relative;
+}
+
+div.pagination a 
+{
+    font-size: 12px;
+    padding: 2px 5px 2px 5px;
+    margin-right: 2px;
+    border: 1px solid #52bfea;
+    text-decoration: none; 
+    color: #348db7;
+}
+div.pagination a:hover, div.pagination a:active 
+{
+    font-size: 12px;
+    border:1px solid #52bfea;
+    color: #fff;
+    background-color: #52bfea;  
+}
+div.pagination span.current 
+{
+    font-size: 12px;
+    padding: 2px 5px 2px 5px;
+    margin-right: 2px;
+    border: 1px solid #52bfea;
+    font-weight: bold;
+    background-color: #52bfea;
+    color: #FFF;
+}
+div.pagination span.disabled 
+{
+    font-size: 12px;
+    padding: 2px 5px 2px 5px;
+    margin-right: 2px;
+    border: 1px solid #f3f3f3;
+    color: #ccc;
+}
+

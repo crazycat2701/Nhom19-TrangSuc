@@ -1,0 +1,85 @@
+﻿@model Trangsuc.ServiceReferenceSanpham.Sanpham_DTO
+
+@{
+    ViewBag.Title = "Chi tiết";
+}
+ <script>
+     window.fbAsyncInit = function () {
+         FB.init({
+             appId: 'your-app-id',
+             xfbml: true,
+             version: 'v2.1'
+         });
+     };
+
+     (function (d, s, id) {
+         var js, fjs = d.getElementsByTagName(s)[0];
+         if (d.getElementById(id)) { return; }
+         js = d.createElement(s); js.id = id;
+         js.src = "//connect.facebook.net/vi_VN/sdk.js";
+         fjs.parentNode.insertBefore(js, fjs);
+     }(document, 'script', 'facebook-jssdk'));
+    </script>
+<div class="covercenter">
+ @{Html.RenderAction("KhungTimKiem", "sanpham");}
+<div class="columncenter">
+    <div class="header-center">CHI TIẾT SẢN PHẨM</div>
+    @{
+        string formatgia = Model.Giasanpham.ToString("c");
+        formatgia = formatgia.Substring(1, formatgia.LastIndexOf(".") - 1);
+        <div style="width:650px">
+        <div class="chitietsanpham">
+            @if(ViewBag.Tonkho > 0 )
+            { <div class="sanphamchitiet"><div class="conhang"><b>Còn hàng</b></div>
+                <div><img src="@Url.Content("~/" + @Html.DisplayFor(modelItem => Model.Hinhanh))"/></div>
+            </div>
+            }
+            else{
+                <div class="sanphamchitiet"><div class="conhang"><b>Hết hàng</b></div>
+                <div><img src="@Url.Content("~/" + @Html.DisplayFor(modelItem => Model.Hinhanh))"/></div>
+            </div>
+            }
+            <div class="phanchitiet">
+                <div class="tensp" style="font-size:12px; text-transform:uppercase">@Html.DisplayFor(modelItem => Model.Tensanpham)</div>
+                <div class="tensanphamct">
+                    <div style="color:#cc0000; font-size:18px; padding-left:10px">Giá: @formatgia VNĐ<br /></div>
+                    @if (ViewBag.Tonkho > 0)
+                    {<table>
+                        <tr valign="middle">
+                            <td valign="middle">
+                                Số lượng:
+                            </td>
+                            <td valign="middle">         
+                                @using (Html.BeginForm("giohangthem", "cart", new { masanpham = Model.Masanpham }))
+                                {
+                                    <input type="text" name="soluong" value="1" size="3"  />
+                                    <input title="Thêm sản phẩm vào giỏ hàng" style="font: bold 13px Arial; background-color:#f6f5ee; border:0; cursor:pointer; margin-left: 20px" type="submit" alt="them" class="muahang1" value="Mua hàng" /> 	
+                                }		                        
+                            </td>
+                        </tr>
+                        <tr><td colspan="2">Số lượng còn: @ViewBag.Tonkho sản phẩm</td></tr>
+                    </table>}
+                </div>
+                <table style="color:Black;">
+                    <tr>
+                        <td style="width:100px; padding-bottom:5px;"><b>Mã sản phẩm</b></td>
+                        <td style="width:200px;">: @Html.DisplayFor(modelItem => Model.Masanpham)</td>
+                    </tr>
+                    <tr>
+                        <td style="width:100px; padding-bottom:5px;"><b>Loại</b></td>
+                        <td>: @Html.DisplayFor(modelItem => Model.Loai.Tenloai)</td>
+                    </tr>
+                    <tr>
+                        <td style="width:100px; padding-bottom:5px;"><b>Chất liệu</b></td>
+                        <td>: @Html.DisplayFor(modelItem => Model.Chatlieu)</td>
+                    </tr>
+                </table>  
+            </div>
+      </div>
+        </div>
+    }<div class="fb-comments" data-href="http://localhost:52730/sanpham/chitietsanpham?masp=@Html.DisplayFor(modelItem => Model.Masanpham)" data-numposts="5" data-colorscheme="light">check this</div>
+</div>
+ @{Html.RenderAction("sanphamcungloai", "sanpham");}
+ </div>
+
+

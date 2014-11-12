@@ -1,0 +1,198 @@
+E:\Trangsuc\Trangsuc\bin\Trangsuc.dll
+E:\Trangsuc\Trangsuc\bin\Trangsuc.pdb
+E:\Trangsuc\Trangsuc\bin\EntityFramework.dll
+E:\Trangsuc\Trangsuc\bin\Microsoft.Web.Infrastructure.dll
+E:\Trangsuc\Trangsuc\bin\System.Web.Helpers.dll
+E:\Trangsuc\Trangsuc\bin\System.Web.Mvc.dll
+E:\Trangsuc\Trangsuc\bin\System.Web.Razor.dll
+E:\Trangsuc\Trangsuc\bin\System.Web.WebPages.Deployment.dll
+E:\Trangsuc\Trangsuc\bin\System.Web.WebPages.dll
+E:\Trangsuc\Trangsuc\bin\System.Web.WebPages.Razor.dll
+E:\Trangsuc\Trangsuc\bin\EntityFramework.xml
+E:\Trangsuc\Trangsuc\bin\System.Web.Helpers.xml
+E:\Trangsuc\Trangsuc\bin\System.Web.Mvc.xml
+E:\Trangsuc\Trangsuc\bin\System.Web.Razor.xml
+E:\Trangsuc\Trangsuc\bin\System.Web.WebPages.xml
+E:\Trangsuc\Trangsuc\bin\System.Web.WebPages.Deployment.xml
+E:\Trangsuc\Trangsuc\bin\System.Web.WebPages.Razor.xml
+E:\Trangsuc\Trangsuc\obj\Debug\Trangsuc.dll
+E:\Trangsuc\Trangsuc\obj\Debug\Trangsuc.pdb
+E:\Trangsuc\Trangsuc\obj\Debug\Trangsuc.csprojResolveAssemblyReference.cache
+E:\Trangsuc - Copy\Trangsuc\bin\Trangsuc.dll
+E:\Trangsuc - Copy\Trangsuc\bin\Trangsuc.pdb
+E:\Trangsuc - Copy\Trangsuc\bin\EntityFramework.dll
+E:\Trangsuc - Copy\Trangsuc\bin\Microsoft.Web.Infrastructure.dll
+E:\Trangsuc - Copy\Trangsuc\bin\System.Web.Helpers.dll
+E:\Trangsuc - Copy\Trangsuc\bin\System.Web.Mvc.dll
+E:\Trangsuc - Copy\Trangsuc\bin\System.Web.Razor.dll
+E:\Trangsuc - Copy\Trangsuc\bin\System.Web.WebPages.Deployment.dll
+E:\Trangsuc - Copy\Trangsuc\bin\System.Web.WebPages.dll
+E:\Trangsuc - Copy\Trangsuc\bin\System.Web.WebPages.Razor.dll
+E:\Trangsuc - Copy\Trangsuc\bin\EntityFramework.xml
+E:\Trangsuc - Copy\Trangsuc\bin\System.Web.Helpers.xml
+E:\Trangsuc - Copy\Trangsuc\bin\System.Web.Mvc.xml
+E:\Trangsuc - Copy\Trangsuc\bin\System.Web.Razor.xml
+E:\Trangsuc - Copy\Trangsuc\bin\System.Web.WebPages.xml
+E:\Trangsuc - Copy\Trangsuc\bin\System.Web.WebPages.Deployment.xml
+E:\Trangsuc - Copy\Trangsuc\bin\System.Web.WebPages.Razor.xml
+E:\Trangsuc - Copy\Trangsuc\obj\Debug\Trangsuc.csprojResolveAssemblyReference.cache
+E:\Trangsuc - Copy\Trangsuc\obj\Debug\Trangsuc.dll
+E:\Trangsuc - Copy\Trangsuc\obj\Debug\Trangsuc.pdb
+E:\doanwebser\Trangsuc\Trangsuc\bin\Trangsuc.dll
+E:\doanwebser\Trangsuc\Trangsuc\bin\Trangsuc.pdb
+E:\doanwebser\Trangsuc\Trangsuc\bin\EntityFramework.dll
+E:\doanwebser\Trangsuc\Trangsuc\bin\Microsoft.Web.Infrastructure.dll
+E:\doanwebser\Trangsuc\Trangsuc\bin\System.Web.Helpers.dll
+E:\doanwebser\Trangsuc\Trangsuc\bin\System.Web.Mvc.dll
+E:\doanwebser\Trangsuc\Trangsuc\bin\System.Web.Razor.dll
+E:\doanwebser\Trangsuc\Trangsuc\bin\System.Web.WebPages.Deployment.dll
+E:\doanwebser\Trangsuc\Trangsuc\bin\System.Web.WebPages.dll
+E:\doanwebser\Trangsuc\Trangsuc\bin\System.Web.WebPages.Razor.dll
+E:\doanwebser\Trangsuc\Trangsuc\bin\EntityFramework.xml
+E:\doanwebser\Trangsuc\Trangsuc\bin\System.Web.Helpers.xml
+E:\doanwebser\Trangsuc\Trangsuc\bin\System.Web.Mvc.xml
+E:\doanwebser\Trangsuc\Trangsuc\bin\System.Web.Razor.xml
+E:\doanwebser\Trangsuc\Trangsuc\bin\System.Web.WebPages.xml
+E:\doanwebser\Trangsuc\Trangsuc\bin\System.Web.WebPages.Deployment.xml
+E:\doanwebser\Trangsuc\Trangsuc\bin\System.Web.WebPages.Razor.xml
+E:\doanwebser\Trangsuc\Trangsuc\obj\Debug\Trangsuc.dll
+E:\doanwebser\Trangsuc\Trangsuc\obj\Debug\Trangsuc.pdb
+E:\doanwebser\Trangsuc\Trangsuc\obj\Debug\Trangsuc.csprojResolveAssemblyReference.cache
+E:\doanwebser\Trangsuc_v1\Trangsuc\bin\Trangsuc.dll
+E:\doanwebser\Trangsuc_v1\Trangsuc\bin\Trangsuc.pdb
+E:\doanwebser\Trangsuc_v1\Trangsuc\bin\EntityFramework.dll
+E:\doanwebser\Trangsuc_v1\Trangsuc\bin\Microsoft.Web.Infrastructure.dll
+E:\doanwebser\Trangsuc_v1\Trangsuc\bin\System.Web.Helpers.dll
+E:\doanwebser\Trangsuc_v1\Trangsuc\bin\System.Web.Mvc.dll
+E:\doanwebser\Trangsuc_v1\Trangsuc\bin\System.Web.Razor.dll
+E:\doanwebser\Trangsuc_v1\Trangsuc\bin\System.Web.WebPages.Deployment.dll
+E:\doanwebser\Trangsuc_v1\Trangsuc\bin\System.Web.WebPages.dll
+E:\doanwebser\Trangsuc_v1\Trangsuc\bin\System.Web.WebPages.Razor.dll
+E:\doanwebser\Trangsuc_v1\Trangsuc\bin\EntityFramework.xml
+E:\doanwebser\Trangsuc_v1\Trangsuc\bin\System.Web.Helpers.xml
+E:\doanwebser\Trangsuc_v1\Trangsuc\bin\System.Web.Mvc.xml
+E:\doanwebser\Trangsuc_v1\Trangsuc\bin\System.Web.Razor.xml
+E:\doanwebser\Trangsuc_v1\Trangsuc\bin\System.Web.WebPages.xml
+E:\doanwebser\Trangsuc_v1\Trangsuc\bin\System.Web.WebPages.Deployment.xml
+E:\doanwebser\Trangsuc_v1\Trangsuc\bin\System.Web.WebPages.Razor.xml
+E:\doanwebser\Trangsuc_v1\Trangsuc\obj\Debug\Trangsuc.csprojResolveAssemblyReference.cache
+E:\doanwebser\Trangsuc_v1\Trangsuc\obj\Debug\Trangsuc.dll
+E:\doanwebser\Trangsuc_v1\Trangsuc\obj\Debug\Trangsuc.pdb
+E:\doanwebser\Trangsuc_v2\Trangsuc\bin\Trangsuc.dll
+E:\doanwebser\Trangsuc_v2\Trangsuc\bin\Trangsuc.pdb
+E:\doanwebser\Trangsuc_v2\Trangsuc\bin\EntityFramework.dll
+E:\doanwebser\Trangsuc_v2\Trangsuc\bin\Microsoft.Web.Infrastructure.dll
+E:\doanwebser\Trangsuc_v2\Trangsuc\bin\System.Web.Helpers.dll
+E:\doanwebser\Trangsuc_v2\Trangsuc\bin\System.Web.Mvc.dll
+E:\doanwebser\Trangsuc_v2\Trangsuc\bin\System.Web.Razor.dll
+E:\doanwebser\Trangsuc_v2\Trangsuc\bin\System.Web.WebPages.Deployment.dll
+E:\doanwebser\Trangsuc_v2\Trangsuc\bin\System.Web.WebPages.dll
+E:\doanwebser\Trangsuc_v2\Trangsuc\bin\System.Web.WebPages.Razor.dll
+E:\doanwebser\Trangsuc_v2\Trangsuc\bin\EntityFramework.xml
+E:\doanwebser\Trangsuc_v2\Trangsuc\bin\System.Web.Helpers.xml
+E:\doanwebser\Trangsuc_v2\Trangsuc\bin\System.Web.Mvc.xml
+E:\doanwebser\Trangsuc_v2\Trangsuc\bin\System.Web.Razor.xml
+E:\doanwebser\Trangsuc_v2\Trangsuc\bin\System.Web.WebPages.xml
+E:\doanwebser\Trangsuc_v2\Trangsuc\bin\System.Web.WebPages.Deployment.xml
+E:\doanwebser\Trangsuc_v2\Trangsuc\bin\System.Web.WebPages.Razor.xml
+E:\doanwebser\Trangsuc_v2\Trangsuc\obj\Debug\Trangsuc.csprojResolveAssemblyReference.cache
+E:\doanwebser\Trangsuc_v2\Trangsuc\obj\Debug\Trangsuc.dll
+E:\doanwebser\Trangsuc_v2\Trangsuc\obj\Debug\Trangsuc.pdb
+E:\doanwebser\Trangsuc_v3\Trangsuc\bin\Trangsuc.dll
+E:\doanwebser\Trangsuc_v3\Trangsuc\bin\Trangsuc.pdb
+E:\doanwebser\Trangsuc_v3\Trangsuc\bin\EntityFramework.dll
+E:\doanwebser\Trangsuc_v3\Trangsuc\bin\Microsoft.Web.Infrastructure.dll
+E:\doanwebser\Trangsuc_v3\Trangsuc\bin\System.Web.Helpers.dll
+E:\doanwebser\Trangsuc_v3\Trangsuc\bin\System.Web.Mvc.dll
+E:\doanwebser\Trangsuc_v3\Trangsuc\bin\System.Web.Razor.dll
+E:\doanwebser\Trangsuc_v3\Trangsuc\bin\System.Web.WebPages.Deployment.dll
+E:\doanwebser\Trangsuc_v3\Trangsuc\bin\System.Web.WebPages.dll
+E:\doanwebser\Trangsuc_v3\Trangsuc\bin\System.Web.WebPages.Razor.dll
+E:\doanwebser\Trangsuc_v3\Trangsuc\bin\EntityFramework.xml
+E:\doanwebser\Trangsuc_v3\Trangsuc\bin\System.Web.Helpers.xml
+E:\doanwebser\Trangsuc_v3\Trangsuc\bin\System.Web.Mvc.xml
+E:\doanwebser\Trangsuc_v3\Trangsuc\bin\System.Web.Razor.xml
+E:\doanwebser\Trangsuc_v3\Trangsuc\bin\System.Web.WebPages.xml
+E:\doanwebser\Trangsuc_v3\Trangsuc\bin\System.Web.WebPages.Deployment.xml
+E:\doanwebser\Trangsuc_v3\Trangsuc\bin\System.Web.WebPages.Razor.xml
+E:\doanwebser\Trangsuc_v3\Trangsuc\obj\Debug\Trangsuc.csprojResolveAssemblyReference.cache
+E:\doanwebser\Trangsuc_v3\Trangsuc\obj\Debug\Trangsuc.dll
+E:\doanwebser\Trangsuc_v3\Trangsuc\obj\Debug\Trangsuc.pdb
+E:\doanwebser\Trangsuc_v4\Trangsuc\bin\Trangsuc.dll
+E:\doanwebser\Trangsuc_v4\Trangsuc\bin\Trangsuc.pdb
+E:\doanwebser\Trangsuc_v4\Trangsuc\bin\EntityFramework.dll
+E:\doanwebser\Trangsuc_v4\Trangsuc\bin\Microsoft.Web.Infrastructure.dll
+E:\doanwebser\Trangsuc_v4\Trangsuc\bin\System.Web.Helpers.dll
+E:\doanwebser\Trangsuc_v4\Trangsuc\bin\System.Web.Mvc.dll
+E:\doanwebser\Trangsuc_v4\Trangsuc\bin\System.Web.Razor.dll
+E:\doanwebser\Trangsuc_v4\Trangsuc\bin\System.Web.WebPages.Deployment.dll
+E:\doanwebser\Trangsuc_v4\Trangsuc\bin\System.Web.WebPages.dll
+E:\doanwebser\Trangsuc_v4\Trangsuc\bin\System.Web.WebPages.Razor.dll
+E:\doanwebser\Trangsuc_v4\Trangsuc\bin\EntityFramework.xml
+E:\doanwebser\Trangsuc_v4\Trangsuc\bin\System.Web.Helpers.xml
+E:\doanwebser\Trangsuc_v4\Trangsuc\bin\System.Web.Mvc.xml
+E:\doanwebser\Trangsuc_v4\Trangsuc\bin\System.Web.Razor.xml
+E:\doanwebser\Trangsuc_v4\Trangsuc\bin\System.Web.WebPages.xml
+E:\doanwebser\Trangsuc_v4\Trangsuc\bin\System.Web.WebPages.Deployment.xml
+E:\doanwebser\Trangsuc_v4\Trangsuc\bin\System.Web.WebPages.Razor.xml
+E:\doanwebser\Trangsuc_v4\Trangsuc\obj\Debug\Trangsuc.dll
+E:\doanwebser\Trangsuc_v4\Trangsuc\obj\Debug\Trangsuc.pdb
+E:\doanwebser\Trangsuc_v4 - Copy (6)\Trangsuc\bin\Trangsuc.dll
+E:\doanwebser\Trangsuc_v4 - Copy (6)\Trangsuc\bin\Trangsuc.pdb
+E:\doanwebser\Trangsuc_v4 - Copy (6)\Trangsuc\bin\EntityFramework.dll
+E:\doanwebser\Trangsuc_v4 - Copy (6)\Trangsuc\bin\Microsoft.Web.Infrastructure.dll
+E:\doanwebser\Trangsuc_v4 - Copy (6)\Trangsuc\bin\System.Web.Helpers.dll
+E:\doanwebser\Trangsuc_v4 - Copy (6)\Trangsuc\bin\System.Web.Mvc.dll
+E:\doanwebser\Trangsuc_v4 - Copy (6)\Trangsuc\bin\System.Web.Razor.dll
+E:\doanwebser\Trangsuc_v4 - Copy (6)\Trangsuc\bin\System.Web.WebPages.Deployment.dll
+E:\doanwebser\Trangsuc_v4 - Copy (6)\Trangsuc\bin\System.Web.WebPages.dll
+E:\doanwebser\Trangsuc_v4 - Copy (6)\Trangsuc\bin\System.Web.WebPages.Razor.dll
+E:\doanwebser\Trangsuc_v4 - Copy (6)\Trangsuc\bin\EntityFramework.xml
+E:\doanwebser\Trangsuc_v4 - Copy (6)\Trangsuc\bin\System.Web.Helpers.xml
+E:\doanwebser\Trangsuc_v4 - Copy (6)\Trangsuc\bin\System.Web.Mvc.xml
+E:\doanwebser\Trangsuc_v4 - Copy (6)\Trangsuc\bin\System.Web.Razor.xml
+E:\doanwebser\Trangsuc_v4 - Copy (6)\Trangsuc\bin\System.Web.WebPages.xml
+E:\doanwebser\Trangsuc_v4 - Copy (6)\Trangsuc\bin\System.Web.WebPages.Deployment.xml
+E:\doanwebser\Trangsuc_v4 - Copy (6)\Trangsuc\bin\System.Web.WebPages.Razor.xml
+E:\doanwebser\Trangsuc_v4 - Copy (6)\Trangsuc\obj\Debug\Trangsuc.csprojResolveAssemblyReference.cache
+E:\doanwebser\Trangsuc_v4 - Copy (6)\Trangsuc\obj\Debug\Trangsuc.dll
+E:\doanwebser\Trangsuc_v4 - Copy (6)\Trangsuc\obj\Debug\Trangsuc.pdb
+E:\doanwebser\Trangsuc_v4 - Copy (6) - Copy\Trangsuc\bin\Trangsuc.dll
+E:\doanwebser\Trangsuc_v4 - Copy (6) - Copy\Trangsuc\bin\Trangsuc.pdb
+E:\doanwebser\Trangsuc_v4 - Copy (6) - Copy\Trangsuc\bin\EntityFramework.dll
+E:\doanwebser\Trangsuc_v4 - Copy (6) - Copy\Trangsuc\bin\Microsoft.Web.Infrastructure.dll
+E:\doanwebser\Trangsuc_v4 - Copy (6) - Copy\Trangsuc\bin\System.Web.Helpers.dll
+E:\doanwebser\Trangsuc_v4 - Copy (6) - Copy\Trangsuc\bin\System.Web.Mvc.dll
+E:\doanwebser\Trangsuc_v4 - Copy (6) - Copy\Trangsuc\bin\System.Web.Razor.dll
+E:\doanwebser\Trangsuc_v4 - Copy (6) - Copy\Trangsuc\bin\System.Web.WebPages.Deployment.dll
+E:\doanwebser\Trangsuc_v4 - Copy (6) - Copy\Trangsuc\bin\System.Web.WebPages.dll
+E:\doanwebser\Trangsuc_v4 - Copy (6) - Copy\Trangsuc\bin\System.Web.WebPages.Razor.dll
+E:\doanwebser\Trangsuc_v4 - Copy (6) - Copy\Trangsuc\bin\EntityFramework.xml
+E:\doanwebser\Trangsuc_v4 - Copy (6) - Copy\Trangsuc\bin\System.Web.Helpers.xml
+E:\doanwebser\Trangsuc_v4 - Copy (6) - Copy\Trangsuc\bin\System.Web.Mvc.xml
+E:\doanwebser\Trangsuc_v4 - Copy (6) - Copy\Trangsuc\bin\System.Web.Razor.xml
+E:\doanwebser\Trangsuc_v4 - Copy (6) - Copy\Trangsuc\bin\System.Web.WebPages.xml
+E:\doanwebser\Trangsuc_v4 - Copy (6) - Copy\Trangsuc\bin\System.Web.WebPages.Deployment.xml
+E:\doanwebser\Trangsuc_v4 - Copy (6) - Copy\Trangsuc\bin\System.Web.WebPages.Razor.xml
+E:\doanwebser\Trangsuc_v4 - Copy (6) - Copy\Trangsuc\obj\Debug\Trangsuc.dll
+E:\doanwebser\Trangsuc_v4 - Copy (6) - Copy\Trangsuc\obj\Debug\Trangsuc.pdb
+E:\doanwebser\Trangsuc_v4 - Copy (6) - Copy - Copy\Trangsuc\bin\Trangsuc.dll
+E:\doanwebser\Trangsuc_v4 - Copy (6) - Copy - Copy\Trangsuc\bin\Trangsuc.pdb
+E:\doanwebser\Trangsuc_v4 - Copy (6) - Copy - Copy\Trangsuc\bin\EntityFramework.dll
+E:\doanwebser\Trangsuc_v4 - Copy (6) - Copy - Copy\Trangsuc\bin\Microsoft.Web.Infrastructure.dll
+E:\doanwebser\Trangsuc_v4 - Copy (6) - Copy - Copy\Trangsuc\bin\System.Web.Helpers.dll
+E:\doanwebser\Trangsuc_v4 - Copy (6) - Copy - Copy\Trangsuc\bin\System.Web.Mvc.dll
+E:\doanwebser\Trangsuc_v4 - Copy (6) - Copy - Copy\Trangsuc\bin\System.Web.Razor.dll
+E:\doanwebser\Trangsuc_v4 - Copy (6) - Copy - Copy\Trangsuc\bin\System.Web.WebPages.Deployment.dll
+E:\doanwebser\Trangsuc_v4 - Copy (6) - Copy - Copy\Trangsuc\bin\System.Web.WebPages.dll
+E:\doanwebser\Trangsuc_v4 - Copy (6) - Copy - Copy\Trangsuc\bin\System.Web.WebPages.Razor.dll
+E:\doanwebser\Trangsuc_v4 - Copy (6) - Copy - Copy\Trangsuc\bin\EntityFramework.xml
+E:\doanwebser\Trangsuc_v4 - Copy (6) - Copy - Copy\Trangsuc\bin\System.Web.Helpers.xml
+E:\doanwebser\Trangsuc_v4 - Copy (6) - Copy - Copy\Trangsuc\bin\System.Web.Mvc.xml
+E:\doanwebser\Trangsuc_v4 - Copy (6) - Copy - Copy\Trangsuc\bin\System.Web.Razor.xml
+E:\doanwebser\Trangsuc_v4 - Copy (6) - Copy - Copy\Trangsuc\bin\System.Web.WebPages.xml
+E:\doanwebser\Trangsuc_v4 - Copy (6) - Copy - Copy\Trangsuc\bin\System.Web.WebPages.Deployment.xml
+E:\doanwebser\Trangsuc_v4 - Copy (6) - Copy - Copy\Trangsuc\bin\System.Web.WebPages.Razor.xml
+E:\doanwebser\Trangsuc_v4 - Copy (6) - Copy - Copy\Trangsuc\obj\Debug\Trangsuc.csprojResolveAssemblyReference.cache
+E:\doanwebser\Trangsuc_v4 - Copy (6) - Copy - Copy\Trangsuc\obj\Debug\Trangsuc.dll
+E:\doanwebser\Trangsuc_v4 - Copy (6) - Copy - Copy\Trangsuc\obj\Debug\Trangsuc.pdb

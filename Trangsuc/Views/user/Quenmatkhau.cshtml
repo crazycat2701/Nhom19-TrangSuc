@@ -1,0 +1,25 @@
+﻿
+@{
+    ViewBag.Title = "Quên mật khẩu";
+}
+
+<div class="covercenter">
+<div class="columncenter">
+<div class="header-center">QUÊN MẬT KHẨU</div>
+<div class="text" style="margin: 20px 10px 10px 20px">
+   
+       @using (Html.BeginForm())
+       {
+       
+        <table>
+            <tr>
+                <td>Mail</td>
+                <td>@Html.TextBox("mail","" ,new { size = 30 })</td>
+            </tr>
+            <tr><td colspan="2"><input type="submit" onsubmit="return alert('Vui lòng kiểm tra email để biết thông tin mật khẩu.');" value="Gửi"/></td></tr>
+        </table>
+       }
+
+</div>
+</div>
+</div>

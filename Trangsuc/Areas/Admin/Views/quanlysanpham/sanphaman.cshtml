@@ -1,0 +1,84 @@
+﻿@model IEnumerable<Trangsuc.ServiceReferenceSanpham.Sanpham_DTO>
+@if (Request.IsAuthenticated && Session["Admin"] != null)
+{
+    {
+        Layout = "~/Areas/Admin/Views/Shared/_Layoutadmin.cshtml";
+    }
+
+    <div class="headercolumn">QUẢN LÝ SẢN PHẨM LOẠI <text style="text-transform: uppercase;">@Html.Raw(ViewBag.tenloai)</text></div>
+    <div class="noidungright">
+    <div style="width:990px">
+    <div style="width:990px">
+        <table>
+            <tr>
+                <td style="width:490px; text-align:left">
+                    <div class="tieude2">
+                        <a href="/admin/quanlysanpham/themsanpham" style="text-decoration:none">
+                            <img src="@Url.Content("~/images/them.png")" width="10px" height="10px"/> Thêm sản phẩm mới
+                        </a>
+                    </div>
+                </td>
+                <td style="width:500px; text-align:right">
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div style="width:990px"><div class="tieude"><center>Danh sách sản phẩm</center></div></div>
+        <table class="tablenguoidung">
+            <tr>
+                <th>Mã sản phẩm</th>
+                <th>Tên sản phẩm</th>
+                <th>Chất liệu</th>
+                <th>Giá (VNĐ)</th>
+                <th style="width:80px">Hình ảnh</th>
+                <th>Loại</th>
+                <th>Kích hoạt</th>
+            </tr>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@Html.DisplayFor(modelItem => item.Masanpham)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Tensanpham)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Chatlieu)</td>
+                    @{
+                    string formatgia = item.Giasanpham.ToString("c");
+                    formatgia = formatgia.Substring(1, formatgia.LastIndexOf(".") - 1);
+                        }
+                    <td>@formatgia</td>
+                   
+                    <td><img src="@Url.Content("~/" + @Html.DisplayFor(modelItem => item.Hinhanh))" width="75px" height="75px"/></td>
+                    <td>@Html.DisplayFor(modelItem => item.Loai.Tenloai)</td>
+                    <td style="padding-left:2px; padding-right: 2px; text-align:center; width:30px">
+                            <a title="Kích hoạt sản phẩm" href="/admin/quanlysanpham/kichhoatsp?masp=@Html.DisplayFor(modelItem => item.Masanpham)" style="text-decoration:none">
+                                <img src="@Url.Content("~/images/check.png")" width="25px" height="25px"/>
+                            </a>
+                    </td>
+                </tr>
+            }
+        </table>
+        </div>
+        <div style="width:990px;">
+        <center>@{Html.RenderAction("Index","adminpaging", new {currentpage = "admin/quanlysanpham/sanphaman?", totalpages = ViewBag.TotalPages});}  
+    </center></div>
+    <div class="clear"></div>
+    </div>
+
+}
+else
+{
+       <link href="@Url.Content("~/Content/Site.css")" rel="stylesheet" type="text/css" />
+    <div class="columnleft"></div>
+    <div class="columnngoai"></div>
+    <div class="covercenter">
+        <div class="columncenter">
+            <div class="header-center">ĐĂNG NHẬP</div>
+            <div class="text" style="margin: 20px 10px 20px 20px">
+                <div>
+                    <text> Bạn chưa đăng nhập. Vui lòng nhấn vào <a href="/admin/dangnhap?returnUrl=@Request.Url.PathAndQuery"> đây </a>để vào trang đăng nhập.</text>
+                </div>
+            </div>
+        </div>
+    </div>
+}     
+
+

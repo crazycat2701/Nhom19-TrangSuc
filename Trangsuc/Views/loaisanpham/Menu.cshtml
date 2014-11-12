@@ -1,0 +1,8 @@
+﻿@model IEnumerable<Trangsuc.ServiceReferenceSanpham.Loaisanpham_DTO>
+
+<ul id="sidebarmenu1">
+    @foreach (var item in Model)
+    {
+        <li><a href="/sanpham/DanhMuc/?maloai=@Html.DisplayFor(modelItem => item.Maloai)"><b style="text-transform: uppercase; font-size:12px">@Html.DisplayFor(modelItem => item.Tenloai)</b></a></li>	
+    }		            
+</ul>

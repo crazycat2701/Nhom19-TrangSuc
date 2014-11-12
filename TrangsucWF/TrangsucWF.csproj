@@ -1,0 +1,376 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FCA1F44B-471F-4E3C-9DBE-4BE16F419312}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TrangsucWF</RootNamespace>
+    <AssemblyName>TrangsucWF</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FormBCDoanhthu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBCDoanhthu.Designer.cs">
+      <DependentUpon>FormBCDoanhthu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormBCTonKho.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBCTonKho.Designer.cs">
+      <DependentUpon>FormBCTonKho.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCTHD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCTHD.Designer.cs">
+      <DependentUpon>FormCTHD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCTPN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCTPN.Designer.cs">
+      <DependentUpon>FormCTPN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCTpx.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCTpx.Designer.cs">
+      <DependentUpon>FormCTpx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormQLDonHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormQLDonHang.Designer.cs">
+      <DependentUpon>FormQLDonHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormQLPhieuNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormQLPhieuNhap.Designer.cs">
+      <DependentUpon>FormQLPhieuNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormQLPhieuXuat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormQLPhieuXuat.Designer.cs">
+      <DependentUpon>FormQLPhieuXuat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormQLSP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormQLSP.Designer.cs">
+      <DependentUpon>FormQLSP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSuaSP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSuaSP.Designer.cs">
+      <DependentUpon>FormSuaSP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormThemSP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormThemSP.Designer.cs">
+      <DependentUpon>FormThemSP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormThongKeBaoCao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormThongKeBaoCao.Designer.cs">
+      <DependentUpon>FormThongKeBaoCao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service References\ServiceReferenceHoadon\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\ServiceReferencePhieunhap\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\ServiceReferencePhieuxuat\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\ServiceReferenceSanpham\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\ServiceReferenceTonkho\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FormBCDoanhthu.resx">
+      <DependentUpon>FormBCDoanhthu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBCTonKho.resx">
+      <DependentUpon>FormBCTonKho.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCTHD.resx">
+      <DependentUpon>FormCTHD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCTPN.resx">
+      <DependentUpon>FormCTPN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCTpx.resx">
+      <DependentUpon>FormCTpx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormQLDonHang.resx">
+      <DependentUpon>FormQLDonHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormQLPhieuNhap.resx">
+      <DependentUpon>FormQLPhieuNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormQLPhieuXuat.resx">
+      <DependentUpon>FormQLPhieuXuat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormQLSP.resx">
+      <DependentUpon>FormQLSP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSuaSP.resx">
+      <DependentUpon>FormSuaSP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormThemSP.resx">
+      <DependentUpon>FormThemSP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormThongKeBaoCao.resx">
+      <DependentUpon>FormThongKeBaoCao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Report1.rdlc" />
+    <EmbeddedResource Include="Report3.rdlc" />
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Service References\ServiceReferenceHoadon\service.wsdl" />
+    <None Include="Service References\ServiceReferenceHoadon\service.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReferenceHoadon\service1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReferenceHoadon\TrangsucWF.ServiceReferenceHoadon.Chitiethoadon_DTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReferenceHoadon\TrangsucWF.ServiceReferenceHoadon.Hoadon_DTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReferenceHoadon\WcfServiceTrangsuc.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReferencePhieunhap\service.wsdl" />
+    <None Include="Service References\ServiceReferencePhieunhap\service.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReferencePhieunhap\service1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReferencePhieunhap\TrangsucWF.ServiceReferencePhieunhap.Chitietphieunhap_DTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReferencePhieunhap\TrangsucWF.ServiceReferencePhieunhap.Phieunhap_DTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReferencePhieunhap\WcfServiceTrangsuc.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReferencePhieuxuat\service.wsdl" />
+    <None Include="Service References\ServiceReferencePhieuxuat\service.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReferencePhieuxuat\service1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReferencePhieuxuat\TrangsucWF.ServiceReferencePhieuxuat.Chitietphieuxuat_DTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReferencePhieuxuat\TrangsucWF.ServiceReferencePhieuxuat.Phieuxuat_DTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReferencePhieuxuat\WcfServiceTrangsuc.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReferenceSanpham\item.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReferenceSanpham\item1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReferenceSanpham\item2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReferenceSanpham\ServiceSanpham.wsdl" />
+    <None Include="Service References\ServiceReferenceSanpham\TrangsucWF.ServiceReferenceSanpham.Loaisanpham_DTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReferenceSanpham\TrangsucWF.ServiceReferenceSanpham.Sanpham_DTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReferenceTonkho\service.wsdl" />
+    <None Include="Service References\ServiceReferenceTonkho\service.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReferenceTonkho\service1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReferenceTonkho\TrangsucWF.ServiceReferenceTonkho.Tonkho_DTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReferenceTonkho\WcfServiceTrangsuc.xsd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\ServiceReferenceHoadon\" />
+    <WCFMetadataStorage Include="Service References\ServiceReferencePhieunhap\" />
+    <WCFMetadataStorage Include="Service References\ServiceReferencePhieuxuat\" />
+    <WCFMetadataStorage Include="Service References\ServiceReferenceSanpham\" />
+    <WCFMetadataStorage Include="Service References\ServiceReferenceTonkho\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceReferenceHoadon\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceReferenceHoadon\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceReferenceHoadon\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceReferencePhieunhap\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceReferencePhieunhap\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceReferencePhieunhap\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceReferenceTonkho\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceReferenceTonkho\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceReferenceTonkho\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceReferenceSanpham\item.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceReferenceSanpham\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceReferenceSanpham\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceReferenceSanpham\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceReferencePhieuxuat\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceReferencePhieuxuat\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceReferencePhieuxuat\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

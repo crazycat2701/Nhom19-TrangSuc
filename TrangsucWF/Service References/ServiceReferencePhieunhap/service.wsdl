@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="ServicePhieunhap" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import namespace="http://tempuri.org/" />
+      <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/WcfServiceTrangsuc" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IServicePhieunhap_GetAllPhieunhap_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllPhieunhap" />
+  </wsdl:message>
+  <wsdl:message name="IServicePhieunhap_GetAllPhieunhap_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllPhieunhapResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicePhieunhap_GetChitietByMa_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetChitietByMa" />
+  </wsdl:message>
+  <wsdl:message name="IServicePhieunhap_GetChitietByMa_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetChitietByMaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicePhieunhap_GetPhieunhapByMa_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPhieunhapByMa" />
+  </wsdl:message>
+  <wsdl:message name="IServicePhieunhap_GetPhieunhapByMa_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPhieunhapByMaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicePhieunhap_InsertPhieunhap_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertPhieunhap" />
+  </wsdl:message>
+  <wsdl:message name="IServicePhieunhap_InsertPhieunhap_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertPhieunhapResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicePhieunhap_UpdatePhieunhap_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdatePhieunhap" />
+  </wsdl:message>
+  <wsdl:message name="IServicePhieunhap_UpdatePhieunhap_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdatePhieunhapResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicePhieunhap_InsertChitiet_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertChitiet" />
+  </wsdl:message>
+  <wsdl:message name="IServicePhieunhap_InsertChitiet_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertChitietResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicePhieunhap_UpdateChitiet_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateChitiet" />
+  </wsdl:message>
+  <wsdl:message name="IServicePhieunhap_UpdateChitiet_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateChitietResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicePhieunhap_DeleteChitiet_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteChitiet" />
+  </wsdl:message>
+  <wsdl:message name="IServicePhieunhap_DeleteChitiet_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteChitietResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IServicePhieunhap">
+    <wsdl:operation name="GetAllPhieunhap">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicePhieunhap/GetAllPhieunhap" message="tns:IServicePhieunhap_GetAllPhieunhap_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicePhieunhap/GetAllPhieunhapResponse" message="tns:IServicePhieunhap_GetAllPhieunhap_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetChitietByMa">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicePhieunhap/GetChitietByMa" message="tns:IServicePhieunhap_GetChitietByMa_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicePhieunhap/GetChitietByMaResponse" message="tns:IServicePhieunhap_GetChitietByMa_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPhieunhapByMa">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicePhieunhap/GetPhieunhapByMa" message="tns:IServicePhieunhap_GetPhieunhapByMa_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicePhieunhap/GetPhieunhapByMaResponse" message="tns:IServicePhieunhap_GetPhieunhapByMa_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertPhieunhap">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicePhieunhap/InsertPhieunhap" message="tns:IServicePhieunhap_InsertPhieunhap_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicePhieunhap/InsertPhieunhapResponse" message="tns:IServicePhieunhap_InsertPhieunhap_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePhieunhap">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicePhieunhap/UpdatePhieunhap" message="tns:IServicePhieunhap_UpdatePhieunhap_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicePhieunhap/UpdatePhieunhapResponse" message="tns:IServicePhieunhap_UpdatePhieunhap_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertChitiet">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicePhieunhap/InsertChitiet" message="tns:IServicePhieunhap_InsertChitiet_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicePhieunhap/InsertChitietResponse" message="tns:IServicePhieunhap_InsertChitiet_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateChitiet">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicePhieunhap/UpdateChitiet" message="tns:IServicePhieunhap_UpdateChitiet_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicePhieunhap/UpdateChitietResponse" message="tns:IServicePhieunhap_UpdateChitiet_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteChitiet">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicePhieunhap/DeleteChitiet" message="tns:IServicePhieunhap_DeleteChitiet_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicePhieunhap/DeleteChitietResponse" message="tns:IServicePhieunhap_DeleteChitiet_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IServicePhieunhap" type="tns:IServicePhieunhap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetAllPhieunhap">
+      <soap:operation soapAction="http://tempuri.org/IServicePhieunhap/GetAllPhieunhap" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetChitietByMa">
+      <soap:operation soapAction="http://tempuri.org/IServicePhieunhap/GetChitietByMa" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPhieunhapByMa">
+      <soap:operation soapAction="http://tempuri.org/IServicePhieunhap/GetPhieunhapByMa" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertPhieunhap">
+      <soap:operation soapAction="http://tempuri.org/IServicePhieunhap/InsertPhieunhap" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePhieunhap">
+      <soap:operation soapAction="http://tempuri.org/IServicePhieunhap/UpdatePhieunhap" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertChitiet">
+      <soap:operation soapAction="http://tempuri.org/IServicePhieunhap/InsertChitiet" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateChitiet">
+      <soap:operation soapAction="http://tempuri.org/IServicePhieunhap/UpdateChitiet" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteChitiet">
+      <soap:operation soapAction="http://tempuri.org/IServicePhieunhap/DeleteChitiet" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ServicePhieunhap">
+    <wsdl:port name="BasicHttpBinding_IServicePhieunhap" binding="tns:BasicHttpBinding_IServicePhieunhap">
+      <soap:address location="http://localhost:8733/Design_Time_Addresses/WcfServiceTrangsuc/ServicePhieunhap/" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

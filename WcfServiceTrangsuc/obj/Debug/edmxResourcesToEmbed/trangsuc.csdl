@@ -1,0 +1,314 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="dewModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="admin">
+    <Key>
+      <PropertyRef Name="username" />
+    </Key>
+    <Property Name="username" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="password" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="hoten" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="ngaysinh" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="chitiethoadon">
+    <Key>
+      <PropertyRef Name="mahoadon" />
+      <PropertyRef Name="masanpham" />
+    </Key>
+    <Property Name="mahoadon" Type="Int32" Nullable="false" />
+    <Property Name="masanpham" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="soluong" Type="Int32" />
+    <NavigationProperty Name="hoadon" Relationship="Self.FK_chitiethoadon_hoadon" FromRole="chitiethoadon" ToRole="hoadon" />
+    <NavigationProperty Name="sanpham" Relationship="Self.FK_chitiethoadon_sanpham" FromRole="chitiethoadon" ToRole="sanpham" />
+    <Property Name="giasanpham" Type="Int32" />
+  </EntityType>
+  <EntityType Name="chitietphieunhap">
+    <Key>
+      <PropertyRef Name="maphieunhap" />
+      <PropertyRef Name="masanpham" />
+    </Key>
+    <Property Name="maphieunhap" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="masanpham" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="soluong" Type="Int32" />
+    <NavigationProperty Name="phieunhap" Relationship="Self.FK_chitietphieunhap_phieunhap" FromRole="chitietphieunhap" ToRole="phieunhap" />
+    <NavigationProperty Name="sanpham" Relationship="Self.FK_chitietphieunhap_sanpham" FromRole="chitietphieunhap" ToRole="sanpham" />
+  </EntityType>
+  <EntityType Name="hoadon">
+    <Key>
+      <PropertyRef Name="mahoadon" />
+    </Key>
+    <Property Name="mahoadon" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="tendangnhap" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="ngaymuahang" Type="DateTime" Precision="3" />
+    <Property Name="diadiemgiaohang" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="trangthai" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="chitiethoadons" Relationship="Self.FK_chitiethoadon_hoadon" FromRole="hoadon" ToRole="chitiethoadon" />
+    <NavigationProperty Name="nguoidung" Relationship="Self.FK_hoadon_nguoidung" FromRole="hoadon" ToRole="nguoidung" />
+    <Property Name="sdt" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ngaygiaohang" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="loaisanpham">
+    <Key>
+      <PropertyRef Name="maloai" />
+    </Key>
+    <Property Name="maloai" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="tenloai" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="sanphams" Relationship="Self.FK_sanpham_loaisanpham" FromRole="loaisanpham" ToRole="sanpham" />
+  </EntityType>
+  <EntityType Name="nguoidung">
+    <Key>
+      <PropertyRef Name="username" />
+    </Key>
+    <Property Name="username" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="hoten" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="password" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ngaysinh" Type="DateTime" Precision="3" />
+    <Property Name="gioitinh" Type="Int32" />
+    <Property Name="sdt" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="diachi" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="email" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="maphanquyen" Type="Int32" Nullable="false" />
+    <Property Name="useran" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="hoadons" Relationship="Self.FK_hoadon_nguoidung" FromRole="nguoidung" ToRole="hoadon" />
+    <NavigationProperty Name="phanquyen" Relationship="Self.FK_nguoidung_phanquyen" FromRole="nguoidung" ToRole="phanquyen" />
+  </EntityType>
+  <EntityType Name="phanquyen">
+    <Key>
+      <PropertyRef Name="maphanquyen" />
+    </Key>
+    <Property Name="maphanquyen" Type="Int32" Nullable="false" />
+    <Property Name="quyen" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="nguoidungs" Relationship="Self.FK_nguoidung_phanquyen" FromRole="phanquyen" ToRole="nguoidung" />
+  </EntityType>
+  <EntityType Name="phieunhap">
+    <Key>
+      <PropertyRef Name="maphieunhap" />
+    </Key>
+    <Property Name="maphieunhap" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="tennguoilap" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ngaylap" Type="DateTime" Precision="3" />
+    <Property Name="trangthai" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="chitietphieunhaps" Relationship="Self.FK_chitietphieunhap_phieunhap" FromRole="phieunhap" ToRole="chitietphieunhap" />
+  </EntityType>
+  <EntityType Name="sanpham">
+    <Key>
+      <PropertyRef Name="masanpham" />
+    </Key>
+    <Property Name="masanpham" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="tensanpham" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="chatlieu" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="giasanpham" Type="Int32" />
+    <Property Name="sanphammoi" Type="Int32" />
+    <Property Name="hinhanh" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="maloai" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="chitiethoadons" Relationship="Self.FK_chitiethoadon_sanpham" FromRole="sanpham" ToRole="chitiethoadon" />
+    <NavigationProperty Name="chitietphieunhaps" Relationship="Self.FK_chitietphieunhap_sanpham" FromRole="sanpham" ToRole="chitietphieunhap" />
+    <NavigationProperty Name="loaisanpham" Relationship="Self.FK_sanpham_loaisanpham" FromRole="sanpham" ToRole="loaisanpham" />
+    <NavigationProperty Name="tonkhoes" Relationship="Self.FK_tonkho_sanpham" FromRole="sanpham" ToRole="tonkho" />
+    <NavigationProperty Name="chitietphieuxuats" Relationship="dewModel.FK_chitietphieuxuat_sanpham" FromRole="sanpham" ToRole="chitietphieuxuat" />
+  </EntityType>
+  <EntityType Name="tonkho">
+    <Key>
+      <PropertyRef Name="ngay" />
+      <PropertyRef Name="masanpham" />
+    </Key>
+    <Property Name="ngay" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="masanpham" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="soluong" Type="Int32" />
+    <NavigationProperty Name="sanpham" Relationship="Self.FK_tonkho_sanpham" FromRole="tonkho" ToRole="sanpham" />
+  </EntityType>
+  <Association Name="FK_chitiethoadon_hoadon">
+    <End Role="hoadon" Type="Self.hoadon" Multiplicity="1" />
+    <End Role="chitiethoadon" Type="Self.chitiethoadon" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="hoadon">
+        <PropertyRef Name="mahoadon" />
+      </Principal>
+      <Dependent Role="chitiethoadon">
+        <PropertyRef Name="mahoadon" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_chitiethoadon_sanpham">
+    <End Role="sanpham" Type="Self.sanpham" Multiplicity="1" />
+    <End Role="chitiethoadon" Type="Self.chitiethoadon" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="sanpham">
+        <PropertyRef Name="masanpham" />
+      </Principal>
+      <Dependent Role="chitiethoadon">
+        <PropertyRef Name="masanpham" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_chitietphieunhap_phieunhap">
+    <End Role="phieunhap" Type="Self.phieunhap" Multiplicity="1" />
+    <End Role="chitietphieunhap" Type="Self.chitietphieunhap" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="phieunhap">
+        <PropertyRef Name="maphieunhap" />
+      </Principal>
+      <Dependent Role="chitietphieunhap">
+        <PropertyRef Name="maphieunhap" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_chitietphieunhap_sanpham">
+    <End Role="sanpham" Type="Self.sanpham" Multiplicity="1" />
+    <End Role="chitietphieunhap" Type="Self.chitietphieunhap" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="sanpham">
+        <PropertyRef Name="masanpham" />
+      </Principal>
+      <Dependent Role="chitietphieunhap">
+        <PropertyRef Name="masanpham" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_hoadon_nguoidung">
+    <End Role="nguoidung" Type="Self.nguoidung" Multiplicity="0..1" />
+    <End Role="hoadon" Type="Self.hoadon" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="nguoidung">
+        <PropertyRef Name="username" />
+      </Principal>
+      <Dependent Role="hoadon">
+        <PropertyRef Name="tendangnhap" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_sanpham_loaisanpham">
+    <End Role="loaisanpham" Type="Self.loaisanpham" Multiplicity="0..1" />
+    <End Role="sanpham" Type="Self.sanpham" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="loaisanpham">
+        <PropertyRef Name="maloai" />
+      </Principal>
+      <Dependent Role="sanpham">
+        <PropertyRef Name="maloai" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_nguoidung_phanquyen">
+    <End Role="phanquyen" Type="Self.phanquyen" Multiplicity="1" />
+    <End Role="nguoidung" Type="Self.nguoidung" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="phanquyen">
+        <PropertyRef Name="maphanquyen" />
+      </Principal>
+      <Dependent Role="nguoidung">
+        <PropertyRef Name="maphanquyen" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tonkho_sanpham">
+    <End Role="sanpham" Type="Self.sanpham" Multiplicity="1" />
+    <End Role="tonkho" Type="Self.tonkho" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="sanpham">
+        <PropertyRef Name="masanpham" />
+      </Principal>
+      <Dependent Role="tonkho">
+        <PropertyRef Name="masanpham" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="dewEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="admins" EntityType="Self.admin" />
+    <EntitySet Name="chitiethoadons" EntityType="Self.chitiethoadon" />
+    <EntitySet Name="chitietphieunhaps" EntityType="Self.chitietphieunhap" />
+    <EntitySet Name="hoadons" EntityType="Self.hoadon" />
+    <EntitySet Name="loaisanphams" EntityType="Self.loaisanpham" />
+    <EntitySet Name="nguoidungs" EntityType="Self.nguoidung" />
+    <EntitySet Name="phanquyens" EntityType="Self.phanquyen" />
+    <EntitySet Name="phieunhaps" EntityType="Self.phieunhap" />
+    <EntitySet Name="sanphams" EntityType="Self.sanpham" />
+    <EntitySet Name="tonkhoes" EntityType="Self.tonkho" />
+    <AssociationSet Name="FK_chitiethoadon_hoadon" Association="Self.FK_chitiethoadon_hoadon">
+      <End Role="hoadon" EntitySet="hoadons" />
+      <End Role="chitiethoadon" EntitySet="chitiethoadons" />
+    </AssociationSet>
+    <AssociationSet Name="FK_chitiethoadon_sanpham" Association="Self.FK_chitiethoadon_sanpham">
+      <End Role="sanpham" EntitySet="sanphams" />
+      <End Role="chitiethoadon" EntitySet="chitiethoadons" />
+    </AssociationSet>
+    <AssociationSet Name="FK_chitietphieunhap_phieunhap" Association="Self.FK_chitietphieunhap_phieunhap">
+      <End Role="phieunhap" EntitySet="phieunhaps" />
+      <End Role="chitietphieunhap" EntitySet="chitietphieunhaps" />
+    </AssociationSet>
+    <AssociationSet Name="FK_chitietphieunhap_sanpham" Association="Self.FK_chitietphieunhap_sanpham">
+      <End Role="sanpham" EntitySet="sanphams" />
+      <End Role="chitietphieunhap" EntitySet="chitietphieunhaps" />
+    </AssociationSet>
+    <AssociationSet Name="FK_hoadon_nguoidung" Association="Self.FK_hoadon_nguoidung">
+      <End Role="nguoidung" EntitySet="nguoidungs" />
+      <End Role="hoadon" EntitySet="hoadons" />
+    </AssociationSet>
+    <AssociationSet Name="FK_sanpham_loaisanpham" Association="Self.FK_sanpham_loaisanpham">
+      <End Role="loaisanpham" EntitySet="loaisanphams" />
+      <End Role="sanpham" EntitySet="sanphams" />
+    </AssociationSet>
+    <AssociationSet Name="FK_nguoidung_phanquyen" Association="Self.FK_nguoidung_phanquyen">
+      <End Role="phanquyen" EntitySet="phanquyens" />
+      <End Role="nguoidung" EntitySet="nguoidungs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tonkho_sanpham" Association="Self.FK_tonkho_sanpham">
+      <End Role="sanpham" EntitySet="sanphams" />
+      <End Role="tonkho" EntitySet="tonkhoes" />
+    </AssociationSet>
+    <EntitySet Name="chitietphieuxuats" EntityType="dewModel.chitietphieuxuat" />
+    <EntitySet Name="phieuxuats" EntityType="dewModel.phieuxuat" />
+    <AssociationSet Name="FK_chitietphieuxuat_phieuxuat" Association="dewModel.FK_chitietphieuxuat_phieuxuat">
+      <End Role="phieuxuat" EntitySet="phieuxuats" />
+      <End Role="chitietphieuxuat" EntitySet="chitietphieuxuats" />
+    </AssociationSet>
+    <AssociationSet Name="FK_chitietphieuxuat_sanpham" Association="dewModel.FK_chitietphieuxuat_sanpham">
+      <End Role="sanpham" EntitySet="sanphams" />
+      <End Role="chitietphieuxuat" EntitySet="chitietphieuxuats" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="chitietphieuxuat">
+    <Key>
+      <PropertyRef Name="maphieuxuat" />
+      <PropertyRef Name="masanpham" />
+    </Key>
+    <Property Name="maphieuxuat" Type="String" Nullable="false" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="masanpham" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="soluong" Type="Int32" />
+    <NavigationProperty Name="phieuxuat" Relationship="dewModel.FK_chitietphieuxuat_phieuxuat" FromRole="chitietphieuxuat" ToRole="phieuxuat" />
+    <NavigationProperty Name="sanpham" Relationship="dewModel.FK_chitietphieuxuat_sanpham" FromRole="chitietphieuxuat" ToRole="sanpham" />
+  </EntityType>
+  <EntityType Name="phieuxuat">
+    <Key>
+      <PropertyRef Name="maphieuxuat" />
+    </Key>
+    <Property Name="maphieuxuat" Type="String" Nullable="false" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="tennguoilap" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ngaylap" Type="DateTime" Precision="3" />
+    <Property Name="trangthai" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="chitietphieuxuats" Relationship="dewModel.FK_chitietphieuxuat_phieuxuat" FromRole="phieuxuat" ToRole="chitietphieuxuat" />
+  </EntityType>
+  <Association Name="FK_chitietphieuxuat_phieuxuat">
+    <End Type="dewModel.phieuxuat" Role="phieuxuat" Multiplicity="1" />
+    <End Type="dewModel.chitietphieuxuat" Role="chitietphieuxuat" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="phieuxuat">
+        <PropertyRef Name="maphieuxuat" />
+      </Principal>
+      <Dependent Role="chitietphieuxuat">
+        <PropertyRef Name="maphieuxuat" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_chitietphieuxuat_sanpham">
+    <End Type="dewModel.sanpham" Role="sanpham" Multiplicity="1" />
+    <End Type="dewModel.chitietphieuxuat" Role="chitietphieuxuat" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="sanpham">
+        <PropertyRef Name="masanpham" />
+      </Principal>
+      <Dependent Role="chitietphieuxuat">
+        <PropertyRef Name="masanpham" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

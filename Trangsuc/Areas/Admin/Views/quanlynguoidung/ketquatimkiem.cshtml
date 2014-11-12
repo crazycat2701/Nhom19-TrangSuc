@@ -1,0 +1,99 @@
+﻿@model IEnumerable<Trangsuc.ServiceReferenceNguoidung.Nguoidung_DTO>
+
+@if (Session["Admin"] != null)
+{
+
+    {
+        Layout = "~/Areas/Admin/Views/Shared/_Layoutadmin.cshtml";
+    }
+    <div class="headercolumn">QUẢN LÝ NGƯỜI DÙNG</div>
+    <div class="noidungright">
+    <div style="width:990px">
+    <div style="width:990px">
+        <table>
+            <tr>
+                <td style="width:480px; text-align:left">
+                    <div class="tieude">Danh sách người dùng</div>
+                </td>
+                <td style="width:500px; text-align:right">
+                    @{Html.RenderAction("timkiemnguoidung", "quanlynguoidung");}
+                </td>
+            </tr>
+        </table>
+    </div>
+        @if (Model.Count() < 1)
+        {
+            <div style="padding-left: 8px">
+                <p>@Html.Raw(ViewBag.KhongTimThay) "@Html.Raw(ViewBag.Chuoi)"</p>
+            </div> 
+        }
+        else
+        {
+        <table class="tablenguoidung">
+            <tr>
+                <th>Tên truy cập</th>
+                <th>Họ tên</th>
+                <th>Ngày sinh</th>
+                <th>Giới tính</th>
+                <th>Số điện thoại</th>
+                <th>Địa chỉ</th>
+                <th>Email</th>
+                <th>Phân quyền</th>
+                <th colspan="1"></th>
+            </tr>
+        @foreach (var item in Model)
+        {
+            
+                <tr>
+                    <td>@Html.DisplayFor(modelItem => item.Username)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Hoten)</td>
+                    @{string ngaysinh = item.Ngaysinh.Date.ToShortDateString();
+                               }
+                    <td>@ngaysinh</td>
+                        @if (item.Gioitinh == 0)
+                        {
+                            <td  style="text-align:center"><img src="@Url.Content("~/images/nu.png")" width="30px" height="30px"/></td> 
+                        }
+                        else
+                        {
+                             <td style="text-align:center"><img src="@Url.Content("~/images/nam.png")" width="30px" height="30px"/></td>
+                        }
+                    <td>@Html.DisplayFor(modelItem => item.Sdt)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Diachi)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Mail)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Quyen.Quyen)</td>
+                       <td style="padding-left:2px; padding-right: 2px; text-align:center; width:30px">
+                            <a title="Cập nhật thông tin" href="/admin/quanlynguoidung/suathongtin?username=@Html.DisplayFor(modelItem => item.Username)" style="text-decoration:none">
+                                <img src="@Url.Content("~/images/sua.png")" width="25px" height="25px"/>
+                            </a>
+                        </td>
+                      
+                </tr>
+        }
+        </table>
+        <div style="width:990px; text-align:center">
+        <center>@{Html.RenderAction("Index", "adminpaging", new { currentpage = "admin/quanlynguoidung/ketquatimkiem?chuoitk=" + @ViewBag.Chuoi, totalpages = ViewBag.TotalPages });}
+    </center></div>
+    <div class="clear"></div>
+        }
+    </div>
+    </div>
+}
+else
+{
+    <link href="@Url.Content("~/Content/Site.css")" rel="stylesheet" type="text/css" />
+    <div class="columnleft"></div>
+    <div class="columnngoai"></div>
+    <div class="covercenter">
+        <div class="columncenter">
+            <div class="header-center">ĐĂNG NHẬP</div>
+            <div class="text" style="margin: 20px 10px 20px 20px">
+                <div>
+                    <text> Bạn chưa đăng nhập. Vui lòng nhấn vào <a href="/admin/dangnhap?returnUrl=@Request.Url.PathAndQuery"> đây </a>để vào trang đăng nhập.</text>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+

@@ -1,0 +1,94 @@
+﻿@if (Session["Admin"]!=null)
+{
+    {
+    Layout = "~/Areas/Admin/Views/Shared/_Layoutadmin.cshtml";
+    }
+    <div class="headercolumn">TRANG CHỦ ADMINISTRATOR</div>
+<div class="noidungright">
+<div class="area">
+    <div class="mucquanly">
+        <a href="/admin/quanlysanpham">
+            <img src="@Url.Content("~/Images/qlsanpham.gif")" width="250px" height="250px" style="margin-top: 15px"/>
+        </a>
+        <div class="dmucquanly">
+            <a href="/admin/quanlysanpham">Quản lý sản phẩm</a>
+        </div>
+        <table class="tablelist">
+            <tr>
+                <td><img src="@Url.Content("~/Images/check.png")" width="25px" height="25px" /></td>
+                <td><a href="/admin/quanlysanpham/themsanpham">Thêm sản phẩm</a></td>
+            </tr>
+            <tr>
+                <td><img src="@Url.Content("~/Images/check.png")" width="25px" height="25px" /></td>
+                <td><a href="/admin/quanlysanpham/index">Danh sách sản phẩm</a></td>
+            </tr>
+            <tr>
+                <td><img src="@Url.Content("~/Images/check.png")" width="25px" height="25px" /></td>
+                <td><a href="/admin/quanlysanpham/index">Tìm kiếm sản phẩm</a></td>
+            </tr>
+        </table>
+    </div>
+    <div class="mucquanly">
+        <a href="/admin/quanlynguoidung">
+            <img src="@Url.Content("~/Images/qlnguoidung.png")" width="250px" height="250px" style="margin-top: 15px"/>
+        </a>
+        <div class="dmucquanly">
+            <a href="/admin/quanlynguoidung">Quản lý người dùng</a>
+        </div>
+        <table class="tablelist">
+            <tr>
+                <td><img src="@Url.Content("~/Images/check.png")" width="25px" height="25px" /></td>
+                <td><a href="/admin/quanlynguoidung/danhsachuser?phanquyen=1">Danh sách khách hàng</a></td>
+            </tr>
+            <tr>
+                <td><img src="@Url.Content("~/Images/check.png")" width="25px" height="25px" /></td>
+                <td><a href="/admin/quanlynguoidung/danhsachuser?phanquyen=2">Danh sách nhân viên</a></td>
+            </tr>
+            <tr>
+                <td><img src="@Url.Content("~/Images/check.png")" width="25px" height="25px" /></td>
+                <td><a href="/admin/quanlynguoidung/index">Tìm kiếm người dùng</a></td>
+            </tr>
+        </table>
+    </div>
+    <div class="mucquanly">
+        <a href="#top">
+            <img src="@Url.Content("~/Images/qlhoadon.png")" width="250px" height="250px" style="margin-top: 15px"/>
+        </a>
+        <div class="dmucquanly">
+            <a href="#top">Quản lý đơn hàng</a>
+        </div>
+        <table class="tablelist">
+            <tr>
+                <td><img src="@Url.Content("~/Images/check.png")" width="25px" height="25px" /></td>
+                <td><a href="#top">Danh sách đơn hàng</a></td>
+            </tr>
+            <tr>
+                <td><img src="@Url.Content("~/Images/check.png")" width="25px" height="25px" /></td>
+                <td><a href="#top">Cập nhật trạng thái đơn hàng</a></td>
+            </tr>
+            <tr>
+                <td><img src="@Url.Content("~/Images/check.png")" width="25px" height="25px" /></td>
+                <td><a href="#top">Tìm kiếm đơn hàng</a></td>
+            </tr>
+        </table>
+    </div>
+</div>
+</div>
+}
+else
+{
+    <link href="@Url.Content("~/Content/Site.css")" rel="stylesheet" type="text/css" />
+    <div class="columnleft"></div>
+    <div class="columnngoai"></div>
+    <div class="covercenter">
+        <div class="columncenter">
+            <div class="header-center">ĐĂNG NHẬP</div>
+            <div class="text" style="margin: 20px 10px 20px 20px">
+                <div>
+                    <text> Bạn chưa đăng nhập. Vui lòng nhấn vào <a href="/admin/dangnhap?returnUrl=@Request.Url.PathAndQuery"> đây </a>để vào trang đăng nhập.</text>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+

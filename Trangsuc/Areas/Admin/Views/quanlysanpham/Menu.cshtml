@@ -1,0 +1,9 @@
+﻿@model IEnumerable<Trangsuc.ServiceReferenceSanpham.Loaisanpham_DTO>
+
+<ul id="danhmucquanly"><a href="/admin/quanlysanpham/index" style="text-align:center">Quản lý sản phẩm</a>
+    @foreach (var item in Model)
+    {
+        <li><a href="/admin/quanlysanpham/danhmuc/@Html.DisplayFor(modelItem => item.Maloai)" style="padding-left:26px"><text style="font-size:12px">@Html.DisplayFor(modelItem => item.Tenloai)</text></a></li>	
+    }	
+    <li><a href="/admin/quanlysanpham/sanphaman" style="padding-left:26px"><text style="font-size:12px">Sản phẩm ẩn</text></a></li>	            
+</ul>

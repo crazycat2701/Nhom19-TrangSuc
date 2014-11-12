@@ -1,0 +1,125 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewBag.Title</title>
+     <link href="@Url.Content("~/Content/Site.css")" rel="stylesheet" type="text/css" />
+    <script src="@Url.Content("~/Scripts/jquery-1.7.1.min.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/script.js")" type="text/javascript"></script>
+</head>
+<body>
+    <div class="container">
+        <!--dau trang-->
+        <a name="top"><div class="banner"></div></a>
+        <div class="menu">
+            <div class="button">@Html.ActionLink("TRANG CHỦ", "Index", "Home")</div>
+            <div class="menu-space"></div>
+            <div class="button">@Html.ActionLink("GIỚI THIỆU", "GioiThieu", "Home")</div>
+            <div class="menu-space"></div>
+            <div class="button">@Html.ActionLink("TIN TỨC", "TinTuc", "Home")</div>
+            <div class="menu-space"></div>
+            <div class="button">@Html.ActionLink("CỬA HÀNG", "CuaHang", "Home")</div>
+            <div class="menu-space"></div>
+            <div class="button">@Html.ActionLink("TUYỂN DỤNG", "TuyenDung", "Home")</div>
+	        <div class="time"> <script>time()</script></div>
+            <div class="clear"></div>
+        </div>
+        <!--giua  trang-->
+        <div class="main">
+            <!--cot trai-->
+            <div class="columnleft">
+                <div class="header-column">DANH MỤC SẢN PHẨM</div>
+                <div class="noidungcanhtrai">
+  	  	            <div style="margin-top:3px">
+                        <div class="sidebarmenu">
+			                @{Html.RenderAction("Menu", "loaisanpham");}
+         	            </div>
+                    </div>
+                </div>
+                <div class="header-column">SẢN PHẨM NỔI BẬT</div>
+                    @{Html.RenderAction("spbanchay", "sanpham");}
+            </div>
+            <!--cot giua trong-->
+            <section>
+                 @RenderBody()
+            </section> 
+            <!--cot phai-->
+            <div class="columnright">
+                <div class="header-column">ĐĂNG NHẬP</div>
+                <div class="noidungdangnhap">
+                    
+                     @if (Session["User"]!=null)
+                        {
+                            Session["Admin"] = null;
+                            <div>
+                                <div style="margin-top:5px">Xin chào <strong>@Session["User"]</strong></div>
+                                <div><img src="@Url.Content("~/Image/hinhdangnhap.png")" style="margin-left:60px" width="55" height="55"/></div>
+                                <div style="margin-top:5px"><a href="/user/suathongtin">Sửa thông tin</a></div>
+                                <div style="margin-top:5px">@Html.ActionLink("Đăng xuất", "DangXuat", "user")</div>
+                            </div>
+                        }
+                        else
+                        {
+                            <div>
+                                @using (Html.BeginForm("DangNhap", "user"))
+                                { 
+                                    <form name="dangnhap" method="post">
+                                                <table>
+                                                    <tr>
+                                                        <td align="left">Tên truy cập</td>
+                                                        <td><input type="text" name="username" id="username" size="15" maxlength="35" /><br></td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td align="left">Mật khẩu</td>
+                                                        <td><input type="password" name="password" id="password" size="15" value="" ><br></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td></td>
+                                                        <td align="left"><input id="remember" class="checkbox" type="checkbox" value="true" name="remember">Ghi nhớ</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td></td>
+                                                        <td align="left"><input type="submit" style="text-align:center" value="Đăng nhập"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td colspan="2">
+            	                                        <div>@Html.ActionLink("Đăng ký thành viên", "DangKy", "user")</div>
+                                                        </td>
+                                                    </tr>
+                                                     <tr>
+                                                        <td colspan="2">
+            	                                        <div>@Html.ActionLink("Quên mật khẩu", "Quenmatkhau", "user")</div>
+                                                        </td>
+                                                    </tr>
+                                                </table>   
+        	                                 </form>
+                                }  
+                            </div>
+                        }
+
+                </div>
+                @{Html.RenderAction("menugiohang", "cart");}
+               
+                <div class=" header-column">HỖ TRỢ TRỰC TUYẾN</div>
+                <div class="noidungcanhgiua">
+                    <div>(Huỳnh Bá Đạt)</div>
+                    <div align="center"><a href="ymsgr:anhmaiyeuem200"><img src="@Url.Content("~/Image/online.gif")"/></a></div>
+                    <div>----------------------</div>
+                    <div>(Phạm Hoàng Hiệp)</div>
+                    <div align="center"><a href="ymsgr:phamhoang_tg5303"><img src="@Url.Content("~/Image/offline.gif")"/></a></div>
+    	        </div>
+                <div class="noidungcanhgiua2" style="margin-bottom: 5px">
+                <img height="229px" src="@Url.Content("~/Image/logofix.png")"/>
+                </div>
+            </div><div class="clear"></div>
+        </div>
+        <!--cuoi trang-->
+        
+  	    <div class="footer">
+  	        © Copyright 2014 <b>DEW</b>, All rights reserved.<br />
+  	    </div>
+  	    <div style="height:3px"></div>
+           
+    </div>        
+</body>
+</html>

@@ -1,0 +1,43 @@
+﻿@model Trangsuc.Models.dangnhap
+@{
+    ViewBag.Title = "Đăng nhập";
+}
+
+<div class="covercenter">
+<div class="columncenter">
+<div class="header-center">ĐĂNG NHẬP</div>
+<div class="text" style="margin: 20px 10px 10px 20px">
+@if (Session["User"] != null)
+{
+    <div style="margin-bottom:5px">Bạn đã đăng nhập. Quay về @Html.ActionLink("Trang chủ", "Index", "Home")</div>
+}
+else
+{    
+       using (Html.BeginForm())
+       {
+        @Html.ValidationSummary(true)
+        <table>
+            <tr>
+                <td>@Html.LabelFor(model => model.username)</td>
+                <td>@Html.TextBoxFor(model => model.username, new { size = 30 })
+                    @Html.ValidationMessageFor(model => model.username)</td>
+            </tr>
+            <tr>
+                <td>@Html.LabelFor(model => model.password)</td>
+                <td>@Html.PasswordFor(model => model.password, new { size = 30 })
+                    @Html.ValidationMessageFor(model => model.password)</td>
+            </tr>
+            <tr>
+                <td>@Html.LabelFor(model => model.remember)</td>
+                <td>@Html.CheckBoxFor(model => model.remember)</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="submit" value="Đăng nhập" /></td>
+            </tr>
+        </table>
+       }
+}
+</div>
+</div>
+</div>

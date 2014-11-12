@@ -1,0 +1,214 @@
+E:\Trangsuc\TrangsucWF\obj\Debug\TrangsucWF.csprojResolveAssemblyReference.cache
+E:\Trangsuc\TrangsucWF\obj\Debug\TrangsucWF.Properties.Resources.resources
+E:\Trangsuc\TrangsucWF\obj\Debug\TrangsucWF.csproj.GenerateResource.Cache
+E:\Trangsuc\TrangsucWF\bin\Debug\TrangsucWF.exe
+E:\Trangsuc\TrangsucWF\bin\Debug\TrangsucWF.pdb
+E:\Trangsuc\TrangsucWF\obj\Debug\TrangsucWF.exe
+E:\Trangsuc\TrangsucWF\obj\Debug\TrangsucWF.pdb
+E:\Trangsuc\TrangsucWF\obj\Debug\TrangsucWF.FormQLPhieuNhap.resources
+E:\Trangsuc\TrangsucWF\bin\Debug\TrangsucWF.exe.config
+E:\Trangsuc\TrangsucWF\obj\Debug\TrangsucWF.FormCTPN.resources
+E:\Trangsuc\TrangsucWF\obj\Debug\TrangsucWF.FormQLDH.resources
+E:\Trangsuc\TrangsucWF\obj\Debug\TrangsucWF.FormCTHD.resources
+E:\Trangsuc\TrangsucWF\obj\Debug\TrangsucWF.FormThongKeBaoCao.resources
+E:\Trangsuc - Copy\TrangsucWF\bin\Debug\TrangsucWF.exe.config
+E:\Trangsuc - Copy\TrangsucWF\obj\Debug\TrangsucWF.exe
+E:\Trangsuc - Copy\TrangsucWF\obj\Debug\TrangsucWF.pdb
+E:\Trangsuc - Copy\TrangsucWF\bin\Debug\TrangsucWF.exe
+E:\Trangsuc - Copy\TrangsucWF\bin\Debug\TrangsucWF.pdb
+E:\Trangsuc - Copy\TrangsucWF\obj\Debug\TrangsucWF.csprojResolveAssemblyReference.cache
+E:\Trangsuc - Copy\TrangsucWF\obj\Debug\TrangsucWF.FormCTHD.resources
+E:\Trangsuc - Copy\TrangsucWF\obj\Debug\TrangsucWF.FormCTPN.resources
+E:\Trangsuc - Copy\TrangsucWF\obj\Debug\TrangsucWF.FormQLDH.resources
+E:\Trangsuc - Copy\TrangsucWF\obj\Debug\TrangsucWF.FormQLPhieuNhap.resources
+E:\Trangsuc - Copy\TrangsucWF\obj\Debug\TrangsucWF.FormThongKeBaoCao.resources
+E:\Trangsuc - Copy\TrangsucWF\obj\Debug\TrangsucWF.Properties.Resources.resources
+E:\Trangsuc - Copy\TrangsucWF\obj\Debug\TrangsucWF.csproj.GenerateResource.Cache
+E:\Trangsuc - Copy\TrangsucWF\obj\Debug\TrangsucWF.FormBCTonKho.resources
+E:\doanwebser\Trangsuc\TrangsucWF\bin\Debug\TrangsucWF.exe.config
+E:\doanwebser\Trangsuc\TrangsucWF\obj\Debug\TrangsucWF.exe
+E:\doanwebser\Trangsuc\TrangsucWF\obj\Debug\TrangsucWF.pdb
+E:\doanwebser\Trangsuc\TrangsucWF\bin\Debug\TrangsucWF.exe
+E:\doanwebser\Trangsuc\TrangsucWF\bin\Debug\TrangsucWF.pdb
+E:\doanwebser\Trangsuc\TrangsucWF\obj\Debug\TrangsucWF.FormBCTonKho.resources
+E:\doanwebser\Trangsuc\TrangsucWF\obj\Debug\TrangsucWF.FormCTHD.resources
+E:\doanwebser\Trangsuc\TrangsucWF\obj\Debug\TrangsucWF.FormCTPN.resources
+E:\doanwebser\Trangsuc\TrangsucWF\obj\Debug\TrangsucWF.FormQLDH.resources
+E:\doanwebser\Trangsuc\TrangsucWF\obj\Debug\TrangsucWF.FormQLPhieuNhap.resources
+E:\doanwebser\Trangsuc\TrangsucWF\obj\Debug\TrangsucWF.FormThongKeBaoCao.resources
+E:\doanwebser\Trangsuc\TrangsucWF\obj\Debug\TrangsucWF.Properties.Resources.resources
+E:\doanwebser\Trangsuc\TrangsucWF\obj\Debug\TrangsucWF.csproj.GenerateResource.Cache
+E:\doanwebser\Trangsuc\TrangsucWF\obj\Debug\RdlCompile.cache
+E:\doanwebser\Trangsuc\TrangsucWF\obj\Debug\RdlCompile.compiled
+E:\doanwebser\Trangsuc\TrangsucWF\obj\Debug\TrangsucWF.FormBCDoanhthu.resources
+E:\doanwebser\Trangsuc\TrangsucWF\obj\Debug\TrangsucWF.csprojResolveAssemblyReference.cache
+E:\doanwebser\Trangsuc\TrangsucWF\obj\Debug\TrangsucWF.MainForm.resources
+E:\doanwebser\Trangsuc_v1\TrangsucWF\bin\Debug\TrangsucWF.exe.config
+E:\doanwebser\Trangsuc_v1\TrangsucWF\obj\Debug\TrangsucWF.exe
+E:\doanwebser\Trangsuc_v1\TrangsucWF\obj\Debug\TrangsucWF.pdb
+E:\doanwebser\Trangsuc_v1\TrangsucWF\obj\Debug\TrangsucWF.csprojResolveAssemblyReference.cache
+E:\doanwebser\Trangsuc_v1\TrangsucWF\obj\Debug\TrangsucWF.FormBCDoanhthu.resources
+E:\doanwebser\Trangsuc_v1\TrangsucWF\obj\Debug\TrangsucWF.FormBCTonKho.resources
+E:\doanwebser\Trangsuc_v1\TrangsucWF\obj\Debug\TrangsucWF.FormCTHD.resources
+E:\doanwebser\Trangsuc_v1\TrangsucWF\obj\Debug\TrangsucWF.FormCTPN.resources
+E:\doanwebser\Trangsuc_v1\TrangsucWF\obj\Debug\TrangsucWF.FormQLDH.resources
+E:\doanwebser\Trangsuc_v1\TrangsucWF\obj\Debug\TrangsucWF.FormQLPhieuNhap.resources
+E:\doanwebser\Trangsuc_v1\TrangsucWF\obj\Debug\TrangsucWF.FormThongKeBaoCao.resources
+E:\doanwebser\Trangsuc_v1\TrangsucWF\obj\Debug\TrangsucWF.MainForm.resources
+E:\doanwebser\Trangsuc_v1\TrangsucWF\obj\Debug\TrangsucWF.Properties.Resources.resources
+E:\doanwebser\Trangsuc_v1\TrangsucWF\obj\Debug\TrangsucWF.csproj.GenerateResource.Cache
+E:\doanwebser\Trangsuc_v1\TrangsucWF\obj\Debug\RdlCompile.cache
+E:\doanwebser\Trangsuc_v1\TrangsucWF\obj\Debug\RdlCompile.compiled
+E:\doanwebser\Trangsuc_v1\TrangsucWF\bin\Debug\TrangsucWF.exe
+E:\doanwebser\Trangsuc_v1\TrangsucWF\bin\Debug\TrangsucWF.pdb
+E:\doanwebser\Trangsuc_v2\TrangsucWF\bin\Debug\TrangsucWF.exe.config
+E:\doanwebser\Trangsuc_v2\TrangsucWF\obj\Debug\TrangsucWF.exe
+E:\doanwebser\Trangsuc_v2\TrangsucWF\obj\Debug\TrangsucWF.pdb
+E:\doanwebser\Trangsuc_v2\TrangsucWF\bin\Debug\TrangsucWF.exe
+E:\doanwebser\Trangsuc_v2\TrangsucWF\bin\Debug\TrangsucWF.pdb
+E:\doanwebser\Trangsuc_v2\TrangsucWF\obj\Debug\TrangsucWF.csprojResolveAssemblyReference.cache
+E:\doanwebser\Trangsuc_v2\TrangsucWF\obj\Debug\TrangsucWF.FormBCDoanhthu.resources
+E:\doanwebser\Trangsuc_v2\TrangsucWF\obj\Debug\TrangsucWF.FormBCTonKho.resources
+E:\doanwebser\Trangsuc_v2\TrangsucWF\obj\Debug\TrangsucWF.FormCTHD.resources
+E:\doanwebser\Trangsuc_v2\TrangsucWF\obj\Debug\TrangsucWF.FormCTPN.resources
+E:\doanwebser\Trangsuc_v2\TrangsucWF\obj\Debug\TrangsucWF.FormQLDH.resources
+E:\doanwebser\Trangsuc_v2\TrangsucWF\obj\Debug\TrangsucWF.FormQLPhieuNhap.resources
+E:\doanwebser\Trangsuc_v2\TrangsucWF\obj\Debug\TrangsucWF.FormThongKeBaoCao.resources
+E:\doanwebser\Trangsuc_v2\TrangsucWF\obj\Debug\TrangsucWF.MainForm.resources
+E:\doanwebser\Trangsuc_v2\TrangsucWF\obj\Debug\TrangsucWF.Properties.Resources.resources
+E:\doanwebser\Trangsuc_v2\TrangsucWF\obj\Debug\TrangsucWF.csproj.GenerateResource.Cache
+E:\doanwebser\Trangsuc_v2\TrangsucWF\obj\Debug\RdlCompile.cache
+E:\doanwebser\Trangsuc_v2\TrangsucWF\obj\Debug\RdlCompile.compiled
+E:\doanwebser\Trangsuc_v3\TrangsucWF\bin\Debug\TrangsucWF.exe.config
+E:\doanwebser\Trangsuc_v3\TrangsucWF\obj\Debug\TrangsucWF.exe
+E:\doanwebser\Trangsuc_v3\TrangsucWF\obj\Debug\TrangsucWF.pdb
+E:\doanwebser\Trangsuc_v3\TrangsucWF\bin\Debug\TrangsucWF.exe
+E:\doanwebser\Trangsuc_v3\TrangsucWF\bin\Debug\TrangsucWF.pdb
+E:\doanwebser\Trangsuc_v3\TrangsucWF\obj\Debug\TrangsucWF.FormBCDoanhthu.resources
+E:\doanwebser\Trangsuc_v3\TrangsucWF\obj\Debug\TrangsucWF.FormBCTonKho.resources
+E:\doanwebser\Trangsuc_v3\TrangsucWF\obj\Debug\TrangsucWF.FormCTHD.resources
+E:\doanwebser\Trangsuc_v3\TrangsucWF\obj\Debug\TrangsucWF.FormCTPN.resources
+E:\doanwebser\Trangsuc_v3\TrangsucWF\obj\Debug\TrangsucWF.FormQLDH.resources
+E:\doanwebser\Trangsuc_v3\TrangsucWF\obj\Debug\TrangsucWF.FormQLPhieuNhap.resources
+E:\doanwebser\Trangsuc_v3\TrangsucWF\obj\Debug\TrangsucWF.FormQLSP.resources
+E:\doanwebser\Trangsuc_v3\TrangsucWF\obj\Debug\TrangsucWF.FormThongKeBaoCao.resources
+E:\doanwebser\Trangsuc_v3\TrangsucWF\obj\Debug\TrangsucWF.MainForm.resources
+E:\doanwebser\Trangsuc_v3\TrangsucWF\obj\Debug\TrangsucWF.Properties.Resources.resources
+E:\doanwebser\Trangsuc_v3\TrangsucWF\obj\Debug\TrangsucWF.csproj.GenerateResource.Cache
+E:\doanwebser\Trangsuc_v3\TrangsucWF\obj\Debug\RdlCompile.cache
+E:\doanwebser\Trangsuc_v3\TrangsucWF\obj\Debug\RdlCompile.compiled
+E:\doanwebser\Trangsuc_v3\TrangsucWF\obj\Debug\TrangsucWF.FormSua.resources
+E:\doanwebser\Trangsuc_v3\TrangsucWF\obj\Debug\TrangsucWF.FormThemSP.resources
+E:\doanwebser\Trangsuc_v3\TrangsucWF\obj\Debug\TrangsucWF.csprojResolveAssemblyReference.cache
+E:\doanwebser\Trangsuc_v4\TrangsucWF\bin\Debug\TrangsucWF.exe.config
+E:\doanwebser\Trangsuc_v4\TrangsucWF\obj\Debug\TrangsucWF.exe
+E:\doanwebser\Trangsuc_v4\TrangsucWF\obj\Debug\TrangsucWF.pdb
+E:\doanwebser\Trangsuc_v4\TrangsucWF\bin\Debug\TrangsucWF.exe
+E:\doanwebser\Trangsuc_v4\TrangsucWF\bin\Debug\TrangsucWF.pdb
+E:\doanwebser\Trangsuc_v4\TrangsucWF\obj\Debug\TrangsucWF.csprojResolveAssemblyReference.cache
+E:\doanwebser\Trangsuc_v4\TrangsucWF\obj\Debug\TrangsucWF.FormBCDoanhthu.resources
+E:\doanwebser\Trangsuc_v4\TrangsucWF\obj\Debug\TrangsucWF.FormBCTonKho.resources
+E:\doanwebser\Trangsuc_v4\TrangsucWF\obj\Debug\TrangsucWF.FormCTHD.resources
+E:\doanwebser\Trangsuc_v4\TrangsucWF\obj\Debug\TrangsucWF.FormCTPN.resources
+E:\doanwebser\Trangsuc_v4\TrangsucWF\obj\Debug\TrangsucWF.FormQLDH.resources
+E:\doanwebser\Trangsuc_v4\TrangsucWF\obj\Debug\TrangsucWF.FormQLPhieuNhap.resources
+E:\doanwebser\Trangsuc_v4\TrangsucWF\obj\Debug\TrangsucWF.FormQLSP.resources
+E:\doanwebser\Trangsuc_v4\TrangsucWF\obj\Debug\TrangsucWF.FormSua.resources
+E:\doanwebser\Trangsuc_v4\TrangsucWF\obj\Debug\TrangsucWF.FormThemSP.resources
+E:\doanwebser\Trangsuc_v4\TrangsucWF\obj\Debug\TrangsucWF.FormThongKeBaoCao.resources
+E:\doanwebser\Trangsuc_v4\TrangsucWF\obj\Debug\TrangsucWF.MainForm.resources
+E:\doanwebser\Trangsuc_v4\TrangsucWF\obj\Debug\TrangsucWF.Properties.Resources.resources
+E:\doanwebser\Trangsuc_v4\TrangsucWF\obj\Debug\TrangsucWF.csproj.GenerateResource.Cache
+E:\doanwebser\Trangsuc_v4\TrangsucWF\obj\Debug\RdlCompile.cache
+E:\doanwebser\Trangsuc_v4\TrangsucWF\obj\Debug\RdlCompile.compiled
+E:\doanwebser\Trangsuc_v4 - Copy (6)\TrangsucWF\bin\Debug\TrangsucWF.exe.config
+E:\doanwebser\Trangsuc_v4 - Copy (6)\TrangsucWF\bin\Debug\TrangsucWF.exe
+E:\doanwebser\Trangsuc_v4 - Copy (6)\TrangsucWF\bin\Debug\TrangsucWF.pdb
+E:\doanwebser\Trangsuc_v4 - Copy (6)\TrangsucWF\obj\Debug\TrangsucWF.csprojResolveAssemblyReference.cache
+E:\doanwebser\Trangsuc_v4 - Copy (6)\TrangsucWF\obj\Debug\TrangsucWF.FormBCDoanhthu.resources
+E:\doanwebser\Trangsuc_v4 - Copy (6)\TrangsucWF\obj\Debug\TrangsucWF.FormBCTonKho.resources
+E:\doanwebser\Trangsuc_v4 - Copy (6)\TrangsucWF\obj\Debug\TrangsucWF.FormCTHD.resources
+E:\doanwebser\Trangsuc_v4 - Copy (6)\TrangsucWF\obj\Debug\TrangsucWF.FormCTPN.resources
+E:\doanwebser\Trangsuc_v4 - Copy (6)\TrangsucWF\obj\Debug\TrangsucWF.FormQLDH.resources
+E:\doanwebser\Trangsuc_v4 - Copy (6)\TrangsucWF\obj\Debug\TrangsucWF.FormQLPhieuNhap.resources
+E:\doanwebser\Trangsuc_v4 - Copy (6)\TrangsucWF\obj\Debug\TrangsucWF.FormQLSP.resources
+E:\doanwebser\Trangsuc_v4 - Copy (6)\TrangsucWF\obj\Debug\TrangsucWF.FormSua.resources
+E:\doanwebser\Trangsuc_v4 - Copy (6)\TrangsucWF\obj\Debug\TrangsucWF.FormThemSP.resources
+E:\doanwebser\Trangsuc_v4 - Copy (6)\TrangsucWF\obj\Debug\TrangsucWF.FormThongKeBaoCao.resources
+E:\doanwebser\Trangsuc_v4 - Copy (6)\TrangsucWF\obj\Debug\TrangsucWF.MainForm.resources
+E:\doanwebser\Trangsuc_v4 - Copy (6)\TrangsucWF\obj\Debug\TrangsucWF.Properties.Resources.resources
+E:\doanwebser\Trangsuc_v4 - Copy (6)\TrangsucWF\obj\Debug\TrangsucWF.csproj.GenerateResource.Cache
+E:\doanwebser\Trangsuc_v4 - Copy (6)\TrangsucWF\obj\Debug\RdlCompile.cache
+E:\doanwebser\Trangsuc_v4 - Copy (6)\TrangsucWF\obj\Debug\RdlCompile.compiled
+E:\doanwebser\Trangsuc_v4 - Copy (6)\TrangsucWF\obj\Debug\TrangsucWF.exe
+E:\doanwebser\Trangsuc_v4 - Copy (6)\TrangsucWF\obj\Debug\TrangsucWF.pdb
+E:\doanwebser\Trangsuc_v4 - Copy (6)\TrangsucWF\obj\Debug\TrangsucWF.FormQLPX.resources
+E:\doanwebser\Trangsuc_v4 - Copy (6)\TrangsucWF\obj\Debug\TrangsucWF.FormCTpx.resources
+E:\doanwebser\Trangsuc_v4 - Copy (6) - Copy\TrangsucWF\bin\Debug\TrangsucWF.exe.config
+E:\doanwebser\Trangsuc_v4 - Copy (6) - Copy\TrangsucWF\obj\Debug\TrangsucWF.exe
+E:\doanwebser\Trangsuc_v4 - Copy (6) - Copy\TrangsucWF\obj\Debug\TrangsucWF.pdb
+E:\doanwebser\Trangsuc_v4 - Copy (6) - Copy\TrangsucWF\obj\Debug\TrangsucWF.FormBCDoanhthu.resources
+E:\doanwebser\Trangsuc_v4 - Copy (6) - Copy\TrangsucWF\obj\Debug\TrangsucWF.FormBCTonKho.resources
+E:\doanwebser\Trangsuc_v4 - Copy (6) - Copy\TrangsucWF\obj\Debug\TrangsucWF.FormCTHD.resources
+E:\doanwebser\Trangsuc_v4 - Copy (6) - Copy\TrangsucWF\obj\Debug\TrangsucWF.FormCTPN.resources
+E:\doanwebser\Trangsuc_v4 - Copy (6) - Copy\TrangsucWF\obj\Debug\TrangsucWF.FormCTpx.resources
+E:\doanwebser\Trangsuc_v4 - Copy (6) - Copy\TrangsucWF\obj\Debug\TrangsucWF.FormQLDH.resources
+E:\doanwebser\Trangsuc_v4 - Copy (6) - Copy\TrangsucWF\obj\Debug\TrangsucWF.FormQLPhieuNhap.resources
+E:\doanwebser\Trangsuc_v4 - Copy (6) - Copy\TrangsucWF\obj\Debug\TrangsucWF.FormQLPX.resources
+E:\doanwebser\Trangsuc_v4 - Copy (6) - Copy\TrangsucWF\obj\Debug\TrangsucWF.FormQLSP.resources
+E:\doanwebser\Trangsuc_v4 - Copy (6) - Copy\TrangsucWF\obj\Debug\TrangsucWF.FormSua.resources
+E:\doanwebser\Trangsuc_v4 - Copy (6) - Copy\TrangsucWF\obj\Debug\TrangsucWF.FormThemSP.resources
+E:\doanwebser\Trangsuc_v4 - Copy (6) - Copy\TrangsucWF\obj\Debug\TrangsucWF.FormThongKeBaoCao.resources
+E:\doanwebser\Trangsuc_v4 - Copy (6) - Copy\TrangsucWF\obj\Debug\TrangsucWF.MainForm.resources
+E:\doanwebser\Trangsuc_v4 - Copy (6) - Copy\TrangsucWF\obj\Debug\TrangsucWF.Properties.Resources.resources
+E:\doanwebser\Trangsuc_v4 - Copy (6) - Copy\TrangsucWF\obj\Debug\TrangsucWF.csproj.GenerateResource.Cache
+E:\doanwebser\Trangsuc_v4 - Copy (6) - Copy\TrangsucWF\obj\Debug\RdlCompile.cache
+E:\doanwebser\Trangsuc_v4 - Copy (6) - Copy\TrangsucWF\obj\Debug\RdlCompile.compiled
+E:\doanwebser\Trangsuc_v4 - Copy (6) - Copy\TrangsucWF\bin\Debug\TrangsucWF.exe
+E:\doanwebser\Trangsuc_v4 - Copy (6) - Copy\TrangsucWF\bin\Debug\TrangsucWF.pdb
+E:\doanwebser\Trangsuc_v4 - Copy (6) - Copy - Copy\TrangsucWF\bin\Debug\TrangsucWF.exe.config
+E:\doanwebser\Trangsuc_v4 - Copy (6) - Copy - Copy\TrangsucWF\obj\Debug\TrangsucWF.exe
+E:\doanwebser\Trangsuc_v4 - Copy (6) - Copy - Copy\TrangsucWF\obj\Debug\TrangsucWF.pdb
+E:\doanwebser\Trangsuc_v4 - Copy (6) - Copy - Copy\TrangsucWF\bin\Debug\TrangsucWF.exe
+E:\doanwebser\Trangsuc_v4 - Copy (6) - Copy - Copy\TrangsucWF\bin\Debug\TrangsucWF.pdb
+E:\doanwebser\Trangsuc_v4 - Copy (6) - Copy - Copy\TrangsucWF\obj\Debug\TrangsucWF.csprojResolveAssemblyReference.cache
+E:\doanwebser\Trangsuc_v4 - Copy (6) - Copy - Copy\TrangsucWF\obj\Debug\TrangsucWF.FormBCDoanhthu.resources
+E:\doanwebser\Trangsuc_v4 - Copy (6) - Copy - Copy\TrangsucWF\obj\Debug\TrangsucWF.FormBCTonKho.resources
+E:\doanwebser\Trangsuc_v4 - Copy (6) - Copy - Copy\TrangsucWF\obj\Debug\TrangsucWF.FormCTHD.resources
+E:\doanwebser\Trangsuc_v4 - Copy (6) - Copy - Copy\TrangsucWF\obj\Debug\TrangsucWF.FormCTPN.resources
+E:\doanwebser\Trangsuc_v4 - Copy (6) - Copy - Copy\TrangsucWF\obj\Debug\TrangsucWF.FormCTpx.resources
+E:\doanwebser\Trangsuc_v4 - Copy (6) - Copy - Copy\TrangsucWF\obj\Debug\TrangsucWF.FormQLDH.resources
+E:\doanwebser\Trangsuc_v4 - Copy (6) - Copy - Copy\TrangsucWF\obj\Debug\TrangsucWF.FormQLPhieuNhap.resources
+E:\doanwebser\Trangsuc_v4 - Copy (6) - Copy - Copy\TrangsucWF\obj\Debug\TrangsucWF.FormQLPX.resources
+E:\doanwebser\Trangsuc_v4 - Copy (6) - Copy - Copy\TrangsucWF\obj\Debug\TrangsucWF.FormQLSP.resources
+E:\doanwebser\Trangsuc_v4 - Copy (6) - Copy - Copy\TrangsucWF\obj\Debug\TrangsucWF.FormSua.resources
+E:\doanwebser\Trangsuc_v4 - Copy (6) - Copy - Copy\TrangsucWF\obj\Debug\TrangsucWF.FormThemSP.resources
+E:\doanwebser\Trangsuc_v4 - Copy (6) - Copy - Copy\TrangsucWF\obj\Debug\TrangsucWF.FormThongKeBaoCao.resources
+E:\doanwebser\Trangsuc_v4 - Copy (6) - Copy - Copy\TrangsucWF\obj\Debug\TrangsucWF.MainForm.resources
+E:\doanwebser\Trangsuc_v4 - Copy (6) - Copy - Copy\TrangsucWF\obj\Debug\TrangsucWF.Properties.Resources.resources
+E:\doanwebser\Trangsuc_v4 - Copy (6) - Copy - Copy\TrangsucWF\obj\Debug\TrangsucWF.csproj.GenerateResource.Cache
+E:\doanwebser\Trangsuc_v4 - Copy (6) - Copy - Copy\TrangsucWF\obj\Debug\RdlCompile.cache
+E:\doanwebser\Trangsuc_v4 - Copy (6) - Copy - Copy\TrangsucWF\obj\Debug\RdlCompile.compiled
+C:\Users\BIN\Desktop\Trangsuc_v4\TrangsucWF\bin\Debug\TrangsucWF.exe.config
+C:\Users\BIN\Desktop\Trangsuc_v4\TrangsucWF\bin\Debug\TrangsucWF.exe
+C:\Users\BIN\Desktop\Trangsuc_v4\TrangsucWF\bin\Debug\TrangsucWF.pdb
+C:\Users\BIN\Desktop\Trangsuc_v4\TrangsucWF\obj\Debug\TrangsucWF.csprojResolveAssemblyReference.cache
+C:\Users\BIN\Desktop\Trangsuc_v4\TrangsucWF\obj\Debug\TrangsucWF.FormBCDoanhthu.resources
+C:\Users\BIN\Desktop\Trangsuc_v4\TrangsucWF\obj\Debug\TrangsucWF.FormBCTonKho.resources
+C:\Users\BIN\Desktop\Trangsuc_v4\TrangsucWF\obj\Debug\TrangsucWF.FormCTHD.resources
+C:\Users\BIN\Desktop\Trangsuc_v4\TrangsucWF\obj\Debug\TrangsucWF.FormCTPN.resources
+C:\Users\BIN\Desktop\Trangsuc_v4\TrangsucWF\obj\Debug\TrangsucWF.FormCTpx.resources
+C:\Users\BIN\Desktop\Trangsuc_v4\TrangsucWF\obj\Debug\TrangsucWF.FormQLDH.resources
+C:\Users\BIN\Desktop\Trangsuc_v4\TrangsucWF\obj\Debug\TrangsucWF.FormQLPhieuNhap.resources
+C:\Users\BIN\Desktop\Trangsuc_v4\TrangsucWF\obj\Debug\TrangsucWF.FormQLPX.resources
+C:\Users\BIN\Desktop\Trangsuc_v4\TrangsucWF\obj\Debug\TrangsucWF.FormQLSP.resources
+C:\Users\BIN\Desktop\Trangsuc_v4\TrangsucWF\obj\Debug\TrangsucWF.FormSua.resources
+C:\Users\BIN\Desktop\Trangsuc_v4\TrangsucWF\obj\Debug\TrangsucWF.FormThemSP.resources
+C:\Users\BIN\Desktop\Trangsuc_v4\TrangsucWF\obj\Debug\TrangsucWF.FormThongKeBaoCao.resources
+C:\Users\BIN\Desktop\Trangsuc_v4\TrangsucWF\obj\Debug\TrangsucWF.MainForm.resources
+C:\Users\BIN\Desktop\Trangsuc_v4\TrangsucWF\obj\Debug\TrangsucWF.Properties.Resources.resources
+C:\Users\BIN\Desktop\Trangsuc_v4\TrangsucWF\obj\Debug\TrangsucWF.csproj.GenerateResource.Cache
+C:\Users\BIN\Desktop\Trangsuc_v4\TrangsucWF\obj\Debug\RdlCompile.cache
+C:\Users\BIN\Desktop\Trangsuc_v4\TrangsucWF\obj\Debug\RdlCompile.compiled
+C:\Users\BIN\Desktop\Trangsuc_v4\TrangsucWF\obj\Debug\TrangsucWF.exe
+C:\Users\BIN\Desktop\Trangsuc_v4\TrangsucWF\obj\Debug\TrangsucWF.pdb

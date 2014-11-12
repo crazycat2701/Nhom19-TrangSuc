@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="52ce0506d2bd4a0dbf618e7955618688" Name="Diagram1">
+        <EntityTypeShape EntityType="dewModel.admin" Width="1.5" PointX="5.75" PointY="7.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="dewModel.chitiethoadon" Width="1.5" PointX="5.25" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dewModel.chitietphieunhap" Width="1.5" PointX="5.25" PointY="1.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dewModel.hoadon" Width="1.5" PointX="3" PointY="8.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="dewModel.loaisanpham" Width="1.5" PointX="0.75" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="dewModel.nguoidung" Width="1.5" PointX="0.75" PointY="8.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="dewModel.phanquyen" Width="1.5" PointX="1.5" PointY="13" IsExpanded="true" />
+        <EntityTypeShape EntityType="dewModel.phieunhap" Width="1.5" PointX="3" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dewModel.sanpham" Width="1.5" PointX="3" PointY="4.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="dewModel.tonkho" Width="1.5" PointX="5.25" PointY="10.25" IsExpanded="true" />
+        <AssociationConnector Association="dewModel.FK_chitiethoadon_hoadon" ManuallyRouted="false" />
+        <AssociationConnector Association="dewModel.FK_chitiethoadon_sanpham" ManuallyRouted="false" />
+        <AssociationConnector Association="dewModel.FK_chitietphieunhap_phieunhap" ManuallyRouted="false" />
+        <AssociationConnector Association="dewModel.FK_chitietphieunhap_sanpham" ManuallyRouted="false" />
+        <AssociationConnector Association="dewModel.FK_hoadon_nguoidung" ManuallyRouted="false" />
+        <AssociationConnector Association="dewModel.FK_sanpham_loaisanpham" ManuallyRouted="false" />
+        <AssociationConnector Association="dewModel.FK_nguoidung_phanquyen" ManuallyRouted="false" />
+        <AssociationConnector Association="dewModel.FK_tonkho_sanpham" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="dewModel.chitietphieuxuat" Width="1.5" PointX="8.25" PointY="4.75" />
+        <EntityTypeShape EntityType="dewModel.phieuxuat" Width="1.5" PointX="6" PointY="12.75" />
+        <AssociationConnector Association="dewModel.FK_chitietphieuxuat_phieuxuat" />
+        <AssociationConnector Association="dewModel.FK_chitietphieuxuat_sanpham" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

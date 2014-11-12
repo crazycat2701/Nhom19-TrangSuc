@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>DEW ADMIN CONTROL PANEL </title>
+<link href="@Url.Content("~/Content/adminsite.css")" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="@Url.Content("~/Scripts/script.js")"></script>
+<script src="@Url.Content("~/Scripts/jquery.validate.min.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/jquery.validate.unobtrusive.min.js")" type="text/javascript"></script>      
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <div class="logo"><img src="@Url.Content("~/Images/logo.png")"/></div>
+        <div class="menu">
+            <div class="danhmuc">
+                <ul><a href="/admin/index">TRANG ADMIN</a></ul>
+                <ul><a href="#">CÀI ĐẶT</a></ul>
+                <ul><a href="#">LIÊN HỆ</a></ul>
+                <ul><a href="/Home/Index">TRANG CHỦ</a></ul>
+            </div>
+            <div class="account">
+                Xin chào <strong>@Session["Admin"]</strong> , <a href="/admin/dangnhap/thoat" class="logout">Đăng xuất</a>
+            </div>
+        </div>
+    </div>
+    <div style="width:1000px">
+    
+    </div>
+    <div class="body">
+    <div class="headerbody">
+            <div class="danhmucquanly">
+                @{Html.RenderAction("Menu", "quanlysanpham");}
+                @{Html.RenderAction("Menu", "quanlynguoidung");}
+                <ul><a href="#top" style="text-align:center">Quản lý đơn hàng</a>
+                    
+                </ul>
+                <div style="color:White; float:right; margin-right: 5px">Hôm nay: @DateTime.Now.ToShortDateString()</div>
+            </div>
+            </div>
+        <div class="content">
+            <section>
+                @RenderBody()
+            </section>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="footer">
+        DEW ADMIN CONTROL PANEL
+    </div>
+</div>
+</body>
+</html>

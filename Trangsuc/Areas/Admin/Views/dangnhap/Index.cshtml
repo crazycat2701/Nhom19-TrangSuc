@@ -1,0 +1,65 @@
+﻿@model Trangsuc.Models.admindangnhap
+
+@{
+    ViewBag.Title = "Đăng nhập";
+}
+
+<link href="@Url.Content("~/Content/Site.css")" rel="stylesheet" type="text/css" />
+
+<div class="columnleft"></div>
+<div class="columnngoai"></div>
+<div class="covercenter">
+<div class="columncenter">
+<div class="header-center">ĐĂNG NHẬP</div>
+<div class="text" style="margin: 20px 10px 10px 20px">
+@if (Session["Admin"]!=null)
+{
+    Session["User"] = null;
+     <text>Xin chào <strong>@Session["Admin"].ToString()</strong>!</text>
+    <text><br />Quay lại: @Html.ActionLink("Trang chủ Admin","Index","Index") </text>
+     <br />@Html.ActionLink("Thoát", "thoat", "dangnhap")
+}
+else
+{
+
+<script src="@Url.Content("~/Scripts/jquery.validate.min.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/jquery.validate.unobtrusive.min.js")" type="text/javascript"></script>
+
+@Html.ValidationSummary(true)
+
+using (Html.BeginForm())
+{
+    <div style="color:Black; font: 12px Arial, Helvetica, sans-serif; margin-top:10px">
+            <table align="center" style="font-size:13px; color:Black">
+                <tr>
+                    <td>@Html.LabelFor(m => m.username)</td>
+                    <td>@Html.TextBoxFor(m => m.username, new { size = 30})
+                        @Html.ValidationMessageFor(m => m.username)</td>
+                </tr>
+                <tr>
+                    <td>@Html.LabelFor(m => m.password)</td>
+                    <td>@Html.PasswordFor(m => m.password, new { size = 30 })
+                        @Html.ValidationMessageFor(m => m.password)</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>@Html.CheckBoxFor(m => m.remember)
+                        @Html.LabelFor(m => m.remember)</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="submit" value="Đăng nhập" /></td>
+                </tr>
+            </table>
+    </div>
+}
+}
+<table>
+    <tr>
+        <td style="width:400px"></td>
+        <td><div style="font-size:13px"><a href="/home/index/">Quay về TRANG CHỦ</a></div></td>
+    </tr>
+</table>
+</div>
+</div>
+</div>

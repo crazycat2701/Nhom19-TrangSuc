@@ -1,0 +1,26 @@
+﻿@model IEnumerable<Trangsuc.ServiceReferenceSanpham.Sanpham_DTO>
+<div class="noidungcanhgiua">
+      	            <marquee height="255px" width="210px" onmouseout="this.start()" onmouseover="this.stop()" scrolldelay="30" scrollamount="2" truespeed="truespeed" direction="up" behavior="scroll">
+                        @foreach (var item in Model)
+                        {
+                            string formatgia = item.Giasanpham.ToString("c");
+                            formatgia = formatgia.Substring(1, formatgia.LastIndexOf(".") - 1);
+                            <div class="sanphamnoibat">
+                                <a title="Chi tiết" href="/sanpham/chitietsanpham?masp=@Html.DisplayFor(modelItem => item.Masanpham).ToString().Trim()">
+                                    <div>
+                                        <img src="@Url.Content("~/"+@Html.DisplayFor(modelItem => item.Hinhanh))"/>
+                                    </div>
+                                </a>
+                                <div class="tensanpham">
+                                    <table align="center">
+                                        <tr height="40px" valign="middle">
+                                            <td><b>@Html.DisplayFor(modelItem => item.Tensanpham)</b></td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <div style="color:#FF0000">Giá: @formatgia VNĐ</div>
+                            </div>
+                        }
+                    </marquee>
+                    </div>
+

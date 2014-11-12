@@ -1,0 +1,233 @@
+﻿@model Trangsuc.Models.dangky
+
+@{
+    ViewBag.Title = "Đăng ký";
+}
+<script src="@Url.Content("~/Scripts/jquery.validate.min.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/jquery.validate.unobtrusive.min.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/script.js")" type="text/javascript"></script>
+@{Html.EnableClientValidation();}
+<div class="covercenter">
+<div class="columncenter">
+<div class="header-center">ĐĂNG KÝ</div>
+
+<div class="text" style="margin: 20px 10px 10px 20px">
+@if (Session["User"] == null)
+{
+    if ((!String.IsNullOrEmpty(@ViewBag.loi)))
+    {
+        List<SelectListItem> ngayList = new List<SelectListItem>();
+        List<SelectListItem> thangList = new List<SelectListItem>();
+        List<SelectListItem> namList = new List<SelectListItem>();
+        ngayList = (List<SelectListItem>)ViewBag.ngay;
+        thangList = (List<SelectListItem>)ViewBag.thang;
+        namList = (List<SelectListItem>)ViewBag.nam;
+        using (Html.BeginForm())
+        {
+        @Html.ValidationSummary(true)
+        <table>
+            <tr>
+                <td>@Html.LabelFor(model => model.username)</td>
+                <td>@Html.TextBoxFor(model => model.username, new { size = 30 })
+                    @Html.ValidationMessageFor(model => model.username)</td>
+            </tr>
+            <tr>
+                <td>@Html.LabelFor(model => model.password)</td>
+                <td>@Html.PasswordFor(model => model.password, new { size = 30 })
+                    @Html.ValidationMessageFor(model => model.password)</td>
+            </tr>
+            <tr>
+                <td>@Html.LabelFor(model => model.xacnhanmatkhau)</td>
+                <td>@Html.PasswordFor(model => model.xacnhanmatkhau, new { size = 30 })
+                    @Html.ValidationMessageFor(model => model.xacnhanmatkhau)</td>
+            </tr>
+            <tr>
+                <td>@Html.LabelFor(model => model.hoten)</td>
+                <td>@Html.TextBoxFor(model => model.hoten, new { size = 30 })
+                    @Html.ValidationMessageFor(model => model.hoten)</td>
+            </tr>
+            <tr>
+                <td>@Html.LabelFor(model => model.ngaysinh)</td>
+                <td>@Html.DropDownList("ngay", ngayList)
+                    @Html.DropDownList("thang", thangList)
+                    @Html.DropDownList("nam", namList)<text style="color:Red">@ViewBag.loi</text></td>
+            </tr>
+            <tr>
+                <td>@Html.LabelFor(model => model.gioitinh)</td>
+                <td>
+                   @Html.RadioButton("gioitinh", "1", true)Nam
+                   @Html.RadioButton("gioitinh", "0", false)Nữ
+                </td>
+            </tr>
+            <tr>
+                <td>@Html.LabelFor(model => model.sdt)</td>
+                <td>@Html.TextBoxFor(model => model.sdt, new { size = 30 })
+                    @Html.ValidationMessageFor(model => model.sdt)</td>
+            </tr>
+            <tr>
+                <td>@Html.LabelFor(model => model.diachi)</td>
+                <td>@Html.TextBoxFor(model => model.diachi, new { size = 30 })
+                    @Html.ValidationMessageFor(model => model.diachi)</td>
+            </tr>
+            <tr>
+                <td>@Html.LabelFor(model => model.email)</td>
+                <td>@Html.TextBoxFor(model => model.email, new { size = 30 })
+                    @Html.ValidationMessageFor(model => model.email)</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="submit" value="Đăng ký" /></td>
+            </tr>
+        </table>
+        }
+    }
+    else
+    {
+        if (!String.IsNullOrEmpty(@ViewBag.thanhcong))
+        {
+            <div>@ViewBag.thanhcong</div>
+            @Html.ActionLink("Đăng nhập", "DangNhap", "user")
+        }
+        else
+        {
+            List<SelectListItem> ngayList = new List<SelectListItem>();
+            List<SelectListItem> thangList = new List<SelectListItem>();
+            List<SelectListItem> namList = new List<SelectListItem>();
+            ngayList = (List<SelectListItem>)ViewBag.ngay;
+            thangList = (List<SelectListItem>)ViewBag.thang;
+            namList = (List<SelectListItem>)ViewBag.nam;
+            if (!String.IsNullOrEmpty(@ViewBag.thatbai))
+            {       
+                <table><tr><td><div style="color:Red">@ViewBag.thatbai</div></td></tr></table>
+                                                 using (Html.BeginForm())
+                                                 {
+                    @Html.ValidationSummary(true)
+                    <table>
+                        <tr>
+                            <td>@Html.LabelFor(model => model.username)</td>
+                            <td>@Html.TextBoxFor(model => model.username, new { size = 30 })
+                                @Html.ValidationMessageFor(model => model.username)</td>
+                        </tr>
+                        <tr>
+                            <td>@Html.LabelFor(model => model.password)</td>
+                            <td>@Html.PasswordFor(model => model.password, new { size = 30 })
+                                @Html.ValidationMessageFor(model => model.password)</td>
+                        </tr>
+                        <tr>
+                            <td>@Html.LabelFor(model => model.xacnhanmatkhau)</td>
+                            <td>@Html.PasswordFor(model => model.xacnhanmatkhau, new { size = 30 })
+                                @Html.ValidationMessageFor(model => model.xacnhanmatkhau)</td>
+                        </tr>
+                        <tr>
+                            <td>@Html.LabelFor(model => model.hoten)</td>
+                            <td>@Html.TextBoxFor(model => model.hoten, new { size = 30 })
+                                @Html.ValidationMessageFor(model => model.hoten)</td>
+                        </tr>
+                        <tr>
+                            <td>@Html.LabelFor(model => model.ngaysinh)</td>
+                            <td>@Html.DropDownList("ngay", ngayList)
+                                @Html.DropDownList("thang", thangList)
+                                @Html.DropDownList("nam", namList)</td>
+                        </tr>
+                        <tr>
+                            <td>@Html.LabelFor(model => model.gioitinh)</td>
+                            <td>
+                               @Html.RadioButton("gioitinh", "1", true)Nam
+                               @Html.RadioButton("gioitinh", "0", false)Nữ
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>@Html.LabelFor(model => model.sdt)</td>
+                            <td>@Html.TextBoxFor(model => model.sdt, new { size = 30 })
+                                @Html.ValidationMessageFor(model => model.sdt)</td>
+                        </tr>
+                        <tr>
+                            <td>@Html.LabelFor(model => model.diachi)</td>
+                            <td>@Html.TextBoxFor(model => model.diachi, new { size = 30 })
+                                @Html.ValidationMessageFor(model => model.diachi)</td>
+                        </tr>
+                        <tr>
+                            <td>@Html.LabelFor(model => model.email)</td>
+                            <td>@Html.TextBoxFor(model => model.email, new { size = 30 })
+                                @Html.ValidationMessageFor(model => model.email)</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><input type="submit" value="Đăng ký" /></td>
+                        </tr>
+                    </table>
+               }
+            }
+            else
+            {
+                using (Html.BeginForm())
+                {
+                    @Html.ValidationSummary(true)
+                    <table>
+                        <tr>
+                            <td>@Html.LabelFor(model => model.username)</td>
+                            <td>@Html.TextBoxFor(model => model.username, new { size = 30 })
+                                @Html.ValidationMessageFor(model => model.username)</td>
+                        </tr>
+                        <tr>
+                            <td>@Html.LabelFor(model => model.password)</td>
+                            <td>@Html.PasswordFor(model => model.password, new { size = 30 })
+                                @Html.ValidationMessageFor(model => model.password)</td>
+                        </tr>
+                        <tr>
+                            <td>@Html.LabelFor(model => model.xacnhanmatkhau)</td>
+                            <td>@Html.PasswordFor(model => model.xacnhanmatkhau, new { size = 30 })
+                                @Html.ValidationMessageFor(model => model.xacnhanmatkhau)</td>
+                        </tr>
+                        <tr>
+                            <td>@Html.LabelFor(model => model.hoten)</td>
+                            <td>@Html.TextBoxFor(model => model.hoten, new { size = 30 })
+                                @Html.ValidationMessageFor(model => model.hoten)</td>
+                        </tr>
+                        <tr>
+                            <td>@Html.LabelFor(model => model.ngaysinh)</td>
+                            <td>@Html.DropDownList("ngay", ngayList)
+                                @Html.DropDownList("thang", thangList)
+                                @Html.DropDownList("nam", namList)
+                                </td>
+                        </tr>
+                        <tr>
+                            <td>@Html.LabelFor(model => model.gioitinh)</td>
+                            <td>
+                               @Html.RadioButton("gioitinh", "1", true)Nam
+                               @Html.RadioButton("gioitinh", "0", false)Nữ
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>@Html.LabelFor(model => model.sdt)</td>
+                            <td>@Html.TextBoxFor(model => model.sdt, new { size = 30 })
+                                @Html.ValidationMessageFor(model => model.sdt)</td>
+                        </tr>
+                        <tr>
+                            <td>@Html.LabelFor(model => model.diachi)</td>
+                            <td>@Html.TextBoxFor(model => model.diachi, new { size = 30 })
+                                @Html.ValidationMessageFor(model => model.diachi)</td>
+                        </tr>
+                        <tr>
+                            <td>@Html.LabelFor(model => model.email)</td>
+                            <td>@Html.TextBoxFor(model => model.email, new { size = 30 })
+                                @Html.ValidationMessageFor(model => model.email)</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><input type="submit" value="Đăng ký" /></td>
+                        </tr>
+                    </table>
+                }
+            }
+        }
+    }
+}
+else
+{
+    @Html.ActionLink("Trang chủ", "Index", "Home")
+}
+    <div align="right">@Html.ActionLink("Quay lại trang chủ", "Index", "home")</div>
+</div>
+</div>
+</div>

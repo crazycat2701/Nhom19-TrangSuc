@@ -1,0 +1,107 @@
+﻿@model Trangsuc.ServiceReferenceNguoidung.Nguoidung_DTO
+
+@if (Session["Admin"] != null)
+{
+    List<SelectListItem> phanquyenList = new List<SelectListItem>();
+    phanquyenList = (List<SelectListItem>)ViewBag.listPhanQuyen;
+    {
+        Layout = "~/Areas/Admin/Views/Shared/_Layoutadmin.cshtml";
+    }
+    <script src="@Url.Content("~/Scripts/script.js")" type="text/javascript"></script>
+    <div class="headercolumn">QUẢN LÝ NGƯỜI DÙNG - SỬA THÔNG TIN NGƯỜI DÙNG</div>
+    <div class="noidungright">
+        @using (@Html.BeginForm("suathongtin", "quanlynguoidung",FormMethod.Post, new {onsubmit="return checkstt();", id="formsave", name="formsave"}))
+        {
+            @Html.ValidationSummary(true)
+            @Html.HiddenFor(model => model.Username)           
+            @Html.HiddenFor(model => model.Gioitinh)
+            @Html.HiddenFor(model => model.Hoten)
+            @Html.HiddenFor(model => model.Sdt)
+            @Html.HiddenFor(model => model.Diachi)
+            @Html.HiddenFor(model => model.Mail)
+            @Html.HiddenFor(model => model.Ngaysinh)
+            <center>
+                <div class="tieude">Thông tin người dùng</div>
+            <table style="text-align:left; margin: 20px 10px 10px 20px;">
+                <tr>
+                    <th style="width:150px; text-align:left; color:#000099">Họ tên</th>
+                    <td style="width:auto; padding: 10px 5px 5px 5px; color:#000033; text-transform:uppercase;"><b>@Html.DisplayTextFor(model => model.Hoten)</b></td>
+                </tr>
+                 <tr>
+                    <th style="text-align:left; color:#000099">Password</th>
+                    <td style="width:auto; padding: 10px 5px 5px 5px">       
+                       @Html.Password("pass", @Html.DisplayTextFor(model => model.Pass), new {id="pass" })
+                        <span id ="pass1" style="color:red"></span>
+                    </td>
+                    
+                </tr>
+                <tr>
+                    <th style="text-align:left; color:#000099">Ngày sinh</th>
+                    @{ string ngaysinh = Model.Ngaysinh.ToString();
+                       ngaysinh = ngaysinh.Substring(0, ngaysinh.LastIndexOf(":") - 6);
+                           }
+                    <td style="width:auto; padding: 10px 5px 5px 5px">@ngaysinh</td>
+                </tr>
+                <tr>
+                    <th style="text-align:left; color:#000099">Giới tính</th>
+                    @{
+                                                                 string gioitinh = "Nữ";
+                                                                 if (Model.Gioitinh == 1)
+                                                                 {
+                                                                     gioitinh = "Nam";
+                                                                 }
+                    }
+                    <td style="width:auto; padding: 10px 5px 5px 5px">@gioitinh</td>
+                </tr>
+                <tr>
+                    <th style="text-align:left; color:#000099">Số điện thoại</th>
+                    <td style="width:auto; padding: 10px 5px 5px 5px">@Html.DisplayTextFor(model => model.Sdt)</td>
+                </tr>
+                <tr>
+                    <th style="text-align:left; color:#000099">Địa chỉ</th>
+                    <td style="width:auto; padding: 10px 5px 5px 5px">@Html.DisplayTextFor(model => model.Diachi)</td>
+                </tr>
+                <tr>
+                    <th style="text-align:left; color:#000099">Địa chỉ email</th>
+                    <td style="width:auto; padding: 10px 5px 5px 5px">@Html.DisplayTextFor(model => model.Mail)</td>
+                </tr>
+                <tr>
+                    <th style="text-align:left; color:#000099">Phân quyền</th>
+                    <td style="width:auto; padding: 10px 5px 5px 5px">@Html.DropDownList("quyen", phanquyenList)</td>
+                </tr
+                <tr>
+                    <th style="text-align:left; color:#000099">Ghi chú (user ẩn)</th>
+                    <td style="width:auto; padding: 10px 5px 5px 5px">@Html.CheckBoxFor(model => model.Useran)</td>
+                </tr>
+                <tr>
+                    <td></td><td><input type="submit" value="Lưu" /></td>
+                </tr>
+                <tr valign="middle">
+                    <td colspan="2" style="text-align:left">
+                    <div class="tieude2">
+                        <a title="Trở về" href="/admin/quanlynguoidung/index" style="text-decoration:none">
+                        <table align="left"><tr height="20px" valign="middle"><td><img src="@Url.Content("~/images/back1.png")" width="20px" height="20px"/></td><td>DANH SÁCH NGƯỜI DÙNG</td></tr></table>
+                        </a>
+                    </div>
+                </td>
+                </tr>
+            </table></center>
+        }
+</div>
+}
+else
+{
+    <link href="@Url.Content("~/Content/Site.css")" rel="stylesheet" type="text/css" />
+    <div class="columnleft"></div>
+    <div class="columnngoai"></div>
+    <div class="covercenter">
+        <div class="columncenter">
+            <div class="header-center">ĐĂNG NHẬP</div>
+            <div class="text" style="margin: 20px 10px 20px 20px">
+                <div>
+                    <text> Bạn chưa đăng nhập. Vui lòng nhấn vào <a href="/admin/dangnhap?returnUrl=@Request.Url.PathAndQuery"> đây </a>để vào trang đăng nhập.</text>
+                </div>
+            </div>
+        </div>
+    </div>
+}

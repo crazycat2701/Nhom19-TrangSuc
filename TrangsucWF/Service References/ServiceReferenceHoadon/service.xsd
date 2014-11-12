@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import namespace="http://schemas.datacontract.org/2004/07/WcfServiceTrangsuc" />
+  <xs:element name="GetAllHoadon">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllHoadonResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/WcfServiceTrangsuc" minOccurs="0" name="GetAllHoadonResult" nillable="true" type="q1:ArrayOfHoadon_DTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetChitietByMa">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="mahoadon" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetChitietByMaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/WcfServiceTrangsuc" minOccurs="0" name="GetChitietByMaResult" nillable="true" type="q2:ArrayOfChitiethoadon_DTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetHoadonByMa">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="mahoadon" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetHoadonByMaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/WcfServiceTrangsuc" minOccurs="0" name="GetHoadonByMaResult" nillable="true" type="q3:Hoadon_DTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertHoadon">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="tendangnhap" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="diadiemgiaohang" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ngaygiaohang" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="sdt" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertHoadonResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertHoadonResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateHoadon">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/WcfServiceTrangsuc" minOccurs="0" name="hd" nillable="true" type="q4:Hoadon_DTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateHoadonResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdateHoadonResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertChitiet">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="mahoadon" type="xs:int" />
+        <xs:element minOccurs="0" name="masanpham" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="soluong" type="xs:int" />
+        <xs:element minOccurs="0" name="giasanpham" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertChitietResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertChitietResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllChitiet">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllChitietResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/WcfServiceTrangsuc" minOccurs="0" name="GetAllChitietResult" nillable="true" type="q5:ArrayOfChitiethoadon_DTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

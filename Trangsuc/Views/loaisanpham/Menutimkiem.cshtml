@@ -1,0 +1,12 @@
+﻿@model IEnumerable<Trangsuc.ServiceReferenceSanpham.Loaisanpham_DTO>
+<select name="loaihang" style="width:120px; height: 23px; font-size:13px; color:Black">
+    
+         @foreach (var item in Model)
+    {
+         <option selected="" value="@Html.DisplayFor(modelItem => item.Maloai).ToString().Trim()">
+             @Html.DisplayFor(modelItem => item.Tenloai)
+         </option>
+    }   
+   
+       <option selected="selected" value="tatca">Mọi mặt hàng</option> 
+</select>

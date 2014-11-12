@@ -1,0 +1,9 @@
+E:\Trangsuc\WcfServiceTrangsuc\bin\Release\WcfServiceTrangsuc.dll.config
+E:\Trangsuc\WcfServiceTrangsuc\bin\Release\WcfServiceTrangsuc.dll
+E:\Trangsuc\WcfServiceTrangsuc\bin\Release\WcfServiceTrangsuc.pdb
+E:\Trangsuc\WcfServiceTrangsuc\bin\Release\EntityFramework.dll
+E:\Trangsuc\WcfServiceTrangsuc\bin\Release\EntityFramework.SqlServer.dll
+E:\Trangsuc\WcfServiceTrangsuc\bin\Release\EntityFramework.xml
+E:\Trangsuc\WcfServiceTrangsuc\bin\Release\EntityFramework.SqlServer.xml
+E:\Trangsuc\WcfServiceTrangsuc\obj\Release\WcfServiceTrangsuc.dll
+E:\Trangsuc\WcfServiceTrangsuc\obj\Release\WcfServiceTrangsuc.pdb

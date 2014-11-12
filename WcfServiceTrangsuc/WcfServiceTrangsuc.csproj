@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{15B3E0D2-6217-493A-A690-158C497F5318}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WcfServiceTrangsuc</RootNamespace>
+    <AssemblyName>WcfServiceTrangsuc</AssemblyName>
+    <ProjectTypeGuids>{3D9AD99F-2412-4246-B90B-4EAA41C64699};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <StartArguments>/client:"WcfTestClient.exe"</StartArguments>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <WcfConfigValidationEnabled>True</WcfConfigValidationEnabled>
+    <XsdCodeGenEnabled>True</XsdCodeGenEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.1.1\lib\net40\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.1\lib\net40\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="admin.cs">
+      <DependentUpon>trangsuc.tt</DependentUpon>
+    </Compile>
+    <Compile Include="chitiethoadon.cs">
+      <DependentUpon>trangsuc.tt</DependentUpon>
+    </Compile>
+    <Compile Include="chitietphieunhap.cs">
+      <DependentUpon>trangsuc.tt</DependentUpon>
+    </Compile>
+    <Compile Include="chitietphieuxuat.cs">
+      <DependentUpon>trangsuc.tt</DependentUpon>
+    </Compile>
+    <Compile Include="hoadon.cs">
+      <DependentUpon>trangsuc.tt</DependentUpon>
+    </Compile>
+    <Compile Include="IServiceAdmin.cs" />
+    <Compile Include="IServiceHoadon.cs" />
+    <Compile Include="IServiceNguoidung.cs" />
+    <Compile Include="IServicePhieunhap.cs" />
+    <Compile Include="IServicePhieuxuat.cs" />
+    <Compile Include="IServiceTonkho.cs" />
+    <Compile Include="IServiceSanpham.cs" />
+    <Compile Include="loaisanpham.cs">
+      <DependentUpon>trangsuc.tt</DependentUpon>
+    </Compile>
+    <Compile Include="nguoidung.cs">
+      <DependentUpon>trangsuc.tt</DependentUpon>
+    </Compile>
+    <Compile Include="phanquyen.cs">
+      <DependentUpon>trangsuc.tt</DependentUpon>
+    </Compile>
+    <Compile Include="phieunhap.cs">
+      <DependentUpon>trangsuc.tt</DependentUpon>
+    </Compile>
+    <Compile Include="phieuxuat.cs">
+      <DependentUpon>trangsuc.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="sanpham.cs">
+      <DependentUpon>trangsuc.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ServiceAdmin.cs" />
+    <Compile Include="ServiceHoadon.cs" />
+    <Compile Include="ServiceNguoidung.cs" />
+    <Compile Include="ServicePhieunhap.cs" />
+    <Compile Include="ServicePhieuxuat.cs" />
+    <Compile Include="ServiceSanpham.cs" />
+    <Compile Include="ServiceTonkho.cs" />
+    <Compile Include="tonkho.cs">
+      <DependentUpon>trangsuc.tt</DependentUpon>
+    </Compile>
+    <Compile Include="trangsuc.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>trangsuc.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="trangsuc.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>trangsuc.tt</DependentUpon>
+    </Compile>
+    <Compile Include="trangsuc.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>trangsuc.edmx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+    <EntityDeploy Include="trangsuc.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>trangsuc.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="trangsuc.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>trangsuc.edmx</DependentUpon>
+      <LastGenOutput>trangsuc.Context.cs</LastGenOutput>
+    </None>
+    <None Include="trangsuc.edmx.diagram">
+      <DependentUpon>trangsuc.edmx</DependentUpon>
+    </None>
+    <None Include="trangsuc.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>trangsuc.edmx</DependentUpon>
+      <LastGenOutput>trangsuc.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{3D9AD99F-2412-4246-B90B-4EAA41C64699}">
+        <WcfProjectProperties>
+          <AutoStart>True</AutoStart>
+        </WcfProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

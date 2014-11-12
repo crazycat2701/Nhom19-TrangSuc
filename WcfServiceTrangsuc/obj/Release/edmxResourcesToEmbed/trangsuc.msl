@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="dewModelStoreContainer" CdmEntityContainer="dewEntities">
+    <EntitySetMapping Name="admins">
+      <EntityTypeMapping TypeName="dewModel.admin">
+        <MappingFragment StoreEntitySet="admin">
+          <ScalarProperty Name="username" ColumnName="username" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="hoten" ColumnName="hoten" />
+          <ScalarProperty Name="ngaysinh" ColumnName="ngaysinh" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="chitiethoadons">
+      <EntityTypeMapping TypeName="dewModel.chitiethoadon">
+        <MappingFragment StoreEntitySet="chitiethoadon">
+          <ScalarProperty Name="mahoadon" ColumnName="mahoadon" />
+          <ScalarProperty Name="masanpham" ColumnName="masanpham" />
+          <ScalarProperty Name="soluong" ColumnName="soluong" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="chitietphieunhaps">
+      <EntityTypeMapping TypeName="dewModel.chitietphieunhap">
+        <MappingFragment StoreEntitySet="chitietphieunhap">
+          <ScalarProperty Name="maphieunhap" ColumnName="maphieunhap" />
+          <ScalarProperty Name="masanpham" ColumnName="masanpham" />
+          <ScalarProperty Name="soluong" ColumnName="soluong" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="hoadons">
+      <EntityTypeMapping TypeName="dewModel.hoadon">
+        <MappingFragment StoreEntitySet="hoadon">
+          <ScalarProperty Name="mahoadon" ColumnName="mahoadon" />
+          <ScalarProperty Name="tendangnhap" ColumnName="tendangnhap" />
+          <ScalarProperty Name="ngaymuahang" ColumnName="ngaymuahang" />
+          <ScalarProperty Name="diadiemgiaohang" ColumnName="diadiemgiaohang" />
+          <ScalarProperty Name="ghichu" ColumnName="ghichu" />
+          <ScalarProperty Name="trangthai" ColumnName="trangthai" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="loaisanphams">
+      <EntityTypeMapping TypeName="dewModel.loaisanpham">
+        <MappingFragment StoreEntitySet="loaisanpham">
+          <ScalarProperty Name="maloai" ColumnName="maloai" />
+          <ScalarProperty Name="tenloai" ColumnName="tenloai" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="nguoidungs">
+      <EntityTypeMapping TypeName="dewModel.nguoidung">
+        <MappingFragment StoreEntitySet="nguoidung">
+          <ScalarProperty Name="username" ColumnName="username" />
+          <ScalarProperty Name="hoten" ColumnName="hoten" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="ngaysinh" ColumnName="ngaysinh" />
+          <ScalarProperty Name="gioitinh" ColumnName="gioitinh" />
+          <ScalarProperty Name="sdt" ColumnName="sdt" />
+          <ScalarProperty Name="diachi" ColumnName="diachi" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="maphanquyen" ColumnName="maphanquyen" />
+          <ScalarProperty Name="useran" ColumnName="useran" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="phanquyens">
+      <EntityTypeMapping TypeName="dewModel.phanquyen">
+        <MappingFragment StoreEntitySet="phanquyen">
+          <ScalarProperty Name="maphanquyen" ColumnName="maphanquyen" />
+          <ScalarProperty Name="quyen" ColumnName="quyen" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="phieunhaps">
+      <EntityTypeMapping TypeName="dewModel.phieunhap">
+        <MappingFragment StoreEntitySet="phieunhap">
+          <ScalarProperty Name="maphieunhap" ColumnName="maphieunhap" />
+          <ScalarProperty Name="tennguoilap" ColumnName="tennguoilap" />
+          <ScalarProperty Name="ngaylap" ColumnName="ngaylap" />
+          <ScalarProperty Name="trangthai" ColumnName="trangthai" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sanphams">
+      <EntityTypeMapping TypeName="dewModel.sanpham">
+        <MappingFragment StoreEntitySet="sanpham">
+          <ScalarProperty Name="masanpham" ColumnName="masanpham" />
+          <ScalarProperty Name="tensanpham" ColumnName="tensanpham" />
+          <ScalarProperty Name="chatlieu" ColumnName="chatlieu" />
+          <ScalarProperty Name="giasanpham" ColumnName="giasanpham" />
+          <ScalarProperty Name="sanphammoi" ColumnName="sanphammoi" />
+          <ScalarProperty Name="hinhanh" ColumnName="hinhanh" />
+          <ScalarProperty Name="maloai" ColumnName="maloai" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tonkhoes">
+      <EntityTypeMapping TypeName="dewModel.tonkho">
+        <MappingFragment StoreEntitySet="tonkho">
+          <ScalarProperty Name="ngay" ColumnName="ngay" />
+          <ScalarProperty Name="masanpham" ColumnName="masanpham" />
+          <ScalarProperty Name="soluong" ColumnName="soluong" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,44 @@
+﻿<center>
+<div class="pagination" style="margin-bottom: 4px">
+@{
+    int page;
+    if (ViewBag.Page > 1)
+    {
+        page = ViewBag.Page - 1; 
+        <a href="/@ViewBag.currentpage&page=1">Trang đầu</a>
+ 		<a href="/@ViewBag.currentpage&page=@page">Trang trước</a>
+    }
+    for (page = ViewBag.Page; page <= ViewBag.TotalPages; page++)
+    {
+        if (page == 1)
+        {
+             <span class="current">@page</span> 
+        }
+        else 
+        {
+                if (page == ViewBag.Page)
+                {   <a href="/@ViewBag.currentpage&page=@(page - 1)">@(page - 1)</a>
+                    <span class="current">@page</span>
+                }
+                else
+                {
+                    if (ViewBag.TotalPages > 8 && page > (ViewBag.Page + 2) && page < (ViewBag.TotalPages - 2))
+                    {
+                        page = ViewBag.TotalPages - 2;
+                             <label>..........</label>
+                    }
+                    else
+                    {<a href="/@ViewBag.currentpage&page=@page">@page</a>}
+               }
+
+        }
+    }
+    if (ViewBag.Page < ViewBag.TotalPages)
+    {
+        page = ViewBag.Page + 1;
+            <a href="/@ViewBag.currentpage&page=@page">Trang kế</a>
+            <a href="/@ViewBag.currentpage&page=@ViewBag.TotalPages">Trang cuối</a>
+        }
+    }   
+    </div> 
+</center>

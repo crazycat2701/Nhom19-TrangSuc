@@ -1,0 +1,95 @@
+E:\Trangsuc\WcfServiceTrangsuc\bin\Debug\WcfServiceTrangsuc.dll.config
+E:\Trangsuc\WcfServiceTrangsuc\bin\Debug\WcfServiceTrangsuc.dll
+E:\Trangsuc\WcfServiceTrangsuc\bin\Debug\WcfServiceTrangsuc.pdb
+E:\Trangsuc\WcfServiceTrangsuc\bin\Debug\EntityFramework.dll
+E:\Trangsuc\WcfServiceTrangsuc\bin\Debug\EntityFramework.SqlServer.dll
+E:\Trangsuc\WcfServiceTrangsuc\bin\Debug\EntityFramework.xml
+E:\Trangsuc\WcfServiceTrangsuc\bin\Debug\EntityFramework.SqlServer.xml
+E:\Trangsuc\WcfServiceTrangsuc\obj\Debug\WcfServiceTrangsuc.dll
+E:\Trangsuc\WcfServiceTrangsuc\obj\Debug\WcfServiceTrangsuc.pdb
+E:\Trangsuc\WcfServiceTrangsuc\obj\Debug\WcfServiceTrangsuc.csprojResolveAssemblyReference.cache
+E:\Trangsuc - Copy\WcfServiceTrangsuc\bin\Debug\WcfServiceTrangsuc.dll.config
+E:\Trangsuc - Copy\WcfServiceTrangsuc\bin\Debug\WcfServiceTrangsuc.dll
+E:\Trangsuc - Copy\WcfServiceTrangsuc\bin\Debug\WcfServiceTrangsuc.pdb
+E:\Trangsuc - Copy\WcfServiceTrangsuc\bin\Debug\EntityFramework.dll
+E:\Trangsuc - Copy\WcfServiceTrangsuc\bin\Debug\EntityFramework.SqlServer.dll
+E:\Trangsuc - Copy\WcfServiceTrangsuc\bin\Debug\EntityFramework.xml
+E:\Trangsuc - Copy\WcfServiceTrangsuc\bin\Debug\EntityFramework.SqlServer.xml
+E:\Trangsuc - Copy\WcfServiceTrangsuc\obj\Debug\WcfServiceTrangsuc.dll
+E:\Trangsuc - Copy\WcfServiceTrangsuc\obj\Debug\WcfServiceTrangsuc.pdb
+E:\doanwebser\Trangsuc\WcfServiceTrangsuc\bin\Debug\WcfServiceTrangsuc.dll.config
+E:\doanwebser\Trangsuc\WcfServiceTrangsuc\bin\Debug\WcfServiceTrangsuc.dll
+E:\doanwebser\Trangsuc\WcfServiceTrangsuc\bin\Debug\WcfServiceTrangsuc.pdb
+E:\doanwebser\Trangsuc\WcfServiceTrangsuc\bin\Debug\EntityFramework.dll
+E:\doanwebser\Trangsuc\WcfServiceTrangsuc\bin\Debug\EntityFramework.SqlServer.dll
+E:\doanwebser\Trangsuc\WcfServiceTrangsuc\bin\Debug\EntityFramework.xml
+E:\doanwebser\Trangsuc\WcfServiceTrangsuc\bin\Debug\EntityFramework.SqlServer.xml
+E:\doanwebser\Trangsuc\WcfServiceTrangsuc\obj\Debug\WcfServiceTrangsuc.dll
+E:\doanwebser\Trangsuc\WcfServiceTrangsuc\obj\Debug\WcfServiceTrangsuc.pdb
+E:\doanwebser\Trangsuc\WcfServiceTrangsuc\obj\Debug\WcfServiceTrangsuc.csprojResolveAssemblyReference.cache
+E:\doanwebser\Trangsuc_v1\WcfServiceTrangsuc\obj\Debug\WcfServiceTrangsuc.dll
+E:\doanwebser\Trangsuc_v1\WcfServiceTrangsuc\bin\Debug\WcfServiceTrangsuc.dll.config
+E:\doanwebser\Trangsuc_v1\WcfServiceTrangsuc\bin\Debug\WcfServiceTrangsuc.dll
+E:\doanwebser\Trangsuc_v1\WcfServiceTrangsuc\bin\Debug\WcfServiceTrangsuc.pdb
+E:\doanwebser\Trangsuc_v1\WcfServiceTrangsuc\bin\Debug\EntityFramework.dll
+E:\doanwebser\Trangsuc_v1\WcfServiceTrangsuc\bin\Debug\EntityFramework.SqlServer.dll
+E:\doanwebser\Trangsuc_v1\WcfServiceTrangsuc\bin\Debug\EntityFramework.xml
+E:\doanwebser\Trangsuc_v1\WcfServiceTrangsuc\bin\Debug\EntityFramework.SqlServer.xml
+E:\doanwebser\Trangsuc_v1\WcfServiceTrangsuc\obj\Debug\WcfServiceTrangsuc.pdb
+E:\doanwebser\Trangsuc_v2\WcfServiceTrangsuc\bin\Debug\WcfServiceTrangsuc.dll.config
+E:\doanwebser\Trangsuc_v2\WcfServiceTrangsuc\bin\Debug\WcfServiceTrangsuc.dll
+E:\doanwebser\Trangsuc_v2\WcfServiceTrangsuc\bin\Debug\WcfServiceTrangsuc.pdb
+E:\doanwebser\Trangsuc_v2\WcfServiceTrangsuc\bin\Debug\EntityFramework.dll
+E:\doanwebser\Trangsuc_v2\WcfServiceTrangsuc\bin\Debug\EntityFramework.SqlServer.dll
+E:\doanwebser\Trangsuc_v2\WcfServiceTrangsuc\bin\Debug\EntityFramework.xml
+E:\doanwebser\Trangsuc_v2\WcfServiceTrangsuc\bin\Debug\EntityFramework.SqlServer.xml
+E:\doanwebser\Trangsuc_v2\WcfServiceTrangsuc\obj\Debug\WcfServiceTrangsuc.dll
+E:\doanwebser\Trangsuc_v2\WcfServiceTrangsuc\obj\Debug\WcfServiceTrangsuc.pdb
+E:\doanwebser\Trangsuc_v3\WcfServiceTrangsuc\bin\Debug\WcfServiceTrangsuc.dll.config
+E:\doanwebser\Trangsuc_v3\WcfServiceTrangsuc\bin\Debug\WcfServiceTrangsuc.dll
+E:\doanwebser\Trangsuc_v3\WcfServiceTrangsuc\bin\Debug\WcfServiceTrangsuc.pdb
+E:\doanwebser\Trangsuc_v3\WcfServiceTrangsuc\bin\Debug\EntityFramework.dll
+E:\doanwebser\Trangsuc_v3\WcfServiceTrangsuc\bin\Debug\EntityFramework.SqlServer.dll
+E:\doanwebser\Trangsuc_v3\WcfServiceTrangsuc\bin\Debug\EntityFramework.xml
+E:\doanwebser\Trangsuc_v3\WcfServiceTrangsuc\bin\Debug\EntityFramework.SqlServer.xml
+E:\doanwebser\Trangsuc_v3\WcfServiceTrangsuc\obj\Debug\WcfServiceTrangsuc.dll
+E:\doanwebser\Trangsuc_v3\WcfServiceTrangsuc\obj\Debug\WcfServiceTrangsuc.pdb
+E:\doanwebser\Trangsuc_v4\WcfServiceTrangsuc\bin\Debug\WcfServiceTrangsuc.dll.config
+E:\doanwebser\Trangsuc_v4\WcfServiceTrangsuc\bin\Debug\WcfServiceTrangsuc.dll
+E:\doanwebser\Trangsuc_v4\WcfServiceTrangsuc\bin\Debug\WcfServiceTrangsuc.pdb
+E:\doanwebser\Trangsuc_v4\WcfServiceTrangsuc\bin\Debug\EntityFramework.dll
+E:\doanwebser\Trangsuc_v4\WcfServiceTrangsuc\bin\Debug\EntityFramework.SqlServer.dll
+E:\doanwebser\Trangsuc_v4\WcfServiceTrangsuc\bin\Debug\EntityFramework.xml
+E:\doanwebser\Trangsuc_v4\WcfServiceTrangsuc\bin\Debug\EntityFramework.SqlServer.xml
+E:\doanwebser\Trangsuc_v4\WcfServiceTrangsuc\obj\Debug\WcfServiceTrangsuc.dll
+E:\doanwebser\Trangsuc_v4\WcfServiceTrangsuc\obj\Debug\WcfServiceTrangsuc.pdb
+E:\doanwebser\Trangsuc_v4\WcfServiceTrangsuc\obj\Debug\WcfServiceTrangsuc.csprojResolveAssemblyReference.cache
+E:\doanwebser\Trangsuc_v4 - Copy (6)\WcfServiceTrangsuc\bin\Debug\WcfServiceTrangsuc.dll.config
+E:\doanwebser\Trangsuc_v4 - Copy (6)\WcfServiceTrangsuc\bin\Debug\WcfServiceTrangsuc.dll
+E:\doanwebser\Trangsuc_v4 - Copy (6)\WcfServiceTrangsuc\bin\Debug\WcfServiceTrangsuc.pdb
+E:\doanwebser\Trangsuc_v4 - Copy (6)\WcfServiceTrangsuc\bin\Debug\EntityFramework.dll
+E:\doanwebser\Trangsuc_v4 - Copy (6)\WcfServiceTrangsuc\bin\Debug\EntityFramework.SqlServer.dll
+E:\doanwebser\Trangsuc_v4 - Copy (6)\WcfServiceTrangsuc\bin\Debug\EntityFramework.xml
+E:\doanwebser\Trangsuc_v4 - Copy (6)\WcfServiceTrangsuc\bin\Debug\EntityFramework.SqlServer.xml
+E:\doanwebser\Trangsuc_v4 - Copy (6)\WcfServiceTrangsuc\obj\Debug\WcfServiceTrangsuc.csprojResolveAssemblyReference.cache
+E:\doanwebser\Trangsuc_v4 - Copy (6)\WcfServiceTrangsuc\obj\Debug\WcfServiceTrangsuc.dll
+E:\doanwebser\Trangsuc_v4 - Copy (6)\WcfServiceTrangsuc\obj\Debug\WcfServiceTrangsuc.pdb
+E:\doanwebser\Trangsuc_v4 - Copy (6) - Copy\WcfServiceTrangsuc\bin\Debug\WcfServiceTrangsuc.dll.config
+E:\doanwebser\Trangsuc_v4 - Copy (6) - Copy\WcfServiceTrangsuc\bin\Debug\WcfServiceTrangsuc.dll
+E:\doanwebser\Trangsuc_v4 - Copy (6) - Copy\WcfServiceTrangsuc\bin\Debug\WcfServiceTrangsuc.pdb
+E:\doanwebser\Trangsuc_v4 - Copy (6) - Copy\WcfServiceTrangsuc\bin\Debug\EntityFramework.dll
+E:\doanwebser\Trangsuc_v4 - Copy (6) - Copy\WcfServiceTrangsuc\bin\Debug\EntityFramework.SqlServer.dll
+E:\doanwebser\Trangsuc_v4 - Copy (6) - Copy\WcfServiceTrangsuc\bin\Debug\EntityFramework.xml
+E:\doanwebser\Trangsuc_v4 - Copy (6) - Copy\WcfServiceTrangsuc\bin\Debug\EntityFramework.SqlServer.xml
+E:\doanwebser\Trangsuc_v4 - Copy (6) - Copy\WcfServiceTrangsuc\obj\Debug\WcfServiceTrangsuc.dll
+E:\doanwebser\Trangsuc_v4 - Copy (6) - Copy\WcfServiceTrangsuc\obj\Debug\WcfServiceTrangsuc.pdb
+E:\doanwebser\Trangsuc_v4 - Copy (6) - Copy - Copy\WcfServiceTrangsuc\bin\Debug\WcfServiceTrangsuc.dll.config
+E:\doanwebser\Trangsuc_v4 - Copy (6) - Copy - Copy\WcfServiceTrangsuc\bin\Debug\WcfServiceTrangsuc.dll
+E:\doanwebser\Trangsuc_v4 - Copy (6) - Copy - Copy\WcfServiceTrangsuc\bin\Debug\WcfServiceTrangsuc.pdb
+E:\doanwebser\Trangsuc_v4 - Copy (6) - Copy - Copy\WcfServiceTrangsuc\bin\Debug\EntityFramework.dll
+E:\doanwebser\Trangsuc_v4 - Copy (6) - Copy - Copy\WcfServiceTrangsuc\bin\Debug\EntityFramework.SqlServer.dll
+E:\doanwebser\Trangsuc_v4 - Copy (6) - Copy - Copy\WcfServiceTrangsuc\bin\Debug\EntityFramework.xml
+E:\doanwebser\Trangsuc_v4 - Copy (6) - Copy - Copy\WcfServiceTrangsuc\bin\Debug\EntityFramework.SqlServer.xml
+E:\doanwebser\Trangsuc_v4 - Copy (6) - Copy - Copy\WcfServiceTrangsuc\obj\Debug\WcfServiceTrangsuc.csprojResolveAssemblyReference.cache
+E:\doanwebser\Trangsuc_v4 - Copy (6) - Copy - Copy\WcfServiceTrangsuc\obj\Debug\WcfServiceTrangsuc.dll
+E:\doanwebser\Trangsuc_v4 - Copy (6) - Copy - Copy\WcfServiceTrangsuc\obj\Debug\WcfServiceTrangsuc.pdb

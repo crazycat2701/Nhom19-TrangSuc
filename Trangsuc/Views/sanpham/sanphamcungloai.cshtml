@@ -1,0 +1,35 @@
+﻿@model IEnumerable<Trangsuc.ServiceReferenceSanpham.Sanpham_DTO>
+<div class="columncenter">
+    <div class="header-center">SẢN PHẨM CÙNG LOẠI</div>
+    <div class="trangsanpham">
+    <div style="width:580px">
+        @foreach (var item in Model)
+        {
+            string formatgia = item.Giasanpham.ToString("c");
+            formatgia = formatgia.Substring(1, formatgia.LastIndexOf(".") - 1);
+            <div class="sanpham">
+            <a title="Chi tiết" href="/sanpham/chitietsanpham?masp=@Html.DisplayFor(modelItem => item.Masanpham).ToString().Trim()"><div><img src="@Url.Content("~/"+@Html.DisplayFor(modelItem => item.Hinhanh))"/></div></a>
+            <div class="tensanpham"><table align="center"><tr height="40px" valign="middle"><td><b>@Html.DisplayFor(modelItem => item.Tensanpham)</b></td></tr></table></div>
+            <div style="color:#FF0000"><b>Giá: @formatgia VNĐ</b></div>
+            <table>
+                        <tr>
+                            <td align="right" style="width:100px;padding-left:7px; padding-right:5px">
+                                <div class="muahang">
+                                    <a title="Thêm sản phẩm vào giỏ hàng" href="/Cart/giohangthem?masanpham=@Html.DisplayFor(x => item.Masanpham)"><b>Mua hàng</b></a>
+                                </div>
+                            </td>
+                            <td align="left" style="width:60px; padding-left:5px; padding-right:10px">
+                                <div class="chitiet">
+                                    <a href="/sanpham/chitietsanpham/?masp=@Html.DisplayFor(modelItem => item.Masanpham).ToString().Trim()">Chi tiết</a>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+            </div>
+            }
+    </div>
+    </div>
+    <div>
+    @{Html.RenderAction("Index","paging", new {currentpage = "sanpham/chitietsanpham?masp="+ @ViewBag.masp, totalpages = ViewBag.TotalPages});}
+</div>
+</div>

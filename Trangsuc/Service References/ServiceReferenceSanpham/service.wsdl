@@ -1,0 +1,229 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="ServiceSanpham" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import namespace="http://tempuri.org/" />
+      <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/WcfServiceTrangsuc" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IServiceSanpham_GetAllSp_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllSp" />
+  </wsdl:message>
+  <wsdl:message name="IServiceSanpham_GetAllSp_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllSpResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceSanpham_GetAllLoaiSp_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllLoaiSp" />
+  </wsdl:message>
+  <wsdl:message name="IServiceSanpham_GetAllLoaiSp_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllLoaiSpResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceSanpham_GetLoaisp_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetLoaisp" />
+  </wsdl:message>
+  <wsdl:message name="IServiceSanpham_GetLoaisp_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetLoaispResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceSanpham_GetSpBc_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSpBc" />
+  </wsdl:message>
+  <wsdl:message name="IServiceSanpham_GetSpBc_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSpBcResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceSanpham_GetSpMoi_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSpMoi" />
+  </wsdl:message>
+  <wsdl:message name="IServiceSanpham_GetSpMoi_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSpMoiResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceSanpham_GetSpCungLoai_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSpCungLoai" />
+  </wsdl:message>
+  <wsdl:message name="IServiceSanpham_GetSpCungLoai_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSpCungLoaiResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceSanpham_Find_InputMessage">
+    <wsdl:part name="parameters" element="tns:Find" />
+  </wsdl:message>
+  <wsdl:message name="IServiceSanpham_Find_OutputMessage">
+    <wsdl:part name="parameters" element="tns:FindResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceSanpham_Insert_InputMessage">
+    <wsdl:part name="parameters" element="tns:Insert" />
+  </wsdl:message>
+  <wsdl:message name="IServiceSanpham_Insert_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceSanpham_Update_InputMessage">
+    <wsdl:part name="parameters" element="tns:Update" />
+  </wsdl:message>
+  <wsdl:message name="IServiceSanpham_Update_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceSanpham_Delete_InputMessage">
+    <wsdl:part name="parameters" element="tns:Delete" />
+  </wsdl:message>
+  <wsdl:message name="IServiceSanpham_Delete_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceSanpham_Kichhoat_InputMessage">
+    <wsdl:part name="parameters" element="tns:Kichhoat" />
+  </wsdl:message>
+  <wsdl:message name="IServiceSanpham_Kichhoat_OutputMessage">
+    <wsdl:part name="parameters" element="tns:KichhoatResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IServiceSanpham">
+    <wsdl:operation name="GetAllSp">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceSanpham/GetAllSp" message="tns:IServiceSanpham_GetAllSp_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceSanpham/GetAllSpResponse" message="tns:IServiceSanpham_GetAllSp_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllLoaiSp">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceSanpham/GetAllLoaiSp" message="tns:IServiceSanpham_GetAllLoaiSp_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceSanpham/GetAllLoaiSpResponse" message="tns:IServiceSanpham_GetAllLoaiSp_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLoaisp">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceSanpham/GetLoaisp" message="tns:IServiceSanpham_GetLoaisp_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceSanpham/GetLoaispResponse" message="tns:IServiceSanpham_GetLoaisp_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSpBc">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceSanpham/GetSpBc" message="tns:IServiceSanpham_GetSpBc_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceSanpham/GetSpBcResponse" message="tns:IServiceSanpham_GetSpBc_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSpMoi">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceSanpham/GetSpMoi" message="tns:IServiceSanpham_GetSpMoi_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceSanpham/GetSpMoiResponse" message="tns:IServiceSanpham_GetSpMoi_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSpCungLoai">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceSanpham/GetSpCungLoai" message="tns:IServiceSanpham_GetSpCungLoai_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceSanpham/GetSpCungLoaiResponse" message="tns:IServiceSanpham_GetSpCungLoai_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Find">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceSanpham/Find" message="tns:IServiceSanpham_Find_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceSanpham/FindResponse" message="tns:IServiceSanpham_Find_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Insert">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceSanpham/Insert" message="tns:IServiceSanpham_Insert_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceSanpham/InsertResponse" message="tns:IServiceSanpham_Insert_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Update">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceSanpham/Update" message="tns:IServiceSanpham_Update_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceSanpham/UpdateResponse" message="tns:IServiceSanpham_Update_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Delete">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceSanpham/Delete" message="tns:IServiceSanpham_Delete_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceSanpham/DeleteResponse" message="tns:IServiceSanpham_Delete_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Kichhoat">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceSanpham/Kichhoat" message="tns:IServiceSanpham_Kichhoat_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceSanpham/KichhoatResponse" message="tns:IServiceSanpham_Kichhoat_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IServiceSanpham" type="tns:IServiceSanpham">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetAllSp">
+      <soap:operation soapAction="http://tempuri.org/IServiceSanpham/GetAllSp" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllLoaiSp">
+      <soap:operation soapAction="http://tempuri.org/IServiceSanpham/GetAllLoaiSp" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLoaisp">
+      <soap:operation soapAction="http://tempuri.org/IServiceSanpham/GetLoaisp" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSpBc">
+      <soap:operation soapAction="http://tempuri.org/IServiceSanpham/GetSpBc" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSpMoi">
+      <soap:operation soapAction="http://tempuri.org/IServiceSanpham/GetSpMoi" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSpCungLoai">
+      <soap:operation soapAction="http://tempuri.org/IServiceSanpham/GetSpCungLoai" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Find">
+      <soap:operation soapAction="http://tempuri.org/IServiceSanpham/Find" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Insert">
+      <soap:operation soapAction="http://tempuri.org/IServiceSanpham/Insert" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Update">
+      <soap:operation soapAction="http://tempuri.org/IServiceSanpham/Update" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Delete">
+      <soap:operation soapAction="http://tempuri.org/IServiceSanpham/Delete" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Kichhoat">
+      <soap:operation soapAction="http://tempuri.org/IServiceSanpham/Kichhoat" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ServiceSanpham">
+    <wsdl:port name="BasicHttpBinding_IServiceSanpham" binding="tns:BasicHttpBinding_IServiceSanpham">
+      <soap:address location="http://localhost:8733/Design_Time_Addresses/WcfServiceTrangsuc/Service1/" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

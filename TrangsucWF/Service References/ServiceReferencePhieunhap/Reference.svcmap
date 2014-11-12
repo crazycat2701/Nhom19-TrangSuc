@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="924fc54e-dbf5-4c16-b544-9e4cc17014c3" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:8733/Design_Time_Addresses/WcfServiceTrangsuc/ServicePhieunhap/mex" Protocol="mex" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="service.wsdl" MetadataType="Wsdl" ID="11c9af40-2d7d-4d64-b8df-ce8221a0607d" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/WcfServiceTrangsuc/ServicePhieunhap/mex" />
+    <MetadataFile FileName="service.xsd" MetadataType="Schema" ID="35b572f6-6946-4350-b032-220c0125c055" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/WcfServiceTrangsuc/ServicePhieunhap/mex" />
+    <MetadataFile FileName="service1.xsd" MetadataType="Schema" ID="7285eef8-9eff-4535-aff6-adcbbf7b48d6" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/WcfServiceTrangsuc/ServicePhieunhap/mex" />
+    <MetadataFile FileName="WcfServiceTrangsuc.xsd" MetadataType="Schema" ID="655534e4-9ca1-4c48-80fa-25e59cbe96f1" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/WcfServiceTrangsuc/ServicePhieunhap/mex" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

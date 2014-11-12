@@ -1,0 +1,76 @@
+﻿@model Trangsuc.Models.Cart
+
+@{
+    ViewBag.Title = "Index";
+}
+<div class="covercenter">
+<div class="columncenter">
+    <div class="header-center">GIỎ HÀNG</div>    
+    <div class="noidunggiua"><hr color="336699" size="2" /></div>
+<table align="center" bgcolor="#FFFFFF"  style=" border-color:"#000000" " border="1" cellspacing="2" cellpadding="4">
+                <tr>
+                      <td align="center" width="45"><span style="color: #0000FF"><b>Mã SP</b></span></td>
+                      <td align="center" width="140"><span style="color: #0000FF"><b>Tên SP</b></span></td>
+                      <td align="center" width="70"><span style="color: #0000FF"><b>Số lượng</b></span></td>
+                      <td align="center" width="95"><span style="color: #0000FF"><b>Đơn giá</b></span></td>
+                      <td align="center" width="90"><span style="color: #0000FF"><b>Thành tiền</b></span></td> 
+                      <td align="center" width="30"><span style="color: #0000FF"><b>Xóa</b></span></td>
+                </tr>
+                @foreach(var line in Model.Lines)
+                {
+                    string formatgia = line.giasanpham.ToString("c");
+                    formatgia = formatgia.Substring(1, formatgia.LastIndexOf(".") - 1);
+                    string thanhtien = (line.giasanpham * line.Quantity).ToString("c");
+                    thanhtien = thanhtien.Substring(1, thanhtien.LastIndexOf(".") - 1);
+                     <tr>
+                      <td align="center" width="50">@line.masp</td>
+                      <td align="center" width="140">@line.tensp</td>
+                      <td align="center" width="80">
+                       @using (Html.BeginForm("capnhatsoluong", "cart", new {masanpham=@line.masp }))
+                       {                 
+                       <input type="text" name="soluong" size="1" value="@line.Quantity" />                        
+                       <input style="cursor:pointer" type="submit" title="Cập nhật thành tiền" alt="Cập nhật" class="updatesoluong" value="" />
+                        
+                       }                    
+                      </td>
+                      <td align="center" width="75">@formatgia VNĐ</td>             
+                      <td align="center" width="80">@thanhtien VNĐ</td>
+                      <td align="center" width="30"><a onclick="return xacnhanxoa('@line.masp')" href="/Cart/giohangxoa?masanpham=@line.masp"><img src="../Image/xoa-icon.png" title="Xoá sản phẩm" alt="Xoá"></a></td>
+                </tr>
+                }    
+                <tr>
+                    @{ string tongtien = Model.tongtien().ToString("c");
+                       tongtien = tongtien.Substring(1, tongtien.LastIndexOf(".") - 1);
+                    }
+                	  <td colspan="4" align="center"><b style="color:#FF0000">TỔNG TIỀN HÀNG</b></td>
+                      <td align="center" width="100"><b style="color:#FF0000">@tongtien VNĐ</b></td>
+                      <td align="center" width="30"><a href="/cart/xoahet/">
+                          <input type="image" border="0" align="absmiddle" src="../Image/xoahet.png" title="Xoá hết sản phẩm trong giỏ" onclick="return xacnhanxoahet()">
+                          </a></td>
+                </tr>
+              </table>
+              <p></p>
+              <table align="center"  border="0" >
+                    <tr>
+                          <td align="left" width="150"><span><a href="/home"><b>TIẾP TỤC MUA HÀNG</b></a></span></td>
+                          @if (Model.Lines.Count() == 0)
+                          {
+                          <td align="right" width="150"><span><a  onclick="alert('Bạn chưa có sản phẫm nào!')"> THANH TOÁN TIỀN </a></span></td>
+                          }
+                          else if (Session["User"]!=null)
+                          {
+                           <td align="right" width="150"><span><a  href="/cart/thanhtoangiohang"><b>THANH TOÁN TIỀN</b></a></span></td>
+
+                          }
+                          else
+                          {
+                           <td align="right" width="150"><span><a  onclick="alert('Bạn phải đăng nhập để thanh toán')">THANH TOÁN TIỀN </a></span></td>
+                          }
+                         <td align="right" width="100"><a href="/cart/xoahet/">
+                          <input type="image" border="0" align="absmiddle" src="../Image/xoahet1.png" title="Xoá hết sản phẩm trong giỏ" onclick="return xacnhanxoahet()">
+                          </a></td>
+                    </tr>
+            </table>
+            <div class="noidunggiua"><hr color="336699" size="2" /></div>
+</div>
+</div>

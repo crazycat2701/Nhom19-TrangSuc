@@ -1,0 +1,15 @@
+﻿@model Trangsuc.Models.Cart
+@{
+    ViewBag.Title = "menugiohang";
+}
+<div class="header-column">MUA HÀNG TRỰC TUYẾN</div>
+                <div class="noidungcanhtrai">
+                @{
+                    string tongtien = Model.tongtien().ToString("c");
+                    tongtien = tongtien.Substring(1, tongtien.LastIndexOf(".") - 1);
+                }
+        	        <div style="margin-top:10px"><a href="/cart/Index"><img src="@Url.Content("~/Image/giohang.png")" align="middle" /></a></div>
+                	<div style="text-align:center; margin-top:10px">Tổng sản phẩm : <b style="color:#cc0000">@Model.tongsanpham().ToString()</b> </div>
+            		<div style="text-align:center; margin-top: 5px; margin-bottom: 5px;">Tổng số tiền : <b style="color:#cc0000">@tongtien VNĐ</b></div>
+                </div>
+

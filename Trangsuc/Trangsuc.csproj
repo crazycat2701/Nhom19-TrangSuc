@@ -1,0 +1,744 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{10AB7B1F-3442-4D21-B3BB-B0FD3C7CAC33}</ProjectGuid>
+    <ProjectTypeGuids>{E53F8FEA-EAE0-44A6-8774-FFD645390401};{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Trangsuc</RootNamespace>
+    <AssemblyName>Trangsuc</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication>disabled</IISExpressAnonymousAuthentication>
+    <IISExpressWindowsAuthentication>enabled</IISExpressWindowsAuthentication>
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net40\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.1.0.20105.408\lib\net40\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.3.0.20105.1\lib\net40\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.1.0.20105.408\lib\net40\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.1.0.20105.408\lib\net40\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.1.0.20105.408\lib\net40\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.1.0.20105.408\lib\net40\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
+    <Compile Include="Areas\Admin\Controllers\adminpagingController.cs" />
+    <Compile Include="Areas\Admin\Controllers\dangnhapController.cs" />
+    <Compile Include="Areas\Admin\Controllers\IndexController.cs" />
+    <Compile Include="Areas\Admin\Controllers\quanlynguoidungController.cs" />
+    <Compile Include="Areas\Admin\Controllers\quanlysanphamController.cs" />
+    <Compile Include="Controllers\cartController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\loaisanphamController.cs" />
+    <Compile Include="Controllers\pagingController.cs" />
+    <Compile Include="Controllers\sanphamController.cs" />
+    <Compile Include="Controllers\userController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\admin.cs" />
+    <Compile Include="Models\cart.cs" />
+    <Compile Include="Models\hoadon.cs" />
+    <Compile Include="Models\nguoidung.cs" />
+    <Compile Include="Models\sanpham.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service References\ServiceReferenceAdmin\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\ServiceReferenceHoadon\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\ServiceReferenceNguoidung\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\ServiceReferenceSanpham\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\ServiceReferenceTonkho\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\adminsite.css" />
+    <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Content\themes\base\images\ui-icons_222222_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_454545_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_888888_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Content\themes\base\jquery-ui.css" />
+    <Content Include="Content\themes\base\jquery.ui.accordion.css" />
+    <Content Include="Content\themes\base\jquery.ui.all.css" />
+    <Content Include="Content\themes\base\jquery.ui.autocomplete.css" />
+    <Content Include="Content\themes\base\jquery.ui.base.css" />
+    <Content Include="Content\themes\base\jquery.ui.button.css" />
+    <Content Include="Content\themes\base\jquery.ui.core.css" />
+    <Content Include="Content\themes\base\jquery.ui.datepicker.css" />
+    <Content Include="Content\themes\base\jquery.ui.dialog.css" />
+    <Content Include="Content\themes\base\jquery.ui.progressbar.css" />
+    <Content Include="Content\themes\base\jquery.ui.resizable.css" />
+    <Content Include="Content\themes\base\jquery.ui.selectable.css" />
+    <Content Include="Content\themes\base\jquery.ui.slider.css" />
+    <Content Include="Content\themes\base\jquery.ui.tabs.css" />
+    <Content Include="Content\themes\base\jquery.ui.theme.css" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_222222_256x240.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_454545_256x240.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_888888_256x240.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Content\themes\base\minified\jquery-ui.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.accordion.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.autocomplete.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.button.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.core.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.datepicker.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.dialog.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.progressbar.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.resizable.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.selectable.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.slider.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.tabs.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.theme.min.css" />
+    <Content Include="Global.asax" />
+    <Content Include="Areas\Admin\Views\Web.config" />
+    <Content Include="Areas\Admin\Views\adminpaging\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\dangnhap\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\Index\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\quanlynguoidung\danhsachuser.cshtml" />
+    <Content Include="Areas\Admin\Views\quanlynguoidung\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\quanlynguoidung\ketquatimkiem.cshtml" />
+    <Content Include="Areas\Admin\Views\quanlynguoidung\Menu.cshtml" />
+    <Content Include="Areas\Admin\Views\quanlynguoidung\nguoidungan.cshtml" />
+    <Content Include="Areas\Admin\Views\quanlynguoidung\suathongtin.cshtml" />
+    <Content Include="Areas\Admin\Views\quanlynguoidung\timkiemnguoidung.cshtml" />
+    <Content Include="Areas\Admin\Views\quanlysanpham\danhmuc.cshtml" />
+    <Content Include="Areas\Admin\Views\quanlysanpham\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\quanlysanpham\ketquatimkiem.cshtml" />
+    <Content Include="Areas\Admin\Views\quanlysanpham\ketquatimkiemdanhmuc.cshtml" />
+    <Content Include="Areas\Admin\Views\quanlysanpham\Menu.cshtml" />
+    <Content Include="Areas\Admin\Views\quanlysanpham\sanphaman.cshtml" />
+    <Content Include="Areas\Admin\Views\quanlysanpham\suathongtin.cshtml" />
+    <Content Include="Areas\Admin\Views\quanlysanpham\themsanpham.cshtml" />
+    <Content Include="Areas\Admin\Views\Shared\_Layoutadmin.cshtml" />
+    <None Include="Scripts\jquery-1.7.1.intellisense.js" />
+    <Content Include="Images\back.png" />
+    <Content Include="Images\back1.png" />
+    <Content Include="Images\bg.jpg" />
+    <Content Include="Images\check.png" />
+    <Content Include="Images\ctdonhang.png" />
+    <Content Include="Images\error.png" />
+    <Content Include="Images\female.png" />
+    <Content Include="Images\logo.gif" />
+    <Content Include="Images\logo.png" />
+    <Content Include="Images\male.png" />
+    <Content Include="Images\menu_bg.gif" />
+    <Content Include="Images\menu_bg_a.gif" />
+    <Content Include="Images\nam.png" />
+    <Content Include="Images\nguoidung.png" />
+    <Content Include="Images\notice.png" />
+    <Content Include="Images\nu.png" />
+    <Content Include="Images\phuchoi.png" />
+    <Content Include="Images\qlhoadon.png" />
+    <Content Include="Images\qlnguoidung.png" />
+    <Content Include="Images\qlsanpham.gif" />
+    <Content Include="Images\red_bt.gif" />
+    <Content Include="Images\red_bt_a.gif" />
+    <Content Include="Images\sidebar_box_bottom.gif" />
+    <Content Include="Images\sidebar_box_top.gif" />
+    <Content Include="Images\sidebar_menu_top.gif" />
+    <Content Include="Images\sidebar_menu_top_a.gif" />
+    <Content Include="Images\sua.png" />
+    <Content Include="Images\them.png" />
+    <Content Include="Images\timkiem.png" />
+    <Content Include="Images\trash.png" />
+    <Content Include="Images\user.png" />
+    <Content Include="Images\user_edit.png" />
+    <Content Include="Images\user_logout.png" />
+    <Content Include="Images\valid.png" />
+    <Content Include="Images\warning.png" />
+    <Content Include="Images\xoa.png" />
+    <Content Include="Image\banner.jpg" />
+    <Content Include="Image\bongtai\1.jpg" />
+    <Content Include="Image\bongtai\10.jpg" />
+    <Content Include="Image\bongtai\11.jpg" />
+    <Content Include="Image\bongtai\12.jpg" />
+    <Content Include="Image\bongtai\2.jpg" />
+    <Content Include="Image\bongtai\3.jpg" />
+    <Content Include="Image\bongtai\4.jpg" />
+    <Content Include="Image\bongtai\5.jpg" />
+    <Content Include="Image\bongtai\6.jpg" />
+    <Content Include="Image\bongtai\7.jpg" />
+    <Content Include="Image\bongtai\8.jpg" />
+    <Content Include="Image\bongtai\9.jpg" />
+    <Content Include="Image\bongtai\Hydrangeas.jpg" />
+    <Content Include="Image\bongtai\Jellyfish.jpg" />
+    <Content Include="Image\bongtai\Koala.jpg" />
+    <Content Include="Image\bongtai\Penguins.jpg" />
+    <Content Include="Image\bongtai\tkb.png" />
+    <Content Include="Image\bongtai\Tulips.jpg" />
+    <Content Include="Image\chitiet.png" />
+    <Content Include="Image\conhang.png" />
+    <Content Include="Image\daychuyen\1.jpg" />
+    <Content Include="Image\daychuyen\10.jpg" />
+    <Content Include="Image\daychuyen\11.jpg" />
+    <Content Include="Image\daychuyen\12.jpg" />
+    <Content Include="Image\daychuyen\13.jpg" />
+    <Content Include="Image\daychuyen\14.jpg" />
+    <Content Include="Image\daychuyen\15.jpg" />
+    <Content Include="Image\daychuyen\16.jpg" />
+    <Content Include="Image\daychuyen\17.jpg" />
+    <Content Include="Image\daychuyen\18.jpg" />
+    <Content Include="Image\daychuyen\19.jpg" />
+    <Content Include="Image\daychuyen\2.jpg" />
+    <Content Include="Image\daychuyen\20.png" />
+    <Content Include="Image\daychuyen\21.jpg" />
+    <Content Include="Image\daychuyen\22.jpg" />
+    <Content Include="Image\daychuyen\23.jpg" />
+    <Content Include="Image\daychuyen\24.jpg" />
+    <Content Include="Image\daychuyen\25.jpg" />
+    <Content Include="Image\daychuyen\26.jpg" />
+    <Content Include="Image\daychuyen\27.jpg" />
+    <Content Include="Image\daychuyen\28.jpg" />
+    <Content Include="Image\daychuyen\3.jpg" />
+    <Content Include="Image\daychuyen\30.jpg" />
+    <Content Include="Image\daychuyen\31.jpg" />
+    <Content Include="Image\daychuyen\32.jpg" />
+    <Content Include="Image\daychuyen\33.jpg" />
+    <Content Include="Image\daychuyen\34.jpg" />
+    <Content Include="Image\daychuyen\35.jpg" />
+    <Content Include="Image\daychuyen\36.jpg" />
+    <Content Include="Image\daychuyen\37.jpg" />
+    <Content Include="Image\daychuyen\38.jpg" />
+    <Content Include="Image\daychuyen\39.jpg" />
+    <Content Include="Image\daychuyen\4.jpg" />
+    <Content Include="Image\daychuyen\40.jpg" />
+    <Content Include="Image\daychuyen\41.jpg" />
+    <Content Include="Image\daychuyen\42.jpg" />
+    <Content Include="Image\daychuyen\43.jpg" />
+    <Content Include="Image\daychuyen\44.jpg" />
+    <Content Include="Image\daychuyen\45.jpg" />
+    <Content Include="Image\daychuyen\46.jpg" />
+    <Content Include="Image\daychuyen\47.jpg" />
+    <Content Include="Image\daychuyen\48.jpg" />
+    <Content Include="Image\daychuyen\49.jpg" />
+    <Content Include="Image\daychuyen\5.jpg" />
+    <Content Include="Image\daychuyen\50.jpg" />
+    <Content Include="Image\daychuyen\51.jpg" />
+    <Content Include="Image\daychuyen\52.jpg" />
+    <Content Include="Image\daychuyen\53.jpg" />
+    <Content Include="Image\daychuyen\54.jpg" />
+    <Content Include="Image\daychuyen\55.jpg" />
+    <Content Include="Image\daychuyen\56.jpg" />
+    <Content Include="Image\daychuyen\57.jpg" />
+    <Content Include="Image\daychuyen\58.jpg" />
+    <Content Include="Image\daychuyen\59.jpg" />
+    <Content Include="Image\daychuyen\6.jpg" />
+    <Content Include="Image\daychuyen\60.jpg" />
+    <Content Include="Image\daychuyen\7.jpg" />
+    <Content Include="Image\daychuyen\8.jpg" />
+    <Content Include="Image\daychuyen\9.jpg" />
+    <Content Include="Image\edit.jpg" />
+    <Content Include="Image\footer.png" />
+    <Content Include="Image\giohang.png" />
+    <Content Include="Image\hinhdangnhap.png" />
+    <Content Include="Image\icon.png" />
+    <Content Include="Image\images.png" />
+    <Content Include="Image\lac\1.png" />
+    <Content Include="Image\lac\10.jpg" />
+    <Content Include="Image\lac\11.jpg" />
+    <Content Include="Image\lac\12.jpg" />
+    <Content Include="Image\lac\13.jpg" />
+    <Content Include="Image\lac\14.jpg" />
+    <Content Include="Image\lac\15.jpg" />
+    <Content Include="Image\lac\16.jpg" />
+    <Content Include="Image\lac\17.jpg" />
+    <Content Include="Image\lac\18.jpg" />
+    <Content Include="Image\lac\19.jpg" />
+    <Content Include="Image\lac\2.jpg" />
+    <Content Include="Image\lac\20.png" />
+    <Content Include="Image\lac\21.jpg" />
+    <Content Include="Image\lac\22.jpg" />
+    <Content Include="Image\lac\23.jpg" />
+    <Content Include="Image\lac\24.jpg" />
+    <Content Include="Image\lac\25.jpg" />
+    <Content Include="Image\lac\26.jpg" />
+    <Content Include="Image\lac\27.jpg" />
+    <Content Include="Image\lac\28.jpg" />
+    <Content Include="Image\lac\29.jpg" />
+    <Content Include="Image\lac\3.jpg" />
+    <Content Include="Image\lac\30.jpg" />
+    <Content Include="Image\lac\31.jpg" />
+    <Content Include="Image\lac\32.jpg" />
+    <Content Include="Image\lac\33.jpg" />
+    <Content Include="Image\lac\34.jpg" />
+    <Content Include="Image\lac\35.jpg" />
+    <Content Include="Image\lac\35.png" />
+    <Content Include="Image\lac\36.jpg" />
+    <Content Include="Image\lac\37.jpg" />
+    <Content Include="Image\lac\38.jpg" />
+    <Content Include="Image\lac\39.jpg" />
+    <Content Include="Image\lac\4.jpg" />
+    <Content Include="Image\lac\40.jpg" />
+    <Content Include="Image\lac\41.jpg" />
+    <Content Include="Image\lac\42.jpg" />
+    <Content Include="Image\lac\43.jpg" />
+    <Content Include="Image\lac\44.jpg" />
+    <Content Include="Image\lac\45.jpg" />
+    <Content Include="Image\lac\46.jpg" />
+    <Content Include="Image\lac\47.jpg" />
+    <Content Include="Image\lac\48.jpg" />
+    <Content Include="Image\lac\5.jpg" />
+    <Content Include="Image\lac\6.jpg" />
+    <Content Include="Image\lac\7.jpg" />
+    <Content Include="Image\lac\8.jpg" />
+    <Content Include="Image\lac\9.jpg" />
+    <Content Include="Image\logofix.png" />
+    <Content Include="Image\matday\1.jpg" />
+    <Content Include="Image\matday\10.jpg" />
+    <Content Include="Image\matday\11.jpg" />
+    <Content Include="Image\matday\12.jpg" />
+    <Content Include="Image\matday\2.jpg" />
+    <Content Include="Image\matday\3.jpg" />
+    <Content Include="Image\matday\4.jpg" />
+    <Content Include="Image\matday\5.jpg" />
+    <Content Include="Image\matday\6.jpg" />
+    <Content Include="Image\matday\7.jpg" />
+    <Content Include="Image\matday\8.jpg" />
+    <Content Include="Image\matday\9.jpg" />
+    <Content Include="Image\menu-space.jpg" />
+    <Content Include="Image\menu_bg.jpg" />
+    <Content Include="Image\menu_line.jpg" />
+    <Content Include="Image\mhoang.jpg" />
+    <Content Include="Image\muahang.png" />
+    <Content Include="Image\muahang1.png" />
+    <Content Include="Image\nhan\1.jpg" />
+    <Content Include="Image\nhan\10.jpg" />
+    <Content Include="Image\nhan\11.jpg" />
+    <Content Include="Image\nhan\12.jpg" />
+    <Content Include="Image\nhan\13.jpg" />
+    <Content Include="Image\nhan\14.jpg" />
+    <Content Include="Image\nhan\15.jpg" />
+    <Content Include="Image\nhan\16.jpg" />
+    <Content Include="Image\nhan\17.jpg" />
+    <Content Include="Image\nhan\18.jpg" />
+    <Content Include="Image\nhan\19.jpg" />
+    <Content Include="Image\nhan\2.jpg" />
+    <Content Include="Image\nhan\20.jpg" />
+    <Content Include="Image\nhan\21.jpg" />
+    <Content Include="Image\nhan\22.jpg" />
+    <Content Include="Image\nhan\23.gif" />
+    <Content Include="Image\nhan\24.gif" />
+    <Content Include="Image\nhan\25.jpg" />
+    <Content Include="Image\nhan\26.jpg" />
+    <Content Include="Image\nhan\27.jpg" />
+    <Content Include="Image\nhan\28.gif" />
+    <Content Include="Image\nhan\29.jpg" />
+    <Content Include="Image\nhan\3.jpg" />
+    <Content Include="Image\nhan\30.jpg" />
+    <Content Include="Image\nhan\31.jpg" />
+    <Content Include="Image\nhan\32.jpg" />
+    <Content Include="Image\nhan\33.jpg" />
+    <Content Include="Image\nhan\34.jpg" />
+    <Content Include="Image\nhan\35.jpg" />
+    <Content Include="Image\nhan\36.jpg" />
+    <Content Include="Image\nhan\37.jpg" />
+    <Content Include="Image\nhan\38.jpg" />
+    <Content Include="Image\nhan\39.jpg" />
+    <Content Include="Image\nhan\4.jpg" />
+    <Content Include="Image\nhan\40.jpg" />
+    <Content Include="Image\nhan\41.jpg" />
+    <Content Include="Image\nhan\42.jpg" />
+    <Content Include="Image\nhan\43.jpg" />
+    <Content Include="Image\nhan\44.jpg" />
+    <Content Include="Image\nhan\45.jpg" />
+    <Content Include="Image\nhan\46.jpg" />
+    <Content Include="Image\nhan\47.jpg" />
+    <Content Include="Image\nhan\48.jpg" />
+    <Content Include="Image\nhan\49.jpg" />
+    <Content Include="Image\nhan\5.jpg" />
+    <Content Include="Image\nhan\50.jpg" />
+    <Content Include="Image\nhan\51.jpg" />
+    <Content Include="Image\nhan\52.jpg" />
+    <Content Include="Image\nhan\53.jpg" />
+    <Content Include="Image\nhan\54.jpg" />
+    <Content Include="Image\nhan\55.jpg" />
+    <Content Include="Image\nhan\56.jpg" />
+    <Content Include="Image\nhan\57.jpg" />
+    <Content Include="Image\nhan\58.jpg" />
+    <Content Include="Image\nhan\59.jpg" />
+    <Content Include="Image\nhan\6.jpg" />
+    <Content Include="Image\nhan\60.jpg" />
+    <Content Include="Image\nhan\61.jpg" />
+    <Content Include="Image\nhan\7.jpg" />
+    <Content Include="Image\nhan\8.jpg" />
+    <Content Include="Image\nhan\9.jpg" />
+    <Content Include="Image\nhan\Chrysanthemum.jpg" />
+    <Content Include="Image\nhan\thac_mac.jpg" />
+    <Content Include="Image\ninhannew.png" />
+    <Content Include="Image\nivong.png" />
+    <Content Include="Image\offline.gif" />
+    <Content Include="Image\online.gif" />
+    <Content Include="Image\plus_add_blue.png" />
+    <Content Include="Image\quan5.jpg" />
+    <Content Include="Image\quan5.png" />
+    <Content Include="Image\quan7.jpg" />
+    <Content Include="Image\quan7.png" />
+    <Content Include="Image\quangcao.png" />
+    <Content Include="Image\refresh-icon.png" />
+    <Content Include="Image\sanphamkhuyenmai\km1.jpg" />
+    <Content Include="Image\sanphamkhuyenmai\km2.jpg" />
+    <Content Include="Image\sanphamkhuyenmai\km3.jpg" />
+    <Content Include="Image\sanphamkhuyenmai\km4.jpg" />
+    <Content Include="Image\sanphamkhuyenmai\km5.jpg" />
+    <Content Include="Image\sanphamkhuyenmai\km6.jpg" />
+    <Content Include="Image\search-icon.png" />
+    <Content Include="Image\sizenhan.jpg" />
+    <Content Include="Image\star.gif" />
+    <Content Include="Image\tanbinh.jpg" />
+    <Content Include="Image\tanbinh.png" />
+    <Content Include="Image\tanh.jpg" />
+    <Content Include="Image\tieptucmuahang.png" />
+    <Content Include="Image\tintuc\giavang.jpg" />
+    <Content Include="Image\tintuc\kimcuong.jpg" />
+    <Content Include="Image\tintuc\kimcuong1.jpg" />
+    <Content Include="Image\tintuc\kimcuong2.jpg" />
+    <Content Include="Image\tintuc\kimcuong3.jpg" />
+    <Content Include="Image\tintuc\nguoimau1.jpg" />
+    <Content Include="Image\tintuc\nguoimau2.jpg" />
+    <Content Include="Image\tintuc\nguoimau3.jpg" />
+    <Content Include="Image\tintuc\nguoimau4.jpg" />
+    <Content Include="Image\tintuc\nuhoangquangcao.jpg" />
+    <Content Include="Image\vong\1.jpg" />
+    <Content Include="Image\vong\10.jpg" />
+    <Content Include="Image\vong\11.jpg" />
+    <Content Include="Image\vong\12.jpg" />
+    <Content Include="Image\vong\13.jpg" />
+    <Content Include="Image\vong\14.jpg" />
+    <Content Include="Image\vong\15.jpg" />
+    <Content Include="Image\vong\16.jpg" />
+    <Content Include="Image\vong\17.jpg" />
+    <Content Include="Image\vong\18.jpg" />
+    <Content Include="Image\vong\19.jpg" />
+    <Content Include="Image\vong\2.jpg" />
+    <Content Include="Image\vong\20.jpg" />
+    <Content Include="Image\vong\3.jpg" />
+    <Content Include="Image\vong\4.jpg" />
+    <Content Include="Image\vong\5.jpg" />
+    <Content Include="Image\vong\6.jpg" />
+    <Content Include="Image\vong\7.jpg" />
+    <Content Include="Image\vong\8.jpg" />
+    <Content Include="Image\vong\9.jpg" />
+    <Content Include="Image\wall1.png" />
+    <Content Include="Image\xoa-icon.png" />
+    <Content Include="Image\xoahet.png" />
+    <Content Include="Image\xoahet1.png" />
+    <Content Include="Scripts\jquery-1.7.1.js" />
+    <Content Include="Scripts\jquery-1.7.1.min.js" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery-ui-1.8.20.js" />
+    <Content Include="Scripts\jquery-ui-1.8.20.min.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\modernizr-2.5.3.js" />
+    <None Include="Service References\ServiceReferenceAdmin\service.wsdl" />
+    <None Include="Service References\ServiceReferenceAdmin\service.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReferenceAdmin\service1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Service References\ServiceReferenceAdmin\Trangsuc.ServiceReferenceAdmin.admin.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Service References\ServiceReferenceAdmin\WcfServiceTrangsuc.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReferenceHoadon\service.wsdl" />
+    <None Include="Service References\ServiceReferenceHoadon\service.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReferenceHoadon\service1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReferenceAdmin\configuration91.svcinfo" />
+    <None Include="Service References\ServiceReferenceAdmin\configuration.svcinfo" />
+    <None Include="Service References\ServiceReferenceAdmin\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="Service References\ServiceReferenceHoadon\Trangsuc.ServiceReferenceHoadon.Chitiethoadon_DTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\ServiceReferenceHoadon\Trangsuc.ServiceReferenceHoadon.Hoadon_DTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Service References\ServiceReferenceHoadon\WcfServiceTrangsuc.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReferenceNguoidung\service.wsdl" />
+    <None Include="Service References\ServiceReferenceNguoidung\service.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReferenceNguoidung\service1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Service References\ServiceReferenceNguoidung\Trangsuc.ServiceReferenceNguoidung.Nguoidung_DTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\ServiceReferenceNguoidung\Trangsuc.ServiceReferenceNguoidung.Phanquyen_DTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Service References\ServiceReferenceNguoidung\WcfServiceTrangsuc.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReferenceSanpham\configuration91.svcinfo" />
+    <None Include="Service References\ServiceReferenceSanpham\configuration.svcinfo" />
+    <None Include="Service References\ServiceReferenceSanpham\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="Scripts\script.js" />
+    <None Include="Service References\ServiceReferenceHoadon\configuration91.svcinfo" />
+    <None Include="Service References\ServiceReferenceHoadon\configuration.svcinfo" />
+    <None Include="Service References\ServiceReferenceHoadon\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\ServiceReferenceNguoidung\configuration91.svcinfo" />
+    <None Include="Service References\ServiceReferenceNguoidung\configuration.svcinfo" />
+    <None Include="Service References\ServiceReferenceNguoidung\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\ServiceReferenceTonkho\configuration91.svcinfo" />
+    <None Include="Service References\ServiceReferenceTonkho\configuration.svcinfo" />
+    <None Include="Service References\ServiceReferenceTonkho\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Content\Site.css" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\MicrosoftAjax.js" />
+    <Content Include="Scripts\MicrosoftAjax.debug.js" />
+    <Content Include="Scripts\MicrosoftMvcAjax.js" />
+    <Content Include="Scripts\MicrosoftMvcAjax.debug.js" />
+    <Content Include="Scripts\MicrosoftMvcValidation.js" />
+    <Content Include="Scripts\MicrosoftMvcValidation.debug.js" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Web.config" />
+    <Content Include="packages.config" />
+    <None Include="Service References\ServiceReferenceSanpham\service.wsdl" />
+    <None Include="Service References\ServiceReferenceSanpham\service.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReferenceSanpham\service1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Service References\ServiceReferenceSanpham\Trangsuc.ServiceReferenceSanpham.Loaisanpham_DTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\ServiceReferenceSanpham\Trangsuc.ServiceReferenceSanpham.Sanpham_DTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Service References\ServiceReferenceSanpham\WcfServiceTrangsuc.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Views\Home\CuaHang.cshtml" />
+    <Content Include="Views\Home\GioiThieu.cshtml" />
+    <Content Include="Views\Home\TinTuc.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Home\TuyenDung.cshtml" />
+    <Content Include="Views\loaisanpham\Menu.cshtml" />
+    <Content Include="Views\loaisanpham\Menutimkiem.cshtml" />
+    <Content Include="Views\sanpham\chitietsanpham.cshtml" />
+    <Content Include="Views\sanpham\DanhMuc.cshtml" />
+    <Content Include="Views\sanpham\KhungTimKiem.cshtml" />
+    <Content Include="Views\sanpham\sanphamcungloai.cshtml" />
+    <Content Include="Views\sanpham\spbanchay.cshtml" />
+    <Content Include="Views\sanpham\TimKiem.cshtml" />
+    <Content Include="Views\sanpham\TimKiemNangCao.cshtml" />
+    <Content Include="Views\paging\Index.cshtml" />
+    <Content Include="Views\cart\footergiohang.cshtml" />
+    <Content Include="Views\cart\Index.cshtml" />
+    <Content Include="Views\cart\menugiohang.cshtml" />
+    <Content Include="Views\cart\thanhtoangiohang.cshtml" />
+    <Content Include="Views\user\DangKy.cshtml" />
+    <Content Include="Views\user\DangNhap.cshtml" />
+    <Content Include="Views\user\SuaThongTin.cshtml" />
+    <None Include="Service References\ServiceReferenceTonkho\service.wsdl" />
+    <None Include="Service References\ServiceReferenceTonkho\service.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReferenceTonkho\service1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Service References\ServiceReferenceTonkho\Trangsuc.ServiceReferenceTonkho.Tonkho_DTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Service References\ServiceReferenceTonkho\WcfServiceTrangsuc.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Views\user\Quenmatkhau.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Areas\Admin\Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\ServiceReferenceAdmin\" />
+    <WCFMetadataStorage Include="Service References\ServiceReferenceHoadon\" />
+    <WCFMetadataStorage Include="Service References\ServiceReferenceNguoidung\" />
+    <WCFMetadataStorage Include="Service References\ServiceReferenceSanpham\" />
+    <WCFMetadataStorage Include="Service References\ServiceReferenceTonkho\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>33347</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:52730/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>
