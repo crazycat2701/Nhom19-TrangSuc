@@ -330,5 +330,30 @@ namespace Trangsuc.Controllers
             }
             return RedirectToAction("Index", "home");
         }
+        //Lich su mua hang cho khach hang
+        ServiceReferenceHoadon.ServiceHoadonClient dbhoadon = new ServiceReferenceHoadon.ServiceHoadonClient();
+        int pagesize = 10;
+        public ActionResult lichsumuahang(int page = 1)
+        {   //Lay makh va kiem tra don hang trong db
+            string makh = Session["User"].ToString();
+            ViewBag.ma = makh;
+            var hoadon = dbhoadon.GetAllHoadon().Where(s => s.Nguoidung.Username.Equals(makh)).ToList();
+            if (hoadon.Count > 0)
+            {
+                ViewBag.TotalPages = Math.Ceiling((double)hoadon.ToList().Count / pagesize);
+                return View(hoadon.Skip((page - 1) * pagesize).Take(pagesize));
+            }
+            else { ViewBag.Thongbao = "Bạn chưa có đơn hàng nào."; return View(); }
+
+        }
+        //Xem chi tiet hoa don va  tinh tong tien
+        public ActionResult chitietmuahang(int mahoadon)
+        {
+            var item = dbhoadon.GetChitietByMa(mahoadon);
+            List<ServiceReferenceHoadon.Chitiethoadon_DTO> danhsachcthd = dbhoadon.GetChitietByMa(mahoadon).ToList();
+            ViewBag.mahd = mahoadon;
+            ViewBag.tongtien = danhsachcthd.FirstOrDefault().Hoadon.Tongtien;
+            return View(danhsachcthd);
+        }
     }
 }

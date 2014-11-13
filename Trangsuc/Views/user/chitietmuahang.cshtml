@@ -1,0 +1,46 @@
+﻿@model IEnumerable<Trangsuc.ServiceReferenceHoadon.Chitiethoadon_DTO>
+@{
+    ViewBag.Title = "chitietmuahang";
+}
+
+<link href="@Url.Content("~/Content/Site.css")" rel="stylesheet" type="text/css" />
+<div class="columncenter">
+               <div class="header-center">Chi tiết đơn hàng</div>
+               <div style="width:580px;height:500px;" > 
+       <table class="tablelichsu">
+            <tr>
+                <th>Mã sản phẩm</th>
+                <th>Tên sản phẩm</th>
+                <th>Số lượng</th>
+                <th style="width: 200px">Đơn giá (VNĐ)</th>
+               
+            </tr>
+             @foreach (var item in Model)
+             {
+                 if (item.Hoadon.Mahoadon == ViewBag.mahd)
+                 {
+                     string gia = item.Thanhtien + "VNĐ";
+            <tr>
+                <td style="text-align: left">@item.Masanpham</td>
+                <td>@item.Tensanpham</td>
+                <td style="text-align: center">@item.Soluong</td> 
+                <td style="text-align: right">@gia</td>
+              </tr>
+                 }
+             }
+             <tr>
+             <td colspan="3" style="text-transform:uppercase; color:#000099; text-align:right; padding-right:20px"><b>Tổng tiền</b></td>
+             @{
+             var tongtien = ViewBag.tongtien;
+             tongtien = tongtien.ToString("c");
+             tongtien = tongtien.Substring(1, tongtien.LastIndexOf(".") - 1) + " VNĐ";
+                }
+             <td style="text-align: right"><b>@tongtien</b></td>
+             </tr>  
+                                  
+      </table>    
+                   <a href="/user/lichsumuahang" style="font-size: 17px; color:#333; font-weight:bold; margin:10px; float:left"> 
+                   <table align="left"><tr height="20px" valign="middle"><td><img src="@Url.Content("~/images/back.png")" width="20px" height="20px"/></td><td>Lịch sử mua hàng</td></tr></table>
+                       </a>
+               </div>  
+</div>

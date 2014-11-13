@@ -1,0 +1,53 @@
+﻿@model IEnumerable<Trangsuc.ServiceReferenceHoadon.Hoadon_DTO>
+@{
+    ViewBag.Title = "lichsumuahang";
+}
+<link href="@Url.Content("~/Content/Site.css")" rel="stylesheet" type="text/css" />
+<div class="columncenter">
+               <div class="header-center">Lịch sử mua hàng</div>
+               <div style="width:580px;height:500px;" > 
+       @if (!String.IsNullOrEmpty(@ViewBag.Thongbao))
+       {
+           <div style="padding-left: 8px"><p>@Html.Raw(ViewBag.Thongbao)</p></div>
+       }
+       else{
+                	<table class="tablelichsu">
+                    	<tr>
+                        	<th>STT</th>                            
+                            <th>Ngày đặt</th>
+                            <th>Tổng tiền</th>
+                            <th>Trạng thái</th>  
+                            <th>Chi tiết</th>                          
+                        </tr>
+                        @{int i = 1;}
+                        @foreach(var item in Model)
+                        {
+                            <tr>
+                        	    <td>                               	     
+                                    @i                               
+                                </td>
+                                <td>
+                                    @item.Ngaymuahang                                
+                                </td>
+                                <td>
+                            	    @String.Format("{0:0,0 VNĐ}", item.Tongtien)
+                                </td>
+                                <td>
+                            	    @item.Trangthai
+                                </td>
+                                <td style="padding-left:2px; padding-right: 2px; text-align:center; width:40px">
+                            	   <a href="/user/chitietmuahang?mahoadon=@item.Mahoadon"><img src="@Url.Content("~/images/ctdonhang.png")" style="width:25px ;height:25px" /></a>
+                                </td>
+                                
+                            </tr>
+                            { i++; }
+                        }         
+                    </table>
+       
+                    <div>@{Html.RenderAction("Index", "paging", new { currentpage = "user/lichsumuahang", totalpages = ViewBag.TotalPages});} </div>        
+       }   
+                   <a href="/home/index" style="font-size: 17px; color:#333; font-weight:bold; margin:10px; float:left"> 
+                   <table align="left"><tr height="20px" valign="middle"><td><img src="@Url.Content("~/images/back1.png")" width="20px" height="20px"/></td><td>Trảng chủ</td></tr></table>
+                       </a>
+               </div>  
+</div>
