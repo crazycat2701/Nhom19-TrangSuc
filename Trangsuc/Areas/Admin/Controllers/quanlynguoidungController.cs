@@ -118,7 +118,6 @@ namespace Trangsuc.Areas.Admin.Controllers
         public ActionResult suathongtin(Nguoidung_DTO nguoidungsua, FormCollection form)
         {
             int maphanquyen = int.Parse(form["quyen"].ToString());
-            nguoidungsua.Pass = form["pass"].ToString();
             nguoidungsua.Quyen = dbnguoidung.GetQuyen(maphanquyen);
             try
             {

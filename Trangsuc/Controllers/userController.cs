@@ -9,6 +9,7 @@ using System.Web.Security;
 using System.Web.Routing;
 using System.Net.Mail;
 using System.Net;
+using System.Web.Helpers;
 
 namespace Trangsuc.Controllers
 {
@@ -38,13 +39,17 @@ namespace Trangsuc.Controllers
 
         public bool kiemtradangnhap(Nguoidung_DTO nd)
         {
+            
             dsnguoidung();
-            foreach (Nguoidung_DTO item in danhsachnguoidung)
+            var _nd = danhsachnguoidung.SingleOrDefault(x=>x.Username.Equals(nd.Username));
+            if (_nd != null)
             {
-                if (item.Username.Equals(nd.Username) && item.Pass.Equals(nd.Pass))
-                    return true;
+                var passmahoa =_nd.Pass;
+                //kiem tra pass
+                var check = Crypto.VerifyHashedPassword(passmahoa, nd.Pass);
+                return check;
             }
-            return false;
+            else return false;
         }
 
         public void dsnguoidungan()
@@ -54,13 +59,17 @@ namespace Trangsuc.Controllers
         }
         public bool kiemtradangnhapan(Nguoidung_DTO nd)
         {
+           
             dsnguoidungan();
-            foreach (Nguoidung_DTO item in danhsachnguoidungan)
+            var _nd = danhsachnguoidungan.SingleOrDefault(x => x.Username.Equals(nd.Username));
+            if (_nd != null)
             {
-                if (item.Username.Equals(nd.Username) && item.Pass.Equals(nd.Pass))
-                    return true;
+                var passmahoa = _nd.Pass;
+
+                var check = Crypto.VerifyHashedPassword(passmahoa, nd.Pass);
+                return check;
             }
-            return false;
+            else return false;
         }
 
         [HttpGet]
@@ -72,8 +81,7 @@ namespace Trangsuc.Controllers
         [HttpPost]
         public ActionResult DangNhap(dangnhap model, string returnUrl)
         {
-            try
-            {
+            
                 Nguoidung_DTO nd = new Nguoidung_DTO();
                 nd.Username = model.username;
                 nd.Pass = model.password;
@@ -108,11 +116,7 @@ namespace Trangsuc.Controllers
                         }
                         return View();
                     }    
-            }
-            catch
-            {
-                return View();
-            }
+           
         }
 
         public ActionResult DangXuat()
@@ -196,9 +200,11 @@ namespace Trangsuc.Controllers
                 DateTime ns = new DateTime(nam, thang, ngay);
                 try
                 {
+                    //ma hoa password
+                    var passmahoa = Crypto.HashPassword(model.password);
                     Nguoidung_DTO nd = new Nguoidung_DTO();
                     nd.Username = model.username;
-                    nd.Pass = model.password;
+                    nd.Pass = passmahoa;
                     nd.Hoten = model.hoten;
                     nd.Ngaysinh = ns;
                     nd.Sdt = model.sdt;
@@ -244,14 +250,7 @@ namespace Trangsuc.Controllers
 
         public ActionResult SuaThongTin()
         {
-            if (ModelState.IsValid)
-            {
-                if (Session["User"] == null)
-                {
-                    return View();
-                }
-                else
-                {
+           
                     string username = Session["User"].ToString();
                     Nguoidung_DTO nd = dbnguoidung.GetNguoidungByUsername(username);                  
                     suathongtin _sua = new suathongtin();
@@ -263,27 +262,12 @@ namespace Trangsuc.Controllers
                     _sua.passwordcu = null;
                     _sua.xacnhanmatkhau = null;
                     return View(_sua);
-                }
-            }
-            else
-            {
-                return View();
-            }
         }
 
         [HttpPost]
         public ActionResult SuaThongTin(suathongtin nd_sua)
         {
             
-            if (Session["User"].Equals(nd_sua.username))
-            {
-                if (nd_sua.password == null || !nd_sua.password.Equals(nd_sua.xacnhanmatkhau))
-                {
-                    ViewBag.saithongtin = "";
-                    return View(nd_sua);
-                }
-                else
-                {
                     Nguoidung_DTO _nd = new Nguoidung_DTO();
                     _nd.Username = nd_sua.username;
                     _nd.Pass = nd_sua.passwordcu;
@@ -293,7 +277,7 @@ namespace Trangsuc.Controllers
                         Nguoidung_DTO _nd_sua = dbnguoidung.GetNguoidungByUsername(_nd.Username);                  
                                 _nd_sua.Sdt = nd_sua.sdt;
                                 _nd_sua.Mail = nd_sua.email;
-                                _nd_sua.Pass = nd_sua.password;
+                                _nd_sua.Pass = Crypto.HashPassword(nd_sua.password);
                                 dbnguoidung.Update(_nd_sua);
                         return RedirectToAction("Index", "Home");
                     }
@@ -301,13 +285,8 @@ namespace Trangsuc.Controllers
                     {
                         ViewBag.saithongtin = "Mật khẩu cũ không hợp lệ";
                         return View(nd_sua);
-                    }
-                }
-            }
-            else
-            {
-                return RedirectToAction("Index", "Home");
-            }
+                    } 
+          
         }
         // gủi mail mật khẩu cho khách hàng
         public ActionResult Quenmatkhau()
@@ -321,24 +300,33 @@ namespace Trangsuc.Controllers
             ServiceReferenceNguoidung.Nguoidung_DTO user = new ServiceReferenceNguoidung.Nguoidung_DTO();
             user = dbnguoidung.GetAllNguoidung().SingleOrDefault(e=> e.Mail.Equals(mail));
             if(user !=null)
-            {string Email = user.Mail.Trim();
-            string chuoi = " TÀI KHOẢN VÀ MẬT KHẨU CỦA QUÝ KHÁCH:\n";
-            chuoi += "Username: " + user.Username +"\n";
-            chuoi += "Password: " + user.Pass + "\n";
-            chuoi += "Chào quý khách.";
-            MailMessage msg = new MailMessage();
-            msg.From = new MailAddress("trangsucviet05@gmail.com");
-            msg.To.Add(Email);
-            msg.Subject = "Trangsucviet: Quên Mật Khẩu";
-            msg.Body = chuoi;
-            #region SMTP
-            SmtpClient smtp = new SmtpClient();
-            smtp.Credentials = new NetworkCredential("trangsucviet05@gmail.com", "seminarnhom05");
-            smtp.Port = 587;
-            smtp.Host = "smtp.gmail.com";
-            smtp.EnableSsl = true;
-            smtp.Send(msg);
-            #endregion
+            {
+                string passrd;
+                Random rd = new Random();
+                //biến passrd sẽ nhận có giá trị ngẫu nhiên trong khoảng 100000 đến 999999
+                passrd = rd.Next(100000, 999999).ToString();  
+                user.Pass = Crypto.HashPassword(passrd);
+                if (dbnguoidung.Update(user))
+                {
+                    string Email = user.Mail.Trim();
+                    string chuoi = " TÀI KHOẢN VÀ MẬT KHẨU CỦA QUÝ KHÁCH:\n";
+                    chuoi += "Username: " + user.Username + "\n";
+                    chuoi += "Password: " + passrd + "\n";
+                    chuoi += "Quý khách hãy đăng nhập và đổi mật khẩu lại.Chào quý khách.";
+                    MailMessage msg = new MailMessage();
+                    msg.From = new MailAddress("trangsucviet05@gmail.com");
+                    msg.To.Add(Email);
+                    msg.Subject = "Trangsucviet: Quên Mật Khẩu";
+                    msg.Body = chuoi;
+                    #region SMTP
+                    SmtpClient smtp = new SmtpClient();
+                    smtp.Credentials = new NetworkCredential("trangsucviet05@gmail.com", "seminarnhom05");
+                    smtp.Port = 587;
+                    smtp.Host = "smtp.gmail.com";
+                    smtp.EnableSsl = true;
+                    smtp.Send(msg);
+                    #endregion
+                }
             }
             return RedirectToAction("Index", "home");
         }

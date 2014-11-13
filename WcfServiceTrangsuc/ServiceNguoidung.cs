@@ -12,6 +12,8 @@ namespace WcfServiceTrangsuc
     {
         dewEntities db = new dewEntities();
          List<Nguoidung_DTO> lst_user = new List<Nguoidung_DTO>();
+
+        //Lay gia tri user tren db
         public List<Nguoidung_DTO> GetAllNguoidung()
         {
             lst_user.Clear();
@@ -36,6 +38,7 @@ namespace WcfServiceTrangsuc
             return lst_user;
         }
 
+        //Lay gia tri phan quyen tren db va tao bien tam de thao tac (phan quyen la 1 table rieng voi user)
         public Phanquyen_DTO GetQuyen(int quyen)
         {
             Phanquyen_DTO pg = new Phanquyen_DTO();
@@ -45,6 +48,7 @@ namespace WcfServiceTrangsuc
             return pg;
         }
 
+        // Lay gia tri user tren db và tao cac bien tam de thao tac (bao gom phan quyen)
         public Nguoidung_DTO GetNguoidungByUsername(string username)
         {
             Nguoidung_DTO nd = new Nguoidung_DTO();
@@ -71,7 +75,7 @@ namespace WcfServiceTrangsuc
             }
         }
 
-
+        //Them nguoi dung moi
         public bool Insert(Nguoidung_DTO nd)
         {
             try
@@ -97,7 +101,7 @@ namespace WcfServiceTrangsuc
             }
         }
 
-
+        //Thay doi thong tin nguoi dung
         public bool Update(Nguoidung_DTO nd)
         {
             try
@@ -120,7 +124,7 @@ namespace WcfServiceTrangsuc
             }
         }
 
-
+        //Lay phan quyen (giua admin va nguoi dung)
         public List<Phanquyen_DTO> GetAllQuyen()
         {
             List<Phanquyen_DTO> lstpq = new List<Phanquyen_DTO>();

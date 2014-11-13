@@ -53,6 +53,8 @@ function check_nam_nhuan(nam) {
     if ((nam % 4 == 0) && (nam % 100 != 0)) return true;
     else return false;
 }
+
+//java cho trang thanh toan cua khach hang
 function checktt() {
     //if (document.formsave.username.value.length == 0) {
     //    document.getElementById('hoten').innerHTML = "Phải nhập họ tên";

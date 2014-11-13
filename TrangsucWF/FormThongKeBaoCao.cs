@@ -109,10 +109,10 @@ namespace TrangsucWF
             foreach (ServiceReferenceHoadon.Chitiethoadon_DTO cthd in list_cthd_giao)
             {
                 if (cthd.Hoadon.Ngaygiaohang.Date >= dt_tungaybc.Value.Date && cthd.Hoadon.Ngaygiaohang.Date <= dt_denngaybc.Value.Date)
-                {
+                { //THeo ngay
                     var check = list_cthdtk.FirstOrDefault(s => s.Masanpham.Contains(cthd.Masanpham));
                     if (check != null)
-                    {
+                    { //Theo san pham
                         tongtien = tongtien - int.Parse(check.Thanhtien);
                         check.Soluong = check.Soluong + cthd.Soluong;
                         check.Thanhtien = (check.Soluong * check.Giasanpham).ToString();

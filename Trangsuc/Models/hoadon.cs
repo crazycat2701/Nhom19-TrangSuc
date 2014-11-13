@@ -6,7 +6,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Data;
 namespace Trangsuc.Models
 {
-
+    
     public class hoadonsua
     {
         public int mahoadon { get; set; }

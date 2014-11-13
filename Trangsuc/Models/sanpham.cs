@@ -7,7 +7,7 @@ using System.Data;
 
 namespace Trangsuc.Models
 {
-   
+    //Validation cho trang them san pham
     public class sanphamthem
     {
         [Required(ErrorMessage = "Bạn chưa nhập mã sản phẩm")]
@@ -31,7 +31,7 @@ namespace Trangsuc.Models
         public string maloai { get; set; }
 
     }
-
+    //Validation cho trang sua san pham
     public class sanphamsua
     {
         public string masanpham { get; set; }

@@ -8,7 +8,7 @@ using System.Data;
 
 namespace Trangsuc.Models
 {
-   
+   //Validation cho trang dang ky
     public class dangky
     {
         [Required(ErrorMessage = "Bạn chưa nhập tên đăng nhập")]
@@ -53,7 +53,7 @@ namespace Trangsuc.Models
         [Display(Name = "Địa chỉ email")]
         public string email { get; set; }
     }
-
+   // Validation cho trang dang nhap
     public class dangnhap
     {
         [Display(Name = "Tên truy cập")]
@@ -65,7 +65,7 @@ namespace Trangsuc.Models
         [Display(Name = "Ghi nhớ")]
         public bool remember { get; set; }
     }
-
+    //Validation cho trang thong tin nguoi dung
     public class suathongtin
     {
         public string username { get; set; }

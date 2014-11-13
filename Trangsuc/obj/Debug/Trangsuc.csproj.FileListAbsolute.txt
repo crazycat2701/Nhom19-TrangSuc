@@ -196,3 +196,23 @@ E:\doanwebser\Trangsuc_v4 - Copy (6) - Copy - Copy\Trangsuc\bin\System.Web.WebPa
 E:\doanwebser\Trangsuc_v4 - Copy (6) - Copy - Copy\Trangsuc\obj\Debug\Trangsuc.csprojResolveAssemblyReference.cache
 E:\doanwebser\Trangsuc_v4 - Copy (6) - Copy - Copy\Trangsuc\obj\Debug\Trangsuc.dll
 E:\doanwebser\Trangsuc_v4 - Copy (6) - Copy - Copy\Trangsuc\obj\Debug\Trangsuc.pdb
+D:\BaDat\Nhom19-TrangSuc\Trangsuc\bin\Trangsuc.dll
+D:\BaDat\Nhom19-TrangSuc\Trangsuc\bin\Trangsuc.pdb
+D:\BaDat\Nhom19-TrangSuc\Trangsuc\bin\EntityFramework.dll
+D:\BaDat\Nhom19-TrangSuc\Trangsuc\bin\Microsoft.Web.Infrastructure.dll
+D:\BaDat\Nhom19-TrangSuc\Trangsuc\bin\System.Web.Helpers.dll
+D:\BaDat\Nhom19-TrangSuc\Trangsuc\bin\System.Web.Mvc.dll
+D:\BaDat\Nhom19-TrangSuc\Trangsuc\bin\System.Web.Razor.dll
+D:\BaDat\Nhom19-TrangSuc\Trangsuc\bin\System.Web.WebPages.Deployment.dll
+D:\BaDat\Nhom19-TrangSuc\Trangsuc\bin\System.Web.WebPages.dll
+D:\BaDat\Nhom19-TrangSuc\Trangsuc\bin\System.Web.WebPages.Razor.dll
+D:\BaDat\Nhom19-TrangSuc\Trangsuc\bin\EntityFramework.xml
+D:\BaDat\Nhom19-TrangSuc\Trangsuc\bin\System.Web.Helpers.xml
+D:\BaDat\Nhom19-TrangSuc\Trangsuc\bin\System.Web.Mvc.xml
+D:\BaDat\Nhom19-TrangSuc\Trangsuc\bin\System.Web.Razor.xml
+D:\BaDat\Nhom19-TrangSuc\Trangsuc\bin\System.Web.WebPages.xml
+D:\BaDat\Nhom19-TrangSuc\Trangsuc\bin\System.Web.WebPages.Deployment.xml
+D:\BaDat\Nhom19-TrangSuc\Trangsuc\bin\System.Web.WebPages.Razor.xml
+D:\BaDat\Nhom19-TrangSuc\Trangsuc\obj\Debug\Trangsuc.csprojResolveAssemblyReference.cache
+D:\BaDat\Nhom19-TrangSuc\Trangsuc\obj\Debug\Trangsuc.dll
+D:\BaDat\Nhom19-TrangSuc\Trangsuc\obj\Debug\Trangsuc.pdb

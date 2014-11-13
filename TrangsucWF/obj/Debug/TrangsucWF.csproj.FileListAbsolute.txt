@@ -212,3 +212,6 @@ C:\Users\BIN\Desktop\Trangsuc_v4\TrangsucWF\obj\Debug\RdlCompile.cache
 C:\Users\BIN\Desktop\Trangsuc_v4\TrangsucWF\obj\Debug\RdlCompile.compiled
 C:\Users\BIN\Desktop\Trangsuc_v4\TrangsucWF\obj\Debug\TrangsucWF.exe
 C:\Users\BIN\Desktop\Trangsuc_v4\TrangsucWF\obj\Debug\TrangsucWF.pdb
+D:\BaDat\Nhom19-TrangSuc\TrangsucWF\bin\Debug\TrangsucWF.exe.config
+D:\BaDat\Nhom19-TrangSuc\TrangsucWF\obj\Debug\TrangsucWF.exe
+D:\BaDat\Nhom19-TrangSuc\TrangsucWF\obj\Debug\TrangsucWF.pdb

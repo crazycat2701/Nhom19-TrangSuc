@@ -13,7 +13,8 @@
         @using (@Html.BeginForm("suathongtin", "quanlynguoidung",FormMethod.Post, new {onsubmit="return checkstt();", id="formsave", name="formsave"}))
         {
             @Html.ValidationSummary(true)
-            @Html.HiddenFor(model => model.Username)           
+            @Html.HiddenFor(model => model.Username)  
+            @Html.HiddenFor(model=>model.Pass)         
             @Html.HiddenFor(model => model.Gioitinh)
             @Html.HiddenFor(model => model.Hoten)
             @Html.HiddenFor(model => model.Sdt)
@@ -27,7 +28,7 @@
                     <th style="width:150px; text-align:left; color:#000099">Họ tên</th>
                     <td style="width:auto; padding: 10px 5px 5px 5px; color:#000033; text-transform:uppercase;"><b>@Html.DisplayTextFor(model => model.Hoten)</b></td>
                 </tr>
-                 <tr>
+               @*  <tr>
                     <th style="text-align:left; color:#000099">Password</th>
                     <td style="width:auto; padding: 10px 5px 5px 5px">       
                        @Html.Password("pass", @Html.DisplayTextFor(model => model.Pass), new {id="pass" })
@@ -35,6 +36,7 @@
                     </td>
                     
                 </tr>
+                *@
                 <tr>
                     <th style="text-align:left; color:#000099">Ngày sinh</th>
                     @{ string ngaysinh = Model.Ngaysinh.ToString();
